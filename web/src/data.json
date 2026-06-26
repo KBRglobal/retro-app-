@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T14:24:48+03:00",
+  "generatedAt": "2026-06-26T18:02:00+03:00",
   "repos": [
     {
       "id": "app",
@@ -31,16 +31,16 @@
     }
   ],
   "summary": {
-    "totalCommits": 1457,
+    "totalCommits": 1460,
     "firstCommit": "2026-05-06T06:09:02+03:00",
-    "lastCommit": "2026-06-26T14:24:48+03:00",
-    "totalInsertions": 511150,
-    "totalDeletions": 195327,
+    "lastCommit": "2026-06-26T18:02:00+03:00",
+    "totalInsertions": 512323,
+    "totalDeletions": 195336,
     "disciplineTotals": {
       "Frontend": 474,
       "Design": 101,
       "Backend": 690,
-      "Product": 510,
+      "Product": 511,
       "AI/ML": 102,
       "DevOps": 45,
       "QA": 242,
@@ -55,33 +55,33 @@
     "ghostMonths": 18,
     "moneyByMarket": {
       "Dubai": {
-        "teamCost": 1427138,
+        "teamCost": 1427009,
         "actualCost": 25000,
-        "savings": 1402138,
+        "savings": 1402009,
         "savingsPct": 98,
         "teamEquivMonths": 138,
         "realHours": 20160
       },
       "USA": {
-        "teamCost": 2785133,
+        "teamCost": 2785063,
         "actualCost": 38000,
-        "savings": 2747133,
+        "savings": 2747063,
         "savingsPct": 99,
         "teamEquivMonths": 138,
         "realHours": 20160
       },
       "Offshore": {
-        "teamCost": 895321,
+        "teamCost": 895151,
         "actualCost": 15000,
-        "savings": 880321,
+        "savings": 880151,
         "savingsPct": 98,
         "teamEquivMonths": 138,
         "realHours": 20160
       }
     },
-    "teamCost": 1427138,
+    "teamCost": 1427009,
     "actualCost": 25000,
-    "savings": 1402138,
+    "savings": 1402009,
     "savingsPct": 98
   },
   "commits": [
@@ -64924,6 +64924,112 @@
         "Product"
       ],
       "fileCount": 1
+    },
+    {
+      "hash": "badb7668926b1b518d1ce3ae91531d5bb1c8cab2",
+      "date": "2026-06-26T17:51:44+03:00",
+      "author": "Claude",
+      "subject": "Sprint 11 Phase A: MyKeyz→Care bridge (inspection jobs) — Care side",
+      "repo": "careapi",
+      "files": [
+        {
+          "path": "src/config.ts",
+          "ins": 7,
+          "del": 0
+        },
+        {
+          "path": "src/data.ts",
+          "ins": 42,
+          "del": 0
+        },
+        {
+          "path": "src/db.ts",
+          "ins": 104,
+          "del": 7
+        },
+        {
+          "path": "src/index.ts",
+          "ins": 146,
+          "del": 1
+        },
+        {
+          "path": "src/lib/signing.ts",
+          "ins": 22,
+          "del": 0
+        },
+        {
+          "path": "src/mykeyzWebhook.ts",
+          "ins": 50,
+          "del": 0
+        }
+      ],
+      "insertions": 371,
+      "deletions": 8,
+      "disciplines": [],
+      "fileCount": 6
+    },
+    {
+      "hash": "069e953a2cc312c155dc2671b99742c86085af27",
+      "date": "2026-06-26T18:01:58+03:00",
+      "author": "Claude",
+      "subject": "Sprint 11 Phase B: bridge E2E suite + Control Panel source display",
+      "repo": "careapi",
+      "files": [
+        {
+          "path": "package.json",
+          "ins": 1,
+          "del": 0
+        },
+        {
+          "path": "public/admin.html",
+          "ins": 50,
+          "del": 1
+        },
+        {
+          "path": "scripts/e2e-all.mjs",
+          "ins": 1,
+          "del": 0
+        },
+        {
+          "path": "scripts/e2e-bridge.mjs",
+          "ins": 268,
+          "del": 0
+        }
+      ],
+      "insertions": 320,
+      "deletions": 1,
+      "disciplines": [],
+      "fileCount": 4
+    },
+    {
+      "hash": "b4a2cc5d8b77a9d8d702c6203706ab816855b8b7",
+      "date": "2026-06-26T18:02:00+03:00",
+      "author": "Claude",
+      "subject": "Sprint 11 Phase B: bridge contract docs",
+      "repo": "care",
+      "files": [
+        {
+          "path": "docs/05-INTEGRATIONS.md",
+          "ins": 33,
+          "del": 0
+        },
+        {
+          "path": "docs/BRIDGE-MYKEYZ-CARE.md",
+          "ins": 339,
+          "del": 0
+        },
+        {
+          "path": "docs/SPRINT-11-TODO.md",
+          "ins": 110,
+          "del": 0
+        }
+      ],
+      "insertions": 482,
+      "deletions": 0,
+      "disciplines": [
+        "Product"
+      ],
+      "fileCount": 3
     }
   ],
   "team": [
@@ -64937,11 +65043,11 @@
       "hours": 2419,
       "issueCount": 97,
       "costByMarket": {
-        "Dubai": 156257,
-        "USA": 312016,
-        "Offshore": 97839
+        "Dubai": 156241,
+        "USA": 312008,
+        "Offshore": 97818
       },
-      "cost": 156257
+      "cost": 156241
     },
     {
       "id": "be",
@@ -64950,14 +65056,14 @@
       "color": "#3B82F6",
       "icon": "lucide:server",
       "avatar": "https://randomuser.me/api/portraits/men/45.jpg",
-      "hours": 3174,
-      "issueCount": 82,
+      "hours": 3185,
+      "issueCount": 83,
       "costByMarket": {
-        "Dubai": 202070,
-        "USA": 418305,
-        "Offshore": 125243
+        "Dubai": 202678,
+        "USA": 419758,
+        "Offshore": 125608
       },
-      "cost": 202070
+      "cost": 202678
     },
     {
       "id": "sec",
@@ -64966,14 +65072,14 @@
       "color": "#EF4444",
       "icon": "lucide:shield-check",
       "avatar": "https://randomuser.me/api/portraits/men/12.jpg",
-      "hours": 1162,
+      "hours": 1160,
       "issueCount": 13,
       "costByMarket": {
-        "Dubai": 78620,
-        "USA": 151519,
-        "Offshore": 49414
+        "Dubai": 78512,
+        "USA": 151311,
+        "Offshore": 49345
       },
-      "cost": 78620
+      "cost": 78512
     },
     {
       "id": "mob",
@@ -64982,14 +65088,14 @@
       "color": "#6366F1",
       "icon": "lucide:smartphone",
       "avatar": "https://randomuser.me/api/portraits/women/44.jpg",
-      "hours": 2842,
+      "hours": 2838,
       "issueCount": 45,
       "costByMarket": {
-        "Dubai": 184424,
-        "USA": 365645,
-        "Offshore": 115281
+        "Dubai": 184154,
+        "USA": 365110,
+        "Offshore": 115112
       },
-      "cost": 184424
+      "cost": 184154
     },
     {
       "id": "web",
@@ -65001,11 +65107,11 @@
       "hours": 157,
       "issueCount": 2,
       "costByMarket": {
-        "Dubai": 9701,
-        "USA": 19683,
-        "Offshore": 6035
+        "Dubai": 9682,
+        "USA": 19647,
+        "Offshore": 6024
       },
-      "cost": 9701
+      "cost": 9682
     },
     {
       "id": "ai",
@@ -65014,14 +65120,14 @@
       "color": "#8B5CF6",
       "icon": "lucide:sparkles",
       "avatar": "https://randomuser.me/api/portraits/women/65.jpg",
-      "hours": 763,
+      "hours": 762,
       "issueCount": 3,
       "costByMarket": {
-        "Dubai": 56065,
-        "USA": 98019,
-        "Offshore": 35852
+        "Dubai": 55985,
+        "USA": 97878,
+        "Offshore": 35800
       },
-      "cost": 56065
+      "cost": 55985
     },
     {
       "id": "ops",
@@ -65030,14 +65136,14 @@
       "color": "#F59E0B",
       "icon": "lucide:cloud",
       "avatar": "https://randomuser.me/api/portraits/men/61.jpg",
-      "hours": 632,
+      "hours": 631,
       "issueCount": 4,
       "costByMarket": {
-        "Dubai": 40995,
-        "USA": 78527,
-        "Offshore": 26407
+        "Dubai": 40938,
+        "USA": 78416,
+        "Offshore": 26370
       },
-      "cost": 40995
+      "cost": 40938
     },
     {
       "id": "qa",
@@ -65046,14 +65152,14 @@
       "color": "#10B981",
       "icon": "lucide:check-check",
       "avatar": "https://randomuser.me/api/portraits/women/68.jpg",
-      "hours": 1798,
+      "hours": 1795,
       "issueCount": 6,
       "costByMarket": {
-        "Dubai": 113754,
-        "USA": 237055,
-        "Offshore": 70408
+        "Dubai": 113589,
+        "USA": 236711,
+        "Offshore": 70305
       },
-      "cost": 113754
+      "cost": 113589
     },
     {
       "id": "pm",
@@ -65062,14 +65168,14 @@
       "color": "#14B8A6",
       "icon": "lucide:clipboard-list",
       "avatar": "https://randomuser.me/api/portraits/men/76.jpg",
-      "hours": 2303,
-      "issueCount": 47,
+      "hours": 2310,
+      "issueCount": 48,
       "costByMarket": {
-        "Dubai": 148622,
-        "USA": 297945,
-        "Offshore": 92539
+        "Dubai": 149071,
+        "USA": 298749,
+        "Offshore": 92765
       },
-      "cost": 148622
+      "cost": 149071
     },
     {
       "id": "design",
@@ -65078,14 +65184,14 @@
       "color": "#EC4899",
       "icon": "lucide:palette",
       "avatar": "https://randomuser.me/api/portraits/women/31.jpg",
-      "hours": 2106,
+      "hours": 2104,
       "issueCount": 506,
       "costByMarket": {
-        "Dubai": 127445,
-        "USA": 231749,
-        "Offshore": 80791
+        "Dubai": 127352,
+        "USA": 231560,
+        "Offshore": 80731
       },
-      "cost": 127445
+      "cost": 127352
     },
     {
       "id": "i18n",
@@ -65094,14 +65200,14 @@
       "color": "#F97316",
       "icon": "lucide:languages",
       "avatar": "https://randomuser.me/api/portraits/women/12.jpg",
-      "hours": 3999,
+      "hours": 3994,
       "issueCount": 71,
       "costByMarket": {
-        "Dubai": 267511,
-        "USA": 489598,
-        "Offshore": 168707
+        "Dubai": 267197,
+        "USA": 488975,
+        "Offshore": 168508
       },
-      "cost": 267511
+      "cost": 267197
     },
     {
       "id": "growth",
@@ -65110,14 +65216,14 @@
       "color": "#84CC16",
       "icon": "lucide:trending-up",
       "avatar": "https://randomuser.me/api/portraits/men/3.jpg",
-      "hours": 707,
+      "hours": 706,
       "issueCount": 18,
       "costByMarket": {
-        "Dubai": 41675,
-        "USA": 85072,
-        "Offshore": 26806
+        "Dubai": 41610,
+        "USA": 84941,
+        "Offshore": 26765
       },
-      "cost": 41675
+      "cost": 41610
     }
   ],
   "ghost": {
@@ -65138,7 +65244,7 @@
           "Frontend"
         ],
         "startDate": "2025-01-15T00:00:00.000Z",
-        "endDate": "2025-02-05T15:43:18.542Z"
+        "endDate": "2025-02-05T16:27:39.942Z"
       },
       {
         "epicId": "design",
@@ -65153,13 +65259,13 @@
           "Frontend"
         ],
         "startDate": "2025-01-15T00:00:00.000Z",
-        "endDate": "2025-02-05T15:43:18.542Z"
+        "endDate": "2025-02-05T16:27:39.942Z"
       },
       {
         "epicId": "onboarding",
         "title": "Onboarding & Auth",
         "lane": 2,
-        "estHours": 761,
+        "estHours": 760,
         "disciplines": [
           "Backend",
           "Marketing",
@@ -65171,7 +65277,7 @@
           "AI/ML"
         ],
         "startDate": "2025-01-15T00:00:00.000Z",
-        "endDate": "2025-03-09T15:42:05.226Z"
+        "endDate": "2025-03-09T15:50:19.020Z"
       },
       {
         "epicId": "core",
@@ -65183,14 +65289,14 @@
           "Frontend",
           "Backend"
         ],
-        "startDate": "2025-02-05T15:43:18.542Z",
-        "endDate": "2025-02-27T07:26:37.085Z"
+        "startDate": "2025-02-05T16:27:39.942Z",
+        "endDate": "2025-02-27T08:55:19.884Z"
       },
       {
         "epicId": "inspection",
         "title": "Inspection Flow",
         "lane": 1,
-        "estHours": 2204,
+        "estHours": 2201,
         "disciplines": [
           "Frontend",
           "Marketing",
@@ -65201,14 +65307,14 @@
           "Design",
           "AI/ML"
         ],
-        "startDate": "2025-02-05T15:43:18.542Z",
-        "endDate": "2025-07-11T01:08:55.992Z"
+        "startDate": "2025-02-05T16:27:39.942Z",
+        "endDate": "2025-07-11T02:06:34.236Z"
       },
       {
         "epicId": "ai",
         "title": "AI Vision Engine",
         "lane": 0,
-        "estHours": 3162,
+        "estHours": 3157,
         "disciplines": [
           "Frontend",
           "Design",
@@ -65219,14 +65325,14 @@
           "DevOps",
           "QA"
         ],
-        "startDate": "2025-02-27T07:26:37.085Z",
-        "endDate": "2025-10-08T05:55:09.524Z"
+        "startDate": "2025-02-27T08:55:19.884Z",
+        "endDate": "2025-10-08T06:32:09.682Z"
       },
       {
         "epicId": "reports",
         "title": "Reports & Legal",
         "lane": 2,
-        "estHours": 247,
+        "estHours": 246,
         "disciplines": [
           "Backend",
           "Product",
@@ -65236,14 +65342,14 @@
           "Frontend",
           "DevOps"
         ],
-        "startDate": "2025-03-09T15:42:05.226Z",
-        "endDate": "2025-03-31T07:25:23.769Z"
+        "startDate": "2025-03-09T15:50:19.020Z",
+        "endDate": "2025-03-31T08:17:58.962Z"
       },
       {
         "epicId": "payments",
         "title": "Payments & Billing",
         "lane": 2,
-        "estHours": 4002,
+        "estHours": 3996,
         "disciplines": [
           "Frontend",
           "Product",
@@ -65254,14 +65360,14 @@
           "QA",
           "Marketing"
         ],
-        "startDate": "2025-03-31T07:25:23.769Z",
-        "endDate": "2026-01-07T11:16:39.664Z"
+        "startDate": "2025-03-31T08:17:58.962Z",
+        "endDate": "2026-01-07T11:37:10.547Z"
       },
       {
         "epicId": "antifraud",
         "title": "Anti-fraud & Trust",
         "lane": 1,
-        "estHours": 5233,
+        "estHours": 5225,
         "disciplines": [
           "Frontend",
           "Backend",
@@ -65272,14 +65378,14 @@
           "Design",
           "AI/ML"
         ],
-        "startDate": "2025-07-11T01:08:55.992Z",
+        "startDate": "2025-07-11T02:06:34.236Z",
         "endDate": "2026-07-15T00:00:00.000Z"
       },
       {
         "epicId": "marketplace",
         "title": "Vendor Marketplace (RFQ / Bidding)",
         "lane": 0,
-        "estHours": 3407,
+        "estHours": 3431,
         "disciplines": [
           "Backend",
           "AI/ML",
@@ -65290,8 +65396,8 @@
           "QA",
           "Design"
         ],
-        "startDate": "2025-10-08T05:55:09.524Z",
-        "endDate": "2026-06-05T10:57:49.637Z"
+        "startDate": "2025-10-08T06:32:09.682Z",
+        "endDate": "2026-06-07T12:26:58.443Z"
       },
       {
         "epicId": "verify",
@@ -65306,8 +65412,8 @@
           "Design",
           "DevOps"
         ],
-        "startDate": "2026-01-07T11:16:39.664Z",
-        "endDate": "2026-01-29T02:59:58.206Z"
+        "startDate": "2026-01-07T11:37:10.547Z",
+        "endDate": "2026-01-29T04:04:50.489Z"
       },
       {
         "epicId": "content",
@@ -65322,8 +65428,8 @@
           "Frontend",
           "Backend"
         ],
-        "startDate": "2026-01-29T02:59:58.206Z",
-        "endDate": "2026-02-19T18:43:16.749Z"
+        "startDate": "2026-01-29T04:04:50.489Z",
+        "endDate": "2026-02-19T20:32:30.432Z"
       },
       {
         "epicId": "marketing",
@@ -65338,8 +65444,8 @@
           "Frontend",
           "Backend"
         ],
-        "startDate": "2026-02-19T18:43:16.749Z",
-        "endDate": "2026-03-13T10:26:35.292Z"
+        "startDate": "2026-02-19T20:32:30.432Z",
+        "endDate": "2026-03-13T13:00:10.374Z"
       },
       {
         "epicId": "i18n",
@@ -65351,8 +65457,8 @@
           "Product",
           "Backend"
         ],
-        "startDate": "2026-03-13T10:26:35.292Z",
-        "endDate": "2026-04-04T02:09:53.834Z"
+        "startDate": "2026-03-13T13:00:10.374Z",
+        "endDate": "2026-04-04T05:27:50.317Z"
       },
       {
         "epicId": "admin",
@@ -65360,8 +65466,8 @@
         "lane": 2,
         "estHours": 28,
         "disciplines": [],
-        "startDate": "2026-04-04T02:09:53.834Z",
-        "endDate": "2026-04-25T17:53:12.377Z"
+        "startDate": "2026-04-04T05:27:50.317Z",
+        "endDate": "2026-04-25T21:55:30.259Z"
       }
     ]
   },
@@ -65420,12 +65526,12 @@
       "status": "done",
       "issueCount": 37,
       "commitCount": 319,
-      "estHours": 5233,
-      "estCost": 309498,
+      "estHours": 5225,
+      "estCost": 309049,
       "estCostByMarket": {
-        "Dubai": 309498,
-        "USA": 688850,
-        "Offshore": 188875
+        "Dubai": 309049,
+        "USA": 687851,
+        "Offshore": 188597
       },
       "startDate": "2026-05-09T12:28:40+03:00",
       "endDate": "2026-06-25T03:23:11+03:00",
@@ -65448,12 +65554,12 @@
       "status": "done",
       "issueCount": 32,
       "commitCount": 267,
-      "estHours": 4002,
-      "estCost": 273645,
+      "estHours": 3996,
+      "estCost": 273231,
       "estCostByMarket": {
-        "Dubai": 273645,
-        "USA": 516383,
-        "Offshore": 172515
+        "Dubai": 273231,
+        "USA": 515612,
+        "Offshore": 172255
       },
       "startDate": "2026-05-07T00:09:57+03:00",
       "endDate": "2026-06-26T14:00:58+03:00",
@@ -65474,17 +65580,17 @@
         "Design"
       ],
       "status": "done",
-      "issueCount": 36,
-      "commitCount": 213,
-      "estHours": 3407,
-      "estCost": 230879,
+      "issueCount": 38,
+      "commitCount": 216,
+      "estHours": 3431,
+      "estCost": 232341,
       "estCostByMarket": {
-        "Dubai": 230879,
-        "USA": 440784,
-        "Offshore": 145645
+        "Dubai": 232341,
+        "USA": 443914,
+        "Offshore": 146473
       },
       "startDate": "2026-05-09T14:12:46+03:00",
-      "endDate": "2026-06-26T13:42:09+03:00",
+      "endDate": "2026-06-26T18:02:00+03:00",
       "icon": "lucide:gavel",
       "desc": "Provider app (Care) + RFQ bidding marketplace and matching."
     },
@@ -65504,12 +65610,12 @@
       "status": "done",
       "issueCount": 32,
       "commitCount": 189,
-      "estHours": 3162,
-      "estCost": 227309,
+      "estHours": 3157,
+      "estCost": 226985,
       "estCostByMarket": {
-        "Dubai": 227309,
-        "USA": 402997,
-        "Offshore": 145010
+        "Dubai": 226985,
+        "USA": 402411,
+        "Offshore": 144803
       },
       "startDate": "2026-05-06T06:09:02+03:00",
       "endDate": "2026-06-26T13:31:04+03:00",
@@ -65532,12 +65638,12 @@
       "status": "done",
       "issueCount": 50,
       "commitCount": 311,
-      "estHours": 2204,
-      "estCost": 131433,
+      "estHours": 2201,
+      "estCost": 131253,
       "estCostByMarket": {
-        "Dubai": 131433,
-        "USA": 284090,
-        "Offshore": 80893
+        "Dubai": 131253,
+        "USA": 283709,
+        "Offshore": 80784
       },
       "startDate": "2026-05-09T00:17:48+03:00",
       "endDate": "2026-06-26T05:31:29+03:00",
@@ -65604,12 +65710,12 @@
       "status": "done",
       "issueCount": 14,
       "commitCount": 56,
-      "estHours": 761,
-      "estCost": 47767,
+      "estHours": 760,
+      "estCost": 47668,
       "estCostByMarket": {
-        "Dubai": 47767,
-        "USA": 100293,
-        "Offshore": 29518
+        "Dubai": 47668,
+        "USA": 100082,
+        "Offshore": 29457
       },
       "startDate": "2026-05-11T03:43:25+03:00",
       "endDate": "2026-06-26T09:45:15+03:00",
@@ -65631,11 +65737,11 @@
       "issueCount": 7,
       "commitCount": 7,
       "estHours": 270,
-      "estCost": 17981,
+      "estCost": 17955,
       "estCostByMarket": {
-        "Dubai": 17981,
-        "USA": 32066,
-        "Offshore": 11802
+        "Dubai": 17955,
+        "USA": 32019,
+        "Offshore": 11784
       },
       "startDate": "2026-06-10T13:08:12+03:00",
       "endDate": "2026-06-11T14:21:30+03:00",
@@ -65657,11 +65763,11 @@
       "issueCount": 3,
       "commitCount": 4,
       "estHours": 266,
-      "estCost": 14922,
+      "estCost": 14899,
       "estCostByMarket": {
-        "Dubai": 14922,
-        "USA": 27901,
-        "Offshore": 10495
+        "Dubai": 14899,
+        "USA": 27859,
+        "Offshore": 10478
       },
       "startDate": "2026-05-26T00:06:41+03:00",
       "endDate": "2026-06-11T14:10:23+03:00",
@@ -65682,11 +65788,11 @@
       "issueCount": 13,
       "commitCount": 20,
       "estHours": 263,
-      "estCost": 14636,
+      "estCost": 14614,
       "estCostByMarket": {
-        "Dubai": 14636,
-        "USA": 32344,
-        "Offshore": 9281
+        "Dubai": 14614,
+        "USA": 32296,
+        "Offshore": 9267
       },
       "startDate": "2026-05-13T16:30:17+03:00",
       "endDate": "2026-06-26T05:49:07+03:00",
@@ -65708,12 +65814,12 @@
       "status": "done",
       "issueCount": 15,
       "commitCount": 36,
-      "estHours": 247,
-      "estCost": 14371,
+      "estHours": 246,
+      "estCost": 14335,
       "estCostByMarket": {
-        "Dubai": 14371,
-        "USA": 31898,
-        "Offshore": 8803
+        "Dubai": 14335,
+        "USA": 31822,
+        "Offshore": 8781
       },
       "startDate": "2026-05-12T20:29:31+03:00",
       "endDate": "2026-06-26T06:21:38+03:00",
@@ -65735,11 +65841,11 @@
       "issueCount": 7,
       "commitCount": 11,
       "estHours": 158,
-      "estCost": 9128,
+      "estCost": 9122,
       "estCostByMarket": {
-        "Dubai": 9128,
-        "USA": 19679,
-        "Offshore": 5805
+        "Dubai": 9122,
+        "USA": 19666,
+        "Offshore": 5801
       },
       "startDate": "2026-05-13T00:54:40+03:00",
       "endDate": "2026-06-26T14:24:17+03:00",
@@ -65759,11 +65865,11 @@
       "issueCount": 5,
       "commitCount": 8,
       "estHours": 85,
-      "estCost": 4976,
+      "estCost": 4970,
       "estCostByMarket": {
-        "Dubai": 4976,
-        "USA": 10791,
-        "Offshore": 3035
+        "Dubai": 4970,
+        "USA": 10778,
+        "Offshore": 3031
       },
       "startDate": "2026-06-11T00:43:31+03:00",
       "endDate": "2026-06-26T14:24:48+03:00",
@@ -65846,11 +65952,11 @@
       "issueCount": 2,
       "commitCount": 2,
       "estHours": 10,
-      "estCost": 603,
+      "estCost": 597,
       "estCostByMarket": {
-        "Dubai": 603,
-        "USA": 1320,
-        "Offshore": 369
+        "Dubai": 597,
+        "USA": 1307,
+        "Offshore": 365
       },
       "startDate": "2026-06-11T00:23:19Z",
       "endDate": "2026-06-26T13:31:06+03:00",
@@ -65878,13 +65984,13 @@
       "deletions": 91,
       "startDate": "2026-05-06T06:09:02+03:00",
       "endDate": "2026-05-06T07:15:54+03:00",
-      "estHours": 594.8,
+      "estHours": 593.9,
       "estCostByMarket": {
-        "Dubai": 43718,
-        "USA": 76432,
-        "Offshore": 27956
+        "Dubai": 43652,
+        "USA": 76316,
+        "Offshore": 27913
       },
-      "estCost": 43718,
+      "estCost": 43652,
       "assigneeId": "mob",
       "contributorIds": [
         "lead",
@@ -66746,13 +66852,13 @@
       "deletions": 661,
       "startDate": "2026-05-07T00:09:57+03:00",
       "endDate": "2026-05-07T01:36:56+03:00",
-      "estHours": 459,
+      "estHours": 458.3,
       "estCostByMarket": {
-        "Dubai": 33737,
-        "USA": 58982,
-        "Offshore": 21573
+        "Dubai": 33685,
+        "USA": 58892,
+        "Offshore": 21540
       },
-      "estCost": 33737,
+      "estCost": 33685,
       "assigneeId": "pm",
       "contributorIds": [
         "lead",
@@ -67626,13 +67732,13 @@
       "deletions": 1269,
       "startDate": "2026-05-07T01:47:43+03:00",
       "endDate": "2026-05-07T02:33:05+03:00",
-      "estHours": 337.7,
+      "estHours": 337.2,
       "estCostByMarket": {
-        "Dubai": 24821,
-        "USA": 43394,
-        "Offshore": 15872
+        "Dubai": 24784,
+        "USA": 43330,
+        "Offshore": 15848
       },
-      "estCost": 24821,
+      "estCost": 24784,
       "assigneeId": "sec",
       "contributorIds": [
         "lead",
@@ -68061,13 +68167,13 @@
       "deletions": 1604,
       "startDate": "2026-05-08T15:58:12+03:00",
       "endDate": "2026-05-08T18:03:49+03:00",
-      "estHours": 183.4,
+      "estHours": 183.1,
       "estCostByMarket": {
-        "Dubai": 10729,
-        "USA": 24484,
-        "Offshore": 6511
+        "Dubai": 10711,
+        "USA": 24444,
+        "Offshore": 6500
       },
-      "estCost": 10729,
+      "estCost": 10711,
       "assigneeId": "mob",
       "contributorIds": [
         "lead",
@@ -68483,13 +68589,13 @@
       "deletions": 2526,
       "startDate": "2026-05-09T03:10:38Z",
       "endDate": "2026-05-09T07:08:55+03:00",
-      "estHours": 265,
+      "estHours": 264.6,
       "estCostByMarket": {
-        "Dubai": 19478,
-        "USA": 34053,
-        "Offshore": 12455
+        "Dubai": 19448,
+        "USA": 34001,
+        "Offshore": 12436
       },
-      "estCost": 19478,
+      "estCost": 19448,
       "assigneeId": "sec",
       "contributorIds": [
         "lead",
@@ -68955,13 +69061,13 @@
       "deletions": 1520,
       "startDate": "2026-05-09T12:28:40+03:00",
       "endDate": "2026-05-09T14:11:01+03:00",
-      "estHours": 116.4,
+      "estHours": 116.2,
       "estCostByMarket": {
-        "Dubai": 6809,
-        "USA": 15539,
-        "Offshore": 4132
+        "Dubai": 6798,
+        "USA": 15513,
+        "Offshore": 4125
       },
-      "estCost": 6809,
+      "estCost": 6798,
       "assigneeId": "sec",
       "contributorIds": [
         "mob",
@@ -69508,13 +69614,13 @@
       "deletions": 112,
       "startDate": "2026-05-09T14:12:46+03:00",
       "endDate": "2026-05-09T15:09:29+03:00",
-      "estHours": 148.2,
+      "estHours": 148,
       "estCostByMarket": {
-        "Dubai": 10893,
-        "USA": 19044,
-        "Offshore": 6965
+        "Dubai": 10878,
+        "USA": 19018,
+        "Offshore": 6956
       },
-      "estCost": 10893,
+      "estCost": 10878,
       "assigneeId": "pm",
       "contributorIds": [
         "lead",
@@ -70117,13 +70223,13 @@
       "deletions": 543,
       "startDate": "2026-05-09T15:12:17+03:00",
       "endDate": "2026-05-09T17:27:34+03:00",
-      "estHours": 103,
+      "estHours": 102.9,
       "estCostByMarket": {
-        "Dubai": 7571,
-        "USA": 13236,
-        "Offshore": 4841
+        "Dubai": 7563,
+        "USA": 13223,
+        "Offshore": 4836
       },
-      "estCost": 7571,
+      "estCost": 7563,
       "assigneeId": "sec",
       "contributorIds": [
         "lead",
@@ -70607,13 +70713,13 @@
       "deletions": 760,
       "startDate": "2026-05-09T17:30:42+03:00",
       "endDate": "2026-05-09T18:25:54+03:00",
-      "estHours": 88.5,
+      "estHours": 88.3,
       "estCostByMarket": {
-        "Dubai": 5177,
-        "USA": 11815,
-        "Offshore": 3142
+        "Dubai": 5166,
+        "USA": 11788,
+        "Offshore": 3135
       },
-      "estCost": 5177,
+      "estCost": 5166,
       "assigneeId": "sec",
       "contributorIds": [
         "lead",
@@ -70955,13 +71061,13 @@
       "deletions": 711,
       "startDate": "2026-05-09T20:49:45+03:00",
       "endDate": "2026-05-09T23:20:56+03:00",
-      "estHours": 91.9,
+      "estHours": 91.8,
       "estCostByMarket": {
-        "Dubai": 6755,
-        "USA": 11809,
-        "Offshore": 4319
+        "Dubai": 6747,
+        "USA": 11796,
+        "Offshore": 4315
       },
-      "estCost": 6755,
+      "estCost": 6747,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -71302,13 +71408,13 @@
       "deletions": 2090,
       "startDate": "2026-05-09T23:37:43+03:00",
       "endDate": "2026-05-10T03:17:27+03:00",
-      "estHours": 192.7,
+      "estHours": 192.5,
       "estCostByMarket": {
-        "Dubai": 14163,
-        "USA": 24762,
-        "Offshore": 9057
+        "Dubai": 14149,
+        "USA": 24736,
+        "Offshore": 9048
       },
-      "estCost": 14163,
+      "estCost": 14149,
       "assigneeId": "sec",
       "contributorIds": [
         "lead",
@@ -72218,13 +72324,13 @@
       "deletions": 682,
       "startDate": "2026-05-10T03:26:33+03:00",
       "endDate": "2026-05-10T04:45:02+03:00",
-      "estHours": 80.2,
+      "estHours": 80.1,
       "estCostByMarket": {
-        "Dubai": 4692,
-        "USA": 10707,
-        "Offshore": 2847
+        "Dubai": 4686,
+        "USA": 10693,
+        "Offshore": 2844
       },
-      "estCost": 4692,
+      "estCost": 4686,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -72568,13 +72674,13 @@
       "deletions": 947,
       "startDate": "2026-05-10T12:21:41+03:00",
       "endDate": "2026-05-10T15:01:52+03:00",
-      "estHours": 140.8,
+      "estHours": 140.6,
       "estCostByMarket": {
-        "Dubai": 10349,
-        "USA": 18093,
-        "Offshore": 6618
+        "Dubai": 10334,
+        "USA": 18067,
+        "Offshore": 6608
       },
-      "estCost": 10349,
+      "estCost": 10334,
       "assigneeId": "mob",
       "contributorIds": [
         "lead",
@@ -73434,13 +73540,13 @@
       "deletions": 1528,
       "startDate": "2026-05-10T18:30:54+03:00",
       "endDate": "2026-05-10T21:33:57+03:00",
-      "estHours": 292.9,
+      "estHours": 292.5,
       "estCostByMarket": {
-        "Dubai": 21528,
-        "USA": 37638,
-        "Offshore": 13766
+        "Dubai": 21499,
+        "USA": 37586,
+        "Offshore": 13748
       },
-      "estCost": 21528,
+      "estCost": 21499,
       "assigneeId": "mob",
       "contributorIds": [
         "lead",
@@ -73907,13 +74013,13 @@
       "deletions": 74,
       "startDate": "2026-05-10T23:21:43+03:00",
       "endDate": "2026-05-11T00:03:00+03:00",
-      "estHours": 71.6,
+      "estHours": 71.5,
       "estCostByMarket": {
-        "Dubai": 4189,
-        "USA": 9559,
-        "Offshore": 2542
+        "Dubai": 4183,
+        "USA": 9545,
+        "Offshore": 2538
       },
-      "estCost": 4189,
+      "estCost": 4183,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -74324,13 +74430,13 @@
       "deletions": 175,
       "startDate": "2026-05-11T00:07:39+03:00",
       "endDate": "2026-05-11T01:07:41+03:00",
-      "estHours": 77.3,
+      "estHours": 77.2,
       "estCostByMarket": {
-        "Dubai": 5682,
-        "USA": 9933,
-        "Offshore": 3633
+        "Dubai": 5674,
+        "USA": 9920,
+        "Offshore": 3628
       },
-      "estCost": 5682,
+      "estCost": 5674,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -75174,13 +75280,13 @@
       "deletions": 53,
       "startDate": "2026-05-11T01:45:08+03:00",
       "endDate": "2026-05-11T02:09:54+03:00",
-      "estHours": 45.2,
+      "estHours": 45.1,
       "estCostByMarket": {
-        "Dubai": 2644,
-        "USA": 6034,
-        "Offshore": 1605
+        "Dubai": 2638,
+        "USA": 6021,
+        "Offshore": 1601
       },
-      "estCost": 2644,
+      "estCost": 2638,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -75776,13 +75882,13 @@
       "deletions": 30,
       "startDate": "2026-05-11T02:29:10+03:00",
       "endDate": "2026-05-11T02:46:22+03:00",
-      "estHours": 36.2,
+      "estHours": 36.1,
       "estCostByMarket": {
-        "Dubai": 2661,
-        "USA": 4652,
-        "Offshore": 1701
+        "Dubai": 2653,
+        "USA": 4639,
+        "Offshore": 1697
       },
-      "estCost": 2661,
+      "estCost": 2653,
       "assigneeId": "be",
       "contributorIds": [
         "ai",
@@ -77005,13 +77111,13 @@
       "deletions": 56,
       "startDate": "2026-05-11T03:43:25+03:00",
       "endDate": "2026-05-11T04:07:13+03:00",
-      "estHours": 25.4,
+      "estHours": 25.3,
       "estCostByMarket": {
-        "Dubai": 1486,
-        "USA": 3391,
-        "Offshore": 902
+        "Dubai": 1480,
+        "USA": 3378,
+        "Offshore": 898
       },
-      "estCost": 1486,
+      "estCost": 1480,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -77352,13 +77458,13 @@
       "deletions": 55,
       "startDate": "2026-05-11T04:09:41+03:00",
       "endDate": "2026-05-11T04:32:55+03:00",
-      "estHours": 19.8,
+      "estHours": 19.7,
       "estCostByMarket": {
-        "Dubai": 1455,
-        "USA": 2544,
-        "Offshore": 931
+        "Dubai": 1448,
+        "USA": 2531,
+        "Offshore": 926
       },
-      "estCost": 1455,
+      "estCost": 1448,
       "assigneeId": "be",
       "contributorIds": [
         "ai",
@@ -78252,13 +78358,13 @@
       "deletions": 109,
       "startDate": "2026-05-11T15:57:35+03:00",
       "endDate": "2026-05-11T16:52:30+03:00",
-      "estHours": 52.9,
+      "estHours": 52.8,
       "estCostByMarket": {
-        "Dubai": 3095,
-        "USA": 7062,
-        "Offshore": 1878
+        "Dubai": 3089,
+        "USA": 7049,
+        "Offshore": 1874
       },
-      "estCost": 3095,
+      "estCost": 3089,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -78560,13 +78666,13 @@
       "deletions": 382,
       "startDate": "2026-05-12T00:30:47+03:00",
       "endDate": "2026-05-12T02:54:53+03:00",
-      "estHours": 59.3,
+      "estHours": 59.2,
       "estCostByMarket": {
-        "Dubai": 4359,
-        "USA": 7620,
-        "Offshore": 2787
+        "Dubai": 4351,
+        "USA": 7607,
+        "Offshore": 2782
       },
-      "estCost": 4359,
+      "estCost": 4351,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -78976,13 +79082,13 @@
       "deletions": 5118,
       "startDate": "2026-05-12T03:09:04+03:00",
       "endDate": "2026-05-12T04:57:07+03:00",
-      "estHours": 224.6,
+      "estHours": 224.3,
       "estCostByMarket": {
-        "Dubai": 13139,
-        "USA": 29984,
-        "Offshore": 7973
+        "Dubai": 13122,
+        "USA": 29944,
+        "Offshore": 7963
       },
-      "estCost": 13139,
+      "estCost": 13122,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -79483,13 +79589,13 @@
       "deletions": 148,
       "startDate": "2026-05-12T04:57:48+03:00",
       "endDate": "2026-05-12T06:08:51+03:00",
-      "estHours": 60,
+      "estHours": 59.9,
       "estCostByMarket": {
-        "Dubai": 4410,
-        "USA": 7710,
-        "Offshore": 2820
+        "Dubai": 4403,
+        "USA": 7697,
+        "Offshore": 2815
       },
-      "estCost": 4410,
+      "estCost": 4403,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -79943,13 +80049,13 @@
       "deletions": 42,
       "startDate": "2026-05-12T18:50:33+03:00",
       "endDate": "2026-05-12T19:23:20+03:00",
-      "estHours": 79.8,
+      "estHours": 79.7,
       "estCostByMarket": {
-        "Dubai": 4668,
-        "USA": 10653,
-        "Offshore": 2833
+        "Dubai": 4662,
+        "USA": 10640,
+        "Offshore": 2829
       },
-      "estCost": 4668,
+      "estCost": 4662,
       "assigneeId": "sec",
       "contributorIds": [
         "lead",
@@ -80301,13 +80407,13 @@
       "deletions": 85,
       "startDate": "2026-05-12T19:27:51+03:00",
       "endDate": "2026-05-12T20:27:29+03:00",
-      "estHours": 47.2,
+      "estHours": 47.1,
       "estCostByMarket": {
-        "Dubai": 3469,
-        "USA": 6065,
-        "Offshore": 2218
+        "Dubai": 3462,
+        "USA": 6052,
+        "Offshore": 2214
       },
-      "estCost": 3469,
+      "estCost": 3462,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -80768,13 +80874,13 @@
       "deletions": 17,
       "startDate": "2026-05-12T20:29:31+03:00",
       "endDate": "2026-05-12T21:06:51+03:00",
-      "estHours": 52.7,
+      "estHours": 52.6,
       "estCostByMarket": {
-        "Dubai": 3083,
-        "USA": 7035,
-        "Offshore": 1871
+        "Dubai": 3077,
+        "USA": 7022,
+        "Offshore": 1867
       },
-      "estCost": 3083,
+      "estCost": 3077,
       "assigneeId": "be",
       "contributorIds": [
         "qa",
@@ -80969,13 +81075,13 @@
       "deletions": 67,
       "startDate": "2026-05-13T00:00:19+03:00",
       "endDate": "2026-05-13T00:52:47+03:00",
-      "estHours": 75.5,
+      "estHours": 75.4,
       "estCostByMarket": {
-        "Dubai": 4417,
-        "USA": 10079,
-        "Offshore": 2680
+        "Dubai": 4411,
+        "USA": 10066,
+        "Offshore": 2677
       },
-      "estCost": 4417,
+      "estCost": 4411,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -81490,13 +81596,13 @@
       "deletions": 26,
       "startDate": "2026-05-13T14:21:24+03:00",
       "endDate": "2026-05-13T14:37:21+03:00",
-      "estHours": 39.2,
+      "estHours": 39.1,
       "estCostByMarket": {
-        "Dubai": 2293,
-        "USA": 5233,
-        "Offshore": 1392
+        "Dubai": 2287,
+        "USA": 5220,
+        "Offshore": 1388
       },
-      "estCost": 2293,
+      "estCost": 2287,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -81611,13 +81717,13 @@
       "deletions": 897,
       "startDate": "2026-05-13T16:30:17+03:00",
       "endDate": "2026-05-13T16:41:53+03:00",
-      "estHours": 15.2,
+      "estHours": 15.1,
       "estCostByMarket": {
-        "Dubai": 889,
-        "USA": 2029,
-        "Offshore": 540
+        "Dubai": 883,
+        "USA": 2016,
+        "Offshore": 536
       },
-      "estCost": 889,
+      "estCost": 883,
       "assigneeId": "be",
       "contributorIds": [
         "pm"
@@ -81926,13 +82032,13 @@
       "deletions": 696,
       "startDate": "2026-05-15T00:54:34+03:00",
       "endDate": "2026-05-15T02:46:49+03:00",
-      "estHours": 82.8,
+      "estHours": 82.7,
       "estCostByMarket": {
-        "Dubai": 4844,
-        "USA": 11054,
-        "Offshore": 2939
+        "Dubai": 4838,
+        "USA": 11040,
+        "Offshore": 2936
       },
-      "estCost": 4844,
+      "estCost": 4838,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -82562,13 +82668,13 @@
       "deletions": 278,
       "startDate": "2026-05-15T23:14:21+03:00",
       "endDate": "2026-05-16T03:57:25+03:00",
-      "estHours": 159.5,
+      "estHours": 159.3,
       "estCostByMarket": {
-        "Dubai": 9331,
-        "USA": 21293,
-        "Offshore": 5662
+        "Dubai": 9319,
+        "USA": 21267,
+        "Offshore": 5655
       },
-      "estCost": 9331,
+      "estCost": 9319,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -83008,13 +83114,13 @@
       "deletions": 1007,
       "startDate": "2026-05-20T18:37:57+03:00",
       "endDate": "2026-05-20T19:30:01+03:00",
-      "estHours": 61.2,
+      "estHours": 61.1,
       "estCostByMarket": {
-        "Dubai": 4498,
-        "USA": 7864,
-        "Offshore": 2876
+        "Dubai": 4491,
+        "USA": 7851,
+        "Offshore": 2872
       },
-      "estCost": 4498,
+      "estCost": 4491,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -84699,13 +84805,13 @@
       "deletions": 111,
       "startDate": "2026-05-25T16:31:06+03:00",
       "endDate": "2026-05-25T18:20:37+03:00",
-      "estHours": 16.4,
+      "estHours": 16.3,
       "estCostByMarket": {
-        "Dubai": 959,
-        "USA": 2189,
-        "Offshore": 582
+        "Dubai": 954,
+        "USA": 2176,
+        "Offshore": 579
       },
-      "estCost": 959,
+      "estCost": 954,
       "assigneeId": "be",
       "contributorIds": [
         "ops",
@@ -84881,13 +84987,13 @@
       "deletions": 1869,
       "startDate": "2026-05-26T00:06:41+03:00",
       "endDate": "2026-05-26T00:13:45+03:00",
-      "estHours": 209.1,
+      "estHours": 208.8,
       "estCostByMarket": {
-        "Dubai": 11605,
-        "USA": 20387,
-        "Offshore": 8469
+        "Dubai": 11588,
+        "USA": 20358,
+        "Offshore": 8456
       },
-      "estCost": 11605,
+      "estCost": 11588,
       "assigneeId": "growth",
       "contributorIds": [
         "design",
@@ -85320,13 +85426,13 @@
       "deletions": 830,
       "startDate": "2026-05-26T02:32:30+03:00",
       "endDate": "2026-05-26T02:55:43+03:00",
-      "estHours": 33.2,
+      "estHours": 33.1,
       "estCostByMarket": {
-        "Dubai": 1494,
-        "USA": 2888,
-        "Offshore": 1145
+        "Dubai": 1490,
+        "USA": 2880,
+        "Offshore": 1142
       },
-      "estCost": 1494,
+      "estCost": 1490,
       "assigneeId": "growth",
       "contributorIds": [
         "design"
@@ -86233,13 +86339,13 @@
       "deletions": 2,
       "startDate": "2026-05-27T02:24:31+03:00",
       "endDate": "2026-05-27T02:54:21+03:00",
-      "estHours": 56.4,
+      "estHours": 56.3,
       "estCostByMarket": {
-        "Dubai": 4145,
-        "USA": 7247,
-        "Offshore": 2651
+        "Dubai": 4138,
+        "USA": 7235,
+        "Offshore": 2646
       },
-      "estCost": 4145,
+      "estCost": 4138,
       "assigneeId": "pm",
       "contributorIds": [
         "ai",
@@ -86498,13 +86604,13 @@
       "deletions": 805,
       "startDate": "2026-05-27T19:25:30+03:00",
       "endDate": "2026-05-27T23:13:43+03:00",
-      "estHours": 160,
+      "estHours": 159.7,
       "estCostByMarket": {
-        "Dubai": 11760,
-        "USA": 20560,
-        "Offshore": 7520
+        "Dubai": 11738,
+        "USA": 20521,
+        "Offshore": 7506
       },
-      "estCost": 11760,
+      "estCost": 11738,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -87274,13 +87380,13 @@
       "deletions": 11542,
       "startDate": "2026-05-27T23:14:34+03:00",
       "endDate": "2026-05-28T01:03:59+03:00",
-      "estHours": 210.6,
+      "estHours": 210.3,
       "estCostByMarket": {
-        "Dubai": 15479,
-        "USA": 27062,
-        "Offshore": 9898
+        "Dubai": 15457,
+        "USA": 27024,
+        "Offshore": 9884
       },
-      "estCost": 15479,
+      "estCost": 15457,
       "assigneeId": "pm",
       "contributorIds": [
         "lead",
@@ -88224,13 +88330,13 @@
       "deletions": 274,
       "startDate": "2026-05-28T16:06:26+03:00",
       "endDate": "2026-05-28T17:04:27+03:00",
-      "estHours": 49.9,
+      "estHours": 49.8,
       "estCostByMarket": {
-        "Dubai": 2919,
-        "USA": 6662,
-        "Offshore": 1771
+        "Dubai": 2913,
+        "USA": 6648,
+        "Offshore": 1768
       },
-      "estCost": 2919,
+      "estCost": 2913,
       "assigneeId": "mob",
       "contributorIds": [
         "lead",
@@ -89027,13 +89133,13 @@
       "deletions": 939,
       "startDate": "2026-06-07T15:21:26+03:00",
       "endDate": "2026-06-07T21:13:25+03:00",
-      "estHours": 84.1,
+      "estHours": 84,
       "estCostByMarket": {
-        "Dubai": 6181,
-        "USA": 10807,
-        "Offshore": 3953
+        "Dubai": 6174,
+        "USA": 10794,
+        "Offshore": 3948
       },
-      "estCost": 6181,
+      "estCost": 6174,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -89995,13 +90101,13 @@
       "deletions": 21531,
       "startDate": "2026-06-08T02:18:14+03:00",
       "endDate": "2026-06-08T03:57:06+03:00",
-      "estHours": 1953,
+      "estHours": 1950.2,
       "estCostByMarket": {
-        "Dubai": 114251,
-        "USA": 260726,
-        "Offshore": 69332
+        "Dubai": 114087,
+        "USA": 260352,
+        "Offshore": 69232
       },
-      "estCost": 114251,
+      "estCost": 114087,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -90573,13 +90679,13 @@
       "deletions": 183,
       "startDate": "2026-06-08T04:11:54+03:00",
       "endDate": "2026-06-08T04:35:43+03:00",
-      "estHours": 36.4,
+      "estHours": 36.3,
       "estCostByMarket": {
-        "Dubai": 2129,
-        "USA": 4859,
-        "Offshore": 1292
+        "Dubai": 2124,
+        "USA": 4846,
+        "Offshore": 1289
       },
-      "estCost": 2129,
+      "estCost": 2124,
       "assigneeId": "be",
       "contributorIds": [
         "qa",
@@ -90753,13 +90859,13 @@
       "deletions": 0,
       "startDate": "2026-06-08T12:30:39+03:00",
       "endDate": "2026-06-08T12:30:39+03:00",
-      "estHours": 13.2,
+      "estHours": 13.1,
       "estCostByMarket": {
-        "Dubai": 772,
-        "USA": 1762,
-        "Offshore": 469
+        "Dubai": 766,
+        "USA": 1749,
+        "Offshore": 465
       },
-      "estCost": 772,
+      "estCost": 766,
       "assigneeId": "be",
       "contributorIds": [
         "qa"
@@ -90829,13 +90935,13 @@
       "deletions": 8723,
       "startDate": "2026-06-08T14:08:55+03:00",
       "endDate": "2026-06-08T16:16:49+03:00",
-      "estHours": 200.8,
+      "estHours": 200.6,
       "estCostByMarket": {
-        "Dubai": 11747,
-        "USA": 26807,
-        "Offshore": 7128
+        "Dubai": 11735,
+        "USA": 26780,
+        "Offshore": 7121
       },
-      "estCost": 11747,
+      "estCost": 11735,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -91612,13 +91718,13 @@
       "deletions": 36,
       "startDate": "2026-06-08T16:18:12+03:00",
       "endDate": "2026-06-08T18:07:48+03:00",
-      "estHours": 46,
+      "estHours": 45.9,
       "estCostByMarket": {
-        "Dubai": 2691,
-        "USA": 6141,
-        "Offshore": 1633
+        "Dubai": 2685,
+        "USA": 6128,
+        "Offshore": 1629
       },
-      "estCost": 2691,
+      "estCost": 2685,
       "assigneeId": "mob",
       "contributorIds": [
         "sec",
@@ -92481,13 +92587,13 @@
       "deletions": 234,
       "startDate": "2026-06-09T12:15:58+03:00",
       "endDate": "2026-06-09T14:02:20+03:00",
-      "estHours": 30,
+      "estHours": 29.9,
       "estCostByMarket": {
-        "Dubai": 2205,
-        "USA": 3855,
-        "Offshore": 1410
+        "Dubai": 2198,
+        "USA": 3842,
+        "Offshore": 1405
       },
-      "estCost": 2205,
+      "estCost": 2198,
       "assigneeId": "mob",
       "contributorIds": [
         "lead",
@@ -93097,13 +93203,13 @@
       "deletions": 67,
       "startDate": "2026-06-10T02:56:11Z",
       "endDate": "2026-06-10T04:28:13Z",
-      "estHours": 71.8,
+      "estHours": 71.7,
       "estCostByMarket": {
-        "Dubai": 5277,
-        "USA": 9226,
-        "Offshore": 3375
+        "Dubai": 5270,
+        "USA": 9213,
+        "Offshore": 3370
       },
-      "estCost": 5277,
+      "estCost": 5270,
       "assigneeId": "pm",
       "contributorIds": [
         "lead",
@@ -93715,13 +93821,13 @@
       "deletions": 296,
       "startDate": "2026-06-10T07:24:04Z",
       "endDate": "2026-06-10T07:34:05Z",
-      "estHours": 33.6,
+      "estHours": 33.5,
       "estCostByMarket": {
-        "Dubai": 1966,
-        "USA": 4486,
-        "Offshore": 1193
+        "Dubai": 1960,
+        "USA": 4472,
+        "Offshore": 1189
       },
-      "estCost": 1966,
+      "estCost": 1960,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -93911,13 +94017,13 @@
       "deletions": 27,
       "startDate": "2026-06-10T09:26:52Z",
       "endDate": "2026-06-10T10:22:49+03:00",
-      "estHours": 14.9,
+      "estHours": 14.8,
       "estCostByMarket": {
-        "Dubai": 872,
-        "USA": 1989,
-        "Offshore": 529
+        "Dubai": 866,
+        "USA": 1976,
+        "Offshore": 525
       },
-      "estCost": 872,
+      "estCost": 866,
       "assigneeId": "pm",
       "contributorIds": [
         "growth",
@@ -94013,13 +94119,13 @@
       "deletions": 2,
       "startDate": "2026-06-10T11:37:55Z",
       "endDate": "2026-06-10T12:05:00+03:00",
-      "estHours": 28.3,
+      "estHours": 28.2,
       "estCostByMarket": {
-        "Dubai": 1797,
-        "USA": 3339,
-        "Offshore": 976
+        "Dubai": 1791,
+        "USA": 3328,
+        "Offshore": 973
       },
-      "estCost": 1797,
+      "estCost": 1791,
       "assigneeId": "pm",
       "contributorIds": [],
       "commits": [
@@ -94124,13 +94230,13 @@
       "deletions": 272,
       "startDate": "2026-06-10T12:12:23Z",
       "endDate": "2026-06-10T12:48:19+03:00",
-      "estHours": 167.8,
+      "estHours": 167.6,
       "estCostByMarket": {
-        "Dubai": 9816,
-        "USA": 22401,
-        "Offshore": 5957
+        "Dubai": 9805,
+        "USA": 22375,
+        "Offshore": 5950
       },
-      "estCost": 9816,
+      "estCost": 9805,
       "assigneeId": "pm",
       "contributorIds": [
         "lead",
@@ -94323,13 +94429,13 @@
       "deletions": 0,
       "startDate": "2026-06-10T13:08:12+03:00",
       "endDate": "2026-06-10T13:08:12+03:00",
-      "estHours": 198.4,
+      "estHours": 198.1,
       "estCostByMarket": {
-        "Dubai": 14582,
-        "USA": 25494,
-        "Offshore": 9325
+        "Dubai": 14560,
+        "USA": 25456,
+        "Offshore": 9311
       },
-      "estCost": 14582,
+      "estCost": 14560,
       "assigneeId": "pm",
       "contributorIds": [
         "lead",
@@ -94782,13 +94888,13 @@
       "deletions": 6301,
       "startDate": "2026-06-10T13:14:26+03:00",
       "endDate": "2026-06-10T13:14:26+03:00",
-      "estHours": 60.4,
+      "estHours": 60.3,
       "estCostByMarket": {
-        "Dubai": 2718,
-        "USA": 5255,
-        "Offshore": 2084
+        "Dubai": 2714,
+        "USA": 5246,
+        "Offshore": 2080
       },
-      "estCost": 2718,
+      "estCost": 2714,
       "assigneeId": "growth",
       "contributorIds": [
         "pm",
@@ -94901,13 +95007,13 @@
       "deletions": 117,
       "startDate": "2026-06-10T14:33:35+03:00",
       "endDate": "2026-06-10T15:12:19+03:00",
-      "estHours": 22.2,
+      "estHours": 22.1,
       "estCostByMarket": {
-        "Dubai": 1299,
-        "USA": 2409,
-        "Offshore": 821
+        "Dubai": 1293,
+        "USA": 2398,
+        "Offshore": 818
       },
-      "estCost": 1299,
+      "estCost": 1293,
       "assigneeId": "growth",
       "contributorIds": [
         "design",
@@ -95544,13 +95650,13 @@
       "deletions": 20,
       "startDate": "2026-06-10T17:21:01Z",
       "endDate": "2026-06-10T18:14:02Z",
-      "estHours": 49.8,
+      "estHours": 49.7,
       "estCostByMarket": {
-        "Dubai": 3660,
-        "USA": 6399,
-        "Offshore": 2341
+        "Dubai": 3653,
+        "USA": 6386,
+        "Offshore": 2336
       },
-      "estCost": 3660,
+      "estCost": 3653,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -96107,13 +96213,13 @@
       "deletions": 78,
       "startDate": "2026-06-10T18:27:57Z",
       "endDate": "2026-06-10T19:04:30Z",
-      "estHours": 72.1,
+      "estHours": 72,
       "estCostByMarket": {
-        "Dubai": 4218,
-        "USA": 9625,
-        "Offshore": 2560
+        "Dubai": 4212,
+        "USA": 9612,
+        "Offshore": 2556
       },
-      "estCost": 4218,
+      "estCost": 4212,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -96759,13 +96865,13 @@
       "deletions": 128,
       "startDate": "2026-06-10T21:24:00Z",
       "endDate": "2026-06-10T21:33:30Z",
-      "estHours": 5,
+      "estHours": 4.9,
       "estCostByMarket": {
-        "Dubai": 293,
-        "USA": 668,
-        "Offshore": 178
+        "Dubai": 287,
+        "USA": 654,
+        "Offshore": 174
       },
-      "estCost": 293,
+      "estCost": 287,
       "assigneeId": "pm",
       "contributorIds": [
         "be",
@@ -97040,13 +97146,13 @@
       "deletions": 0,
       "startDate": "2026-06-10T22:17:31+03:00",
       "endDate": "2026-06-10T22:17:31+03:00",
-      "estHours": 499.8,
+      "estHours": 499,
       "estCostByMarket": {
-        "Dubai": 36735,
-        "USA": 64224,
-        "Offshore": 23491
+        "Dubai": 36677,
+        "USA": 64122,
+        "Offshore": 23453
       },
-      "estCost": 36735,
+      "estCost": 36677,
       "assigneeId": "pm",
       "contributorIds": [
         "lead",
@@ -97522,13 +97628,13 @@
       "deletions": 659,
       "startDate": "2026-06-10T22:54:19Z",
       "endDate": "2026-06-10T23:53:05Z",
-      "estHours": 62.3,
+      "estHours": 62.2,
       "estCostByMarket": {
-        "Dubai": 3645,
-        "USA": 6760,
-        "Offshore": 2305
+        "Dubai": 3639,
+        "USA": 6749,
+        "Offshore": 2301
       },
-      "estCost": 3645,
+      "estCost": 3639,
       "assigneeId": "mob",
       "contributorIds": [
         "i18n"
@@ -97976,13 +98082,13 @@
       "deletions": 123,
       "startDate": "2026-06-10T23:53:54Z",
       "endDate": "2026-06-11T00:11:44Z",
-      "estHours": 16.8,
+      "estHours": 16.7,
       "estCostByMarket": {
-        "Dubai": 983,
-        "USA": 2243,
-        "Offshore": 596
+        "Dubai": 977,
+        "USA": 2229,
+        "Offshore": 593
       },
-      "estCost": 983,
+      "estCost": 977,
       "assigneeId": "mob",
       "contributorIds": [
         "i18n",
@@ -98677,13 +98783,13 @@
       "deletions": 0,
       "startDate": "2026-06-11T00:45:22Z",
       "endDate": "2026-06-11T00:45:22Z",
-      "estHours": 48,
+      "estHours": 47.9,
       "estCostByMarket": {
-        "Dubai": 2808,
-        "USA": 6408,
-        "Offshore": 1704
+        "Dubai": 2802,
+        "USA": 6395,
+        "Offshore": 1700
       },
-      "estCost": 2808,
+      "estCost": 2802,
       "assigneeId": "i18n",
       "contributorIds": [],
       "commits": [
@@ -98773,13 +98879,13 @@
       "deletions": 43,
       "startDate": "2026-06-11T00:46:37Z",
       "endDate": "2026-06-11T00:47:43Z",
-      "estHours": 48.9,
+      "estHours": 48.8,
       "estCostByMarket": {
-        "Dubai": 2861,
-        "USA": 6528,
-        "Offshore": 1736
+        "Dubai": 2855,
+        "USA": 6515,
+        "Offshore": 1732
       },
-      "estCost": 2861,
+      "estCost": 2855,
       "assigneeId": "i18n",
       "contributorIds": [],
       "commits": [
@@ -98990,13 +99096,13 @@
       "deletions": 1,
       "startDate": "2026-06-11T01:13:31+03:00",
       "endDate": "2026-06-11T01:46:12+03:00",
-      "estHours": 107.3,
+      "estHours": 107.2,
       "estCostByMarket": {
-        "Dubai": 6277,
-        "USA": 11642,
-        "Offshore": 3970
+        "Dubai": 6271,
+        "USA": 11631,
+        "Offshore": 3966
       },
-      "estCost": 6277,
+      "estCost": 6271,
       "assigneeId": "growth",
       "contributorIds": [
         "design",
@@ -99359,13 +99465,13 @@
       "deletions": 43,
       "startDate": "2026-06-11T01:48:21+03:00",
       "endDate": "2026-06-11T01:48:21+03:00",
-      "estHours": 101.4,
+      "estHours": 101.3,
       "estCostByMarket": {
-        "Dubai": 5932,
-        "USA": 13537,
-        "Offshore": 3600
+        "Dubai": 5926,
+        "USA": 13524,
+        "Offshore": 3596
       },
-      "estCost": 5932,
+      "estCost": 5926,
       "assigneeId": "be",
       "contributorIds": [
         "qa",
@@ -99553,13 +99659,13 @@
       "deletions": 47,
       "startDate": "2026-06-11T02:45:41+03:00",
       "endDate": "2026-06-11T02:45:41+03:00",
-      "estHours": 162.2,
+      "estHours": 162,
       "estCostByMarket": {
-        "Dubai": 9489,
-        "USA": 21654,
-        "Offshore": 5758
+        "Dubai": 9477,
+        "USA": 21627,
+        "Offshore": 5751
       },
-      "estCost": 9489,
+      "estCost": 9477,
       "assigneeId": "web",
       "contributorIds": [
         "design",
@@ -100069,13 +100175,13 @@
       "deletions": 157,
       "startDate": "2026-06-11T03:52:13+03:00",
       "endDate": "2026-06-11T03:52:13+03:00",
-      "estHours": 54.9,
+      "estHours": 54.8,
       "estCostByMarket": {
-        "Dubai": 3212,
-        "USA": 7329,
-        "Offshore": 1949
+        "Dubai": 3206,
+        "USA": 7316,
+        "Offshore": 1945
       },
-      "estCost": 3212,
+      "estCost": 3206,
       "assigneeId": "pm",
       "contributorIds": [
         "web",
@@ -100260,13 +100366,13 @@
       "deletions": 327,
       "startDate": "2026-06-11T06:35:06Z",
       "endDate": "2026-06-11T07:03:28Z",
-      "estHours": 302.4,
+      "estHours": 301.9,
       "estCostByMarket": {
-        "Dubai": 17690,
-        "USA": 40370,
-        "Offshore": 10735
+        "Dubai": 17661,
+        "USA": 40304,
+        "Offshore": 10717
       },
-      "estCost": 17690,
+      "estCost": 17661,
       "assigneeId": "i18n",
       "contributorIds": [],
       "commits": [
@@ -100556,13 +100662,13 @@
       "deletions": 785,
       "startDate": "2026-06-11T07:04:04Z",
       "endDate": "2026-06-11T07:51:44Z",
-      "estHours": 132.3,
+      "estHours": 132.1,
       "estCostByMarket": {
-        "Dubai": 7740,
-        "USA": 17662,
-        "Offshore": 4697
+        "Dubai": 7728,
+        "USA": 17635,
+        "Offshore": 4690
       },
-      "estCost": 7740,
+      "estCost": 7728,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -100784,13 +100890,13 @@
       "deletions": 34,
       "startDate": "2026-06-11T09:45:41+03:00",
       "endDate": "2026-06-11T09:50:16+03:00",
-      "estHours": 10.2,
+      "estHours": 10.1,
       "estCostByMarket": {
-        "Dubai": 597,
-        "USA": 1107,
-        "Offshore": 377
+        "Dubai": 591,
+        "USA": 1096,
+        "Offshore": 374
       },
-      "estCost": 597,
+      "estCost": 591,
       "assigneeId": "growth",
       "contributorIds": [
         "web"
@@ -101052,13 +101158,13 @@
       "deletions": 240,
       "startDate": "2026-06-11T10:11:06+03:00",
       "endDate": "2026-06-11T10:11:22+03:00",
-      "estHours": 104.4,
+      "estHours": 104.3,
       "estCostByMarket": {
-        "Dubai": 7673,
-        "USA": 13415,
-        "Offshore": 4907
+        "Dubai": 7666,
+        "USA": 13403,
+        "Offshore": 4902
       },
-      "estCost": 7673,
+      "estCost": 7666,
       "assigneeId": "sec",
       "contributorIds": [
         "lead",
@@ -101946,13 +102052,13 @@
       "deletions": 204,
       "startDate": "2026-06-11T12:04:09+03:00",
       "endDate": "2026-06-11T12:04:09+03:00",
-      "estHours": 6.5,
+      "estHours": 6.4,
       "estCostByMarket": {
-        "Dubai": 380,
-        "USA": 705,
-        "Offshore": 241
+        "Dubai": 374,
+        "USA": 694,
+        "Offshore": 237
       },
-      "estCost": 380,
+      "estCost": 374,
       "assigneeId": "growth",
       "contributorIds": [
         "web"
@@ -102114,13 +102220,13 @@
       "deletions": 37,
       "startDate": "2026-06-11T12:20:15+03:00",
       "endDate": "2026-06-11T12:21:48+03:00",
-      "estHours": 4.3,
+      "estHours": 4.2,
       "estCostByMarket": {
-        "Dubai": 252,
-        "USA": 467,
-        "Offshore": 159
+        "Dubai": 246,
+        "USA": 456,
+        "Offshore": 155
       },
-      "estCost": 252,
+      "estCost": 246,
       "assigneeId": "growth",
       "contributorIds": [
         "web"
@@ -102784,13 +102890,13 @@
       "deletions": 357,
       "startDate": "2026-06-11T14:42:02Z",
       "endDate": "2026-06-11T15:10:48Z",
-      "estHours": 64.7,
+      "estHours": 64.6,
       "estCostByMarket": {
-        "Dubai": 4755,
-        "USA": 8314,
-        "Offshore": 3041
+        "Dubai": 4748,
+        "USA": 8301,
+        "Offshore": 3036
       },
-      "estCost": 4755,
+      "estCost": 4748,
       "assigneeId": "qa",
       "contributorIds": [
         "lead",
@@ -103790,13 +103896,13 @@
       "deletions": 37,
       "startDate": "2026-06-12T12:40:02+03:00",
       "endDate": "2026-06-12T15:42:54+03:00",
-      "estHours": 62.6,
+      "estHours": 62.5,
       "estCostByMarket": {
-        "Dubai": 3662,
-        "USA": 8357,
-        "Offshore": 2222
+        "Dubai": 3656,
+        "USA": 8344,
+        "Offshore": 2219
       },
-      "estCost": 3662,
+      "estCost": 3656,
       "assigneeId": "be",
       "contributorIds": [
         "pm",
@@ -104775,13 +104881,13 @@
       "deletions": 74,
       "startDate": "2026-06-13T21:57:10+03:00",
       "endDate": "2026-06-13T23:19:19+03:00",
-      "estHours": 16,
+      "estHours": 15.9,
       "estCostByMarket": {
-        "Dubai": 1176,
-        "USA": 2056,
-        "Offshore": 752
+        "Dubai": 1169,
+        "USA": 2043,
+        "Offshore": 747
       },
-      "estCost": 1176,
+      "estCost": 1169,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -104998,13 +105104,13 @@
       "deletions": 389,
       "startDate": "2026-06-14T01:07:08+03:00",
       "endDate": "2026-06-14T03:40:47+03:00",
-      "estHours": 86.2,
+      "estHours": 86.1,
       "estCostByMarket": {
-        "Dubai": 5043,
-        "USA": 11508,
-        "Offshore": 3060
+        "Dubai": 5037,
+        "USA": 11494,
+        "Offshore": 3057
       },
-      "estCost": 5043,
+      "estCost": 5037,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -105449,13 +105555,13 @@
       "deletions": 1072,
       "startDate": "2026-06-14T03:45:29+03:00",
       "endDate": "2026-06-14T04:55:35+03:00",
-      "estHours": 61,
+      "estHours": 60.9,
       "estCostByMarket": {
-        "Dubai": 3569,
-        "USA": 8144,
-        "Offshore": 2166
+        "Dubai": 3563,
+        "USA": 8130,
+        "Offshore": 2162
       },
-      "estCost": 3569,
+      "estCost": 3563,
       "assigneeId": "mob",
       "contributorIds": [
         "lead",
@@ -105914,13 +106020,13 @@
       "deletions": 2573,
       "startDate": "2026-06-14T12:36:30+03:00",
       "endDate": "2026-06-14T13:44:25+03:00",
-      "estHours": 184.5,
+      "estHours": 184.2,
       "estCostByMarket": {
-        "Dubai": 10793,
-        "USA": 24631,
-        "Offshore": 6550
+        "Dubai": 10776,
+        "USA": 24591,
+        "Offshore": 6539
       },
-      "estCost": 10793,
+      "estCost": 10776,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -106389,13 +106495,13 @@
       "deletions": 1605,
       "startDate": "2026-06-14T13:52:11+03:00",
       "endDate": "2026-06-14T15:12:04+03:00",
-      "estHours": 232.9,
+      "estHours": 232.5,
       "estCostByMarket": {
-        "Dubai": 13625,
-        "USA": 31092,
-        "Offshore": 8268
+        "Dubai": 13601,
+        "USA": 31039,
+        "Offshore": 8254
       },
-      "estCost": 13625,
+      "estCost": 13601,
       "assigneeId": "mob",
       "contributorIds": [
         "lead",
@@ -106946,13 +107052,13 @@
       "deletions": 1301,
       "startDate": "2026-06-14T15:12:51+03:00",
       "endDate": "2026-06-14T15:53:14+03:00",
-      "estHours": 55.1,
+      "estHours": 55,
       "estCostByMarket": {
-        "Dubai": 3223,
-        "USA": 7356,
-        "Offshore": 1956
+        "Dubai": 3218,
+        "USA": 7343,
+        "Offshore": 1953
       },
-      "estCost": 3223,
+      "estCost": 3218,
       "assigneeId": "pm",
       "contributorIds": [
         "lead",
@@ -107172,13 +107278,13 @@
       "deletions": 19,
       "startDate": "2026-06-14T17:46:36+03:00",
       "endDate": "2026-06-14T18:04:07+03:00",
-      "estHours": 29.1,
+      "estHours": 29,
       "estCostByMarket": {
-        "Dubai": 2139,
-        "USA": 3739,
-        "Offshore": 1368
+        "Dubai": 2132,
+        "USA": 3727,
+        "Offshore": 1363
       },
-      "estCost": 2139,
+      "estCost": 2132,
       "assigneeId": "be",
       "contributorIds": [
         "pm",
@@ -107345,13 +107451,13 @@
       "deletions": 5040,
       "startDate": "2026-06-14T18:06:24Z",
       "endDate": "2026-06-14T18:30:44+03:00",
-      "estHours": 326.5,
+      "estHours": 326.1,
       "estCostByMarket": {
-        "Dubai": 19100,
-        "USA": 35425,
-        "Offshore": 12081
+        "Dubai": 19077,
+        "USA": 35382,
+        "Offshore": 12066
       },
-      "estCost": 19100,
+      "estCost": 19077,
       "assigneeId": "i18n",
       "contributorIds": [
         "mob",
@@ -107965,13 +108071,13 @@
       "deletions": 10,
       "startDate": "2026-06-14T18:43:36Z",
       "endDate": "2026-06-14T19:26:53Z",
-      "estHours": 155.8,
+      "estHours": 155.6,
       "estCostByMarket": {
-        "Dubai": 9114,
-        "USA": 20799,
-        "Offshore": 5531
+        "Dubai": 9103,
+        "USA": 20773,
+        "Offshore": 5524
       },
-      "estCost": 9114,
+      "estCost": 9103,
       "assigneeId": "pm",
       "contributorIds": [
         "lead",
@@ -108352,13 +108458,13 @@
       "deletions": 916,
       "startDate": "2026-06-14T21:12:25Z",
       "endDate": "2026-06-15T01:04:07+03:00",
-      "estHours": 116.5,
+      "estHours": 116.4,
       "estCostByMarket": {
-        "Dubai": 6815,
-        "USA": 15553,
-        "Offshore": 4136
+        "Dubai": 6809,
+        "USA": 15539,
+        "Offshore": 4132
       },
-      "estCost": 6815,
+      "estCost": 6809,
       "assigneeId": "mob",
       "contributorIds": [
         "lead",
@@ -108748,13 +108854,13 @@
       "deletions": 1828,
       "startDate": "2026-06-15T01:13:44+03:00",
       "endDate": "2026-06-15T02:55:33+03:00",
-      "estHours": 65.6,
+      "estHours": 65.5,
       "estCostByMarket": {
-        "Dubai": 3838,
-        "USA": 7118,
-        "Offshore": 2427
+        "Dubai": 3832,
+        "USA": 7107,
+        "Offshore": 2424
       },
-      "estCost": 3838,
+      "estCost": 3832,
       "assigneeId": "mob",
       "contributorIds": [
         "pm",
@@ -109110,13 +109216,13 @@
       "deletions": 2735,
       "startDate": "2026-06-15T03:22:52+03:00",
       "endDate": "2026-06-15T06:01:54+03:00",
-      "estHours": 353.4,
+      "estHours": 352.9,
       "estCostByMarket": {
-        "Dubai": 25975,
-        "USA": 45412,
-        "Offshore": 16610
+        "Dubai": 25938,
+        "USA": 45348,
+        "Offshore": 16586
       },
-      "estCost": 25975,
+      "estCost": 25938,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -110176,13 +110282,13 @@
       "deletions": 9199,
       "startDate": "2026-06-15T16:33:22+03:00",
       "endDate": "2026-06-15T18:48:50+03:00",
-      "estHours": 300.8,
+      "estHours": 300.4,
       "estCostByMarket": {
-        "Dubai": 17597,
-        "USA": 40157,
-        "Offshore": 10678
+        "Dubai": 17573,
+        "USA": 40103,
+        "Offshore": 10664
       },
-      "estCost": 17597,
+      "estCost": 17573,
       "assigneeId": "mob",
       "contributorIds": [
         "lead",
@@ -111208,13 +111314,13 @@
       "deletions": 15059,
       "startDate": "2026-06-16T00:10:55+03:00",
       "endDate": "2026-06-16T04:20:52+03:00",
-      "estHours": 292.3,
+      "estHours": 291.9,
       "estCostByMarket": {
-        "Dubai": 17100,
-        "USA": 39022,
-        "Offshore": 10377
+        "Dubai": 17076,
+        "USA": 38969,
+        "Offshore": 10362
       },
-      "estCost": 17100,
+      "estCost": 17076,
       "assigneeId": "mob",
       "contributorIds": [
         "lead",
@@ -112667,13 +112773,13 @@
       "deletions": 388,
       "startDate": "2026-06-16T15:29:58+03:00",
       "endDate": "2026-06-16T17:18:57+03:00",
-      "estHours": 42.8,
+      "estHours": 42.7,
       "estCostByMarket": {
-        "Dubai": 3146,
-        "USA": 5500,
-        "Offshore": 2012
+        "Dubai": 3138,
+        "USA": 5487,
+        "Offshore": 2007
       },
-      "estCost": 3146,
+      "estCost": 3138,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -113094,13 +113200,13 @@
       "deletions": 0,
       "startDate": "2026-06-16T17:43:27+03:00",
       "endDate": "2026-06-16T17:48:56+03:00",
-      "estHours": 27.5,
+      "estHours": 27.4,
       "estCostByMarket": {
-        "Dubai": 1609,
-        "USA": 3671,
-        "Offshore": 976
+        "Dubai": 1603,
+        "USA": 3658,
+        "Offshore": 973
       },
-      "estCost": 1609,
+      "estCost": 1603,
       "assigneeId": "pm",
       "contributorIds": [
         "growth",
@@ -113314,13 +113420,13 @@
       "deletions": 2,
       "startDate": "2026-06-16T17:54:15+03:00",
       "endDate": "2026-06-16T17:54:15+03:00",
-      "estHours": 2.8,
+      "estHours": 2.7,
       "estCostByMarket": {
-        "Dubai": 164,
-        "USA": 304,
-        "Offshore": 104
+        "Dubai": 158,
+        "USA": 293,
+        "Offshore": 100
       },
-      "estCost": 164,
+      "estCost": 158,
       "assigneeId": "i18n",
       "contributorIds": [
         "mob"
@@ -113783,13 +113889,13 @@
       "deletions": 191,
       "startDate": "2026-06-16T18:48:35+03:00",
       "endDate": "2026-06-16T20:23:23+03:00",
-      "estHours": 20.3,
+      "estHours": 20.2,
       "estCostByMarket": {
-        "Dubai": 1188,
-        "USA": 2710,
-        "Offshore": 721
+        "Dubai": 1182,
+        "USA": 2697,
+        "Offshore": 717
       },
-      "estCost": 1188,
+      "estCost": 1182,
       "assigneeId": "i18n",
       "contributorIds": [
         "sec",
@@ -114431,13 +114537,13 @@
       "deletions": 985,
       "startDate": "2026-06-16T21:48:33+03:00",
       "endDate": "2026-06-17T00:39:17+03:00",
-      "estHours": 90.9,
+      "estHours": 90.8,
       "estCostByMarket": {
-        "Dubai": 5318,
-        "USA": 12135,
-        "Offshore": 3227
+        "Dubai": 5312,
+        "USA": 12122,
+        "Offshore": 3223
       },
-      "estCost": 5318,
+      "estCost": 5312,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -116220,13 +116326,13 @@
       "deletions": 4427,
       "startDate": "2026-06-17T19:40:03+03:00",
       "endDate": "2026-06-17T21:01:45+03:00",
-      "estHours": 983.1,
+      "estHours": 981.6,
       "estCostByMarket": {
-        "Dubai": 72258,
-        "USA": 126328,
-        "Offshore": 46206
+        "Dubai": 72148,
+        "USA": 126136,
+        "Offshore": 46135
       },
-      "estCost": 72258,
+      "estCost": 72148,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -118210,13 +118316,13 @@
       "deletions": 140,
       "startDate": "2026-06-17T21:03:18+03:00",
       "endDate": "2026-06-17T21:30:20+03:00",
-      "estHours": 40.2,
+      "estHours": 40.1,
       "estCostByMarket": {
-        "Dubai": 2352,
-        "USA": 4362,
-        "Offshore": 1487
+        "Dubai": 2346,
+        "USA": 4351,
+        "Offshore": 1484
       },
-      "estCost": 2352,
+      "estCost": 2346,
       "assigneeId": "i18n",
       "contributorIds": [
         "mob",
@@ -118672,13 +118778,13 @@
       "deletions": 31,
       "startDate": "2026-06-17T21:34:23+03:00",
       "endDate": "2026-06-17T21:48:36+03:00",
-      "estHours": 17.1,
+      "estHours": 17,
       "estCostByMarket": {
-        "Dubai": 1000,
-        "USA": 1855,
-        "Offshore": 633
+        "Dubai": 995,
+        "USA": 1845,
+        "Offshore": 629
       },
-      "estCost": 1000,
+      "estCost": 995,
       "assigneeId": "i18n",
       "contributorIds": [
         "mob"
@@ -119515,13 +119621,13 @@
       "deletions": 91,
       "startDate": "2026-06-17T22:46:06+03:00",
       "endDate": "2026-06-17T23:18:48+03:00",
-      "estHours": 26.5,
+      "estHours": 26.4,
       "estCostByMarket": {
-        "Dubai": 1550,
-        "USA": 2875,
-        "Offshore": 981
+        "Dubai": 1544,
+        "USA": 2864,
+        "Offshore": 977
       },
-      "estCost": 1550,
+      "estCost": 1544,
       "assigneeId": "i18n",
       "contributorIds": [
         "mob"
@@ -120881,13 +120987,13 @@
       "deletions": 2292,
       "startDate": "2026-06-18T00:07:26+03:00",
       "endDate": "2026-06-18T02:18:52+03:00",
-      "estHours": 135.8,
+      "estHours": 135.6,
       "estCostByMarket": {
-        "Dubai": 9981,
-        "USA": 17450,
-        "Offshore": 6383
+        "Dubai": 9967,
+        "USA": 17425,
+        "Offshore": 6373
       },
-      "estCost": 9981,
+      "estCost": 9967,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -121342,13 +121448,13 @@
       "deletions": 1696,
       "startDate": "2026-06-18T02:24:47+03:00",
       "endDate": "2026-06-18T03:16:50+03:00",
-      "estHours": 70.2,
+      "estHours": 70.1,
       "estCostByMarket": {
-        "Dubai": 4107,
-        "USA": 9372,
-        "Offshore": 2492
+        "Dubai": 4101,
+        "USA": 9358,
+        "Offshore": 2489
       },
-      "estCost": 4107,
+      "estCost": 4101,
       "assigneeId": "pm",
       "contributorIds": [
         "be",
@@ -121754,13 +121860,13 @@
       "deletions": 5247,
       "startDate": "2026-06-18T03:22:44+03:00",
       "endDate": "2026-06-18T04:42:55+03:00",
-      "estHours": 1048.4,
+      "estHours": 1046.9,
       "estCostByMarket": {
-        "Dubai": 77057,
-        "USA": 134719,
-        "Offshore": 49275
+        "Dubai": 76947,
+        "USA": 134527,
+        "Offshore": 49204
       },
-      "estCost": 77057,
+      "estCost": 76947,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -122751,13 +122857,13 @@
       "deletions": 23194,
       "startDate": "2026-06-18T04:45:03+03:00",
       "endDate": "2026-06-18T05:38:22+03:00",
-      "estHours": 388.6,
+      "estHours": 388,
       "estCostByMarket": {
-        "Dubai": 22733,
-        "USA": 51878,
-        "Offshore": 13795
+        "Dubai": 22698,
+        "USA": 51798,
+        "Offshore": 13774
       },
-      "estCost": 22733,
+      "estCost": 22698,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -123600,13 +123706,13 @@
       "deletions": 54,
       "startDate": "2026-06-18T16:06:41+03:00",
       "endDate": "2026-06-18T16:43:46+03:00",
-      "estHours": 9.9,
+      "estHours": 9.8,
       "estCostByMarket": {
-        "Dubai": 579,
-        "USA": 1322,
-        "Offshore": 351
+        "Dubai": 573,
+        "USA": 1308,
+        "Offshore": 348
       },
-      "estCost": 579,
+      "estCost": 573,
       "assigneeId": "be",
       "contributorIds": [
         "qa"
@@ -123763,13 +123869,13 @@
       "deletions": 57,
       "startDate": "2026-06-19T01:52:25+03:00",
       "endDate": "2026-06-19T02:42:32+03:00",
-      "estHours": 35.6,
+      "estHours": 35.5,
       "estCostByMarket": {
-        "Dubai": 2083,
-        "USA": 4753,
-        "Offshore": 1264
+        "Dubai": 2077,
+        "USA": 4739,
+        "Offshore": 1260
       },
-      "estCost": 2083,
+      "estCost": 2077,
       "assigneeId": "be",
       "contributorIds": [
         "qa"
@@ -124155,13 +124261,13 @@
       "deletions": 27,
       "startDate": "2026-06-19T03:12:44+03:00",
       "endDate": "2026-06-19T04:26:23+03:00",
-      "estHours": 36,
+      "estHours": 35.9,
       "estCostByMarket": {
-        "Dubai": 2106,
-        "USA": 4806,
-        "Offshore": 1278
+        "Dubai": 2100,
+        "USA": 4793,
+        "Offshore": 1274
       },
-      "estCost": 2106,
+      "estCost": 2100,
       "assigneeId": "be",
       "contributorIds": [
         "qa",
@@ -124784,13 +124890,13 @@
       "deletions": 876,
       "startDate": "2026-06-19T15:34:09+03:00",
       "endDate": "2026-06-19T17:18:37+03:00",
-      "estHours": 83.6,
+      "estHours": 83.4,
       "estCostByMarket": {
-        "Dubai": 4891,
-        "USA": 11161,
-        "Offshore": 2968
+        "Dubai": 4879,
+        "USA": 11134,
+        "Offshore": 2961
       },
-      "estCost": 4891,
+      "estCost": 4879,
       "assigneeId": "be",
       "contributorIds": [
         "qa",
@@ -125123,13 +125229,13 @@
       "deletions": 1655,
       "startDate": "2026-06-19T18:12:30+03:00",
       "endDate": "2026-06-19T21:09:15+03:00",
-      "estHours": 280.9,
+      "estHours": 280.5,
       "estCostByMarket": {
-        "Dubai": 20646,
-        "USA": 36096,
-        "Offshore": 13202
+        "Dubai": 20617,
+        "USA": 36044,
+        "Offshore": 13184
       },
-      "estCost": 20646,
+      "estCost": 20617,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -126230,13 +126336,13 @@
       "deletions": 117,
       "startDate": "2026-06-20T00:57:41+03:00",
       "endDate": "2026-06-20T04:36:26+03:00",
-      "estHours": 48.1,
+      "estHours": 48,
       "estCostByMarket": {
-        "Dubai": 3535,
-        "USA": 6181,
-        "Offshore": 2261
+        "Dubai": 3528,
+        "USA": 6168,
+        "Offshore": 2256
       },
-      "estCost": 3535,
+      "estCost": 3528,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -126656,13 +126762,13 @@
       "deletions": 3142,
       "startDate": "2026-06-20T04:46:00+03:00",
       "endDate": "2026-06-20T06:43:41+03:00",
-      "estHours": 154.2,
+      "estHours": 153.9,
       "estCostByMarket": {
-        "Dubai": 11334,
-        "USA": 19815,
-        "Offshore": 7247
+        "Dubai": 11312,
+        "USA": 19776,
+        "Offshore": 7233
       },
-      "estCost": 11334,
+      "estCost": 11312,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -127334,13 +127440,13 @@
       "deletions": 75,
       "startDate": "2026-06-20T16:35:30+03:00",
       "endDate": "2026-06-20T17:12:34+03:00",
-      "estHours": 137.6,
+      "estHours": 137.4,
       "estCostByMarket": {
-        "Dubai": 8050,
-        "USA": 18370,
-        "Offshore": 4885
+        "Dubai": 8038,
+        "USA": 18343,
+        "Offshore": 4878
       },
-      "estCost": 8050,
+      "estCost": 8038,
       "assigneeId": "be",
       "contributorIds": [
         "mob",
@@ -128043,13 +128149,13 @@
       "deletions": 120,
       "startDate": "2026-06-20T17:59:57+03:00",
       "endDate": "2026-06-20T18:47:14+03:00",
-      "estHours": 18.4,
+      "estHours": 18.3,
       "estCostByMarket": {
-        "Dubai": 1076,
-        "USA": 2456,
-        "Offshore": 653
+        "Dubai": 1071,
+        "USA": 2443,
+        "Offshore": 650
       },
-      "estCost": 1076,
+      "estCost": 1071,
       "assigneeId": "mob",
       "contributorIds": [
         "i18n",
@@ -128293,13 +128399,13 @@
       "deletions": 19,
       "startDate": "2026-06-20T20:21:53+03:00",
       "endDate": "2026-06-20T20:21:53+03:00",
-      "estHours": 63.2,
+      "estHours": 63.1,
       "estCostByMarket": {
-        "Dubai": 3697,
-        "USA": 6857,
-        "Offshore": 2338
+        "Dubai": 3691,
+        "USA": 6846,
+        "Offshore": 2335
       },
-      "estCost": 3697,
+      "estCost": 3691,
       "assigneeId": "mob",
       "contributorIds": [
         "pm",
@@ -128444,13 +128550,13 @@
       "deletions": 704,
       "startDate": "2026-06-21T01:58:54+03:00",
       "endDate": "2026-06-21T03:36:30+03:00",
-      "estHours": 77.5,
+      "estHours": 77.4,
       "estCostByMarket": {
-        "Dubai": 5696,
-        "USA": 9959,
-        "Offshore": 3643
+        "Dubai": 5689,
+        "USA": 9946,
+        "Offshore": 3638
       },
-      "estCost": 5696,
+      "estCost": 5689,
       "assigneeId": "qa",
       "contributorIds": [
         "lead",
@@ -129040,13 +129146,13 @@
       "deletions": 705,
       "startDate": "2026-06-21T13:08:15+03:00",
       "endDate": "2026-06-21T16:03:03+03:00",
-      "estHours": 41.5,
+      "estHours": 41.4,
       "estCostByMarket": {
-        "Dubai": 2428,
-        "USA": 5540,
-        "Offshore": 1473
+        "Dubai": 2422,
+        "USA": 5527,
+        "Offshore": 1470
       },
-      "estCost": 2428,
+      "estCost": 2422,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -129513,13 +129619,13 @@
       "deletions": 284,
       "startDate": "2026-06-21T20:31:31+03:00",
       "endDate": "2026-06-21T22:36:01+03:00",
-      "estHours": 37.9,
+      "estHours": 37.8,
       "estCostByMarket": {
-        "Dubai": 2217,
-        "USA": 4112,
-        "Offshore": 1402
+        "Dubai": 2211,
+        "USA": 4101,
+        "Offshore": 1399
       },
-      "estCost": 2217,
+      "estCost": 2211,
       "assigneeId": "i18n",
       "contributorIds": [
         "mob"
@@ -129707,13 +129813,13 @@
       "deletions": 1123,
       "startDate": "2026-06-22T00:56:26+03:00",
       "endDate": "2026-06-22T02:41:16+03:00",
-      "estHours": 136.7,
+      "estHours": 136.5,
       "estCostByMarket": {
-        "Dubai": 10047,
-        "USA": 17566,
-        "Offshore": 6425
+        "Dubai": 10033,
+        "USA": 17540,
+        "Offshore": 6416
       },
-      "estCost": 10047,
+      "estCost": 10033,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -130518,13 +130624,13 @@
       "deletions": 5028,
       "startDate": "2026-06-22T03:43:55+03:00",
       "endDate": "2026-06-22T04:27:03+03:00",
-      "estHours": 143.7,
+      "estHours": 143.5,
       "estCostByMarket": {
-        "Dubai": 10562,
-        "USA": 18465,
-        "Offshore": 6754
+        "Dubai": 10547,
+        "USA": 18440,
+        "Offshore": 6745
       },
-      "estCost": 10562,
+      "estCost": 10547,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -131164,13 +131270,13 @@
       "deletions": 222,
       "startDate": "2026-06-22T04:41:43+03:00",
       "endDate": "2026-06-22T05:33:25+03:00",
-      "estHours": 83,
+      "estHours": 82.9,
       "estCostByMarket": {
-        "Dubai": 6101,
-        "USA": 10666,
-        "Offshore": 3901
+        "Dubai": 6093,
+        "USA": 10653,
+        "Offshore": 3896
       },
-      "estCost": 6101,
+      "estCost": 6093,
       "assigneeId": "be",
       "contributorIds": [
         "lead",
@@ -132457,13 +132563,13 @@
       "deletions": 457,
       "startDate": "2026-06-22T14:05:38+03:00",
       "endDate": "2026-06-22T16:40:00+03:00",
-      "estHours": 29.3,
+      "estHours": 29.2,
       "estCostByMarket": {
-        "Dubai": 1714,
-        "USA": 3912,
-        "Offshore": 1040
+        "Dubai": 1708,
+        "USA": 3898,
+        "Offshore": 1037
       },
-      "estCost": 1714,
+      "estCost": 1708,
       "assigneeId": "pm",
       "contributorIds": [
         "be",
@@ -132771,13 +132877,13 @@
       "deletions": 0,
       "startDate": "2026-06-25T00:26:49+03:00",
       "endDate": "2026-06-25T00:26:49+03:00",
-      "estHours": 199.5,
+      "estHours": 199.2,
       "estCostByMarket": {
-        "Dubai": 11671,
-        "USA": 21646,
-        "Offshore": 7382
+        "Dubai": 11653,
+        "USA": 21613,
+        "Offshore": 7370
       },
-      "estCost": 11671,
+      "estCost": 11653,
       "assigneeId": "pm",
       "contributorIds": [
         "mob",
@@ -132993,13 +133099,13 @@
       "deletions": 6297,
       "startDate": "2026-06-25T03:17:39+03:00",
       "endDate": "2026-06-25T03:23:11+03:00",
-      "estHours": 1067.7,
+      "estHours": 1066.2,
       "estCostByMarket": {
-        "Dubai": 62460,
-        "USA": 142538,
-        "Offshore": 37903
+        "Dubai": 62373,
+        "USA": 142338,
+        "Offshore": 37850
       },
-      "estCost": 62460,
+      "estCost": 62373,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -135799,13 +135905,13 @@
       "deletions": 106,
       "startDate": "2026-06-25T11:53:07+03:00",
       "endDate": "2026-06-25T13:32:15+03:00",
-      "estHours": 87.1,
+      "estHours": 87,
       "estCostByMarket": {
-        "Dubai": 5095,
-        "USA": 11628,
-        "Offshore": 3092
+        "Dubai": 5090,
+        "USA": 11615,
+        "Offshore": 3089
       },
-      "estCost": 5095,
+      "estCost": 5090,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -136163,13 +136269,13 @@
       "deletions": 126,
       "startDate": "2026-06-26T01:50:11+03:00",
       "endDate": "2026-06-26T04:38:02+03:00",
-      "estHours": 36.7,
+      "estHours": 36.6,
       "estCostByMarket": {
-        "Dubai": 2697,
-        "USA": 4716,
-        "Offshore": 1725
+        "Dubai": 2690,
+        "USA": 4703,
+        "Offshore": 1720
       },
-      "estCost": 2697,
+      "estCost": 2690,
       "assigneeId": "pm",
       "contributorIds": [
         "lead",
@@ -136429,13 +136535,13 @@
       "deletions": 153,
       "startDate": "2026-06-26T04:40:41+03:00",
       "endDate": "2026-06-26T04:40:41+03:00",
-      "estHours": 159.7,
+      "estHours": 159.5,
       "estCostByMarket": {
-        "Dubai": 9342,
-        "USA": 21320,
-        "Offshore": 5669
+        "Dubai": 9331,
+        "USA": 21293,
+        "Offshore": 5662
       },
-      "estCost": 9342,
+      "estCost": 9331,
       "assigneeId": "mob",
       "contributorIds": [
         "be",
@@ -136832,13 +136938,13 @@
       "deletions": 0,
       "startDate": "2026-06-26T04:41:23+03:00",
       "endDate": "2026-06-26T04:41:23+03:00",
-      "estHours": 81.7,
+      "estHours": 81.6,
       "estCostByMarket": {
-        "Dubai": 4534,
-        "USA": 7966,
-        "Offshore": 3309
+        "Dubai": 4529,
+        "USA": 7956,
+        "Offshore": 3305
       },
-      "estCost": 4534,
+      "estCost": 4529,
       "assigneeId": "ops",
       "contributorIds": [],
       "commits": [
@@ -136946,13 +137052,13 @@
       "deletions": 369,
       "startDate": "2026-06-26T04:51:56+03:00",
       "endDate": "2026-06-26T05:31:29+03:00",
-      "estHours": 17.1,
+      "estHours": 17,
       "estCostByMarket": {
-        "Dubai": 1000,
-        "USA": 2283,
-        "Offshore": 607
+        "Dubai": 995,
+        "USA": 2270,
+        "Offshore": 604
       },
-      "estCost": 1000,
+      "estCost": 995,
       "assigneeId": "mob",
       "contributorIds": [
         "be",
@@ -137330,13 +137436,13 @@
       "deletions": 0,
       "startDate": "2026-06-26T07:29:43+03:00",
       "endDate": "2026-06-26T08:07:13+03:00",
-      "estHours": 60.7,
+      "estHours": 60.6,
       "estCostByMarket": {
-        "Dubai": 3551,
-        "USA": 8103,
-        "Offshore": 2155
+        "Dubai": 3545,
+        "USA": 8090,
+        "Offshore": 2151
       },
-      "estCost": 3551,
+      "estCost": 3545,
       "assigneeId": "pm",
       "contributorIds": [
         "be",
@@ -137547,13 +137653,13 @@
       "deletions": 77,
       "startDate": "2026-06-26T09:01:32+03:00",
       "endDate": "2026-06-26T09:01:32+03:00",
-      "estHours": 10.1,
+      "estHours": 10,
       "estCostByMarket": {
-        "Dubai": 591,
-        "USA": 1348,
-        "Offshore": 359
+        "Dubai": 585,
+        "USA": 1335,
+        "Offshore": 355
       },
-      "estCost": 591,
+      "estCost": 585,
       "assigneeId": "mob",
       "contributorIds": [
         "pm",
@@ -137714,13 +137820,13 @@
       "deletions": 93,
       "startDate": "2026-06-26T09:45:15+03:00",
       "endDate": "2026-06-26T09:45:15+03:00",
-      "estHours": 12.2,
+      "estHours": 12.1,
       "estCostByMarket": {
-        "Dubai": 714,
-        "USA": 1629,
-        "Offshore": 433
+        "Dubai": 708,
+        "USA": 1615,
+        "Offshore": 430
       },
-      "estCost": 714,
+      "estCost": 708,
       "assigneeId": "mob",
       "contributorIds": [
         "pm",
@@ -138237,13 +138343,13 @@
       "deletions": 85,
       "startDate": "2026-06-26T12:54:18+03:00",
       "endDate": "2026-06-26T12:54:18+03:00",
-      "estHours": 9.2,
+      "estHours": 9.1,
       "estCostByMarket": {
-        "Dubai": 538,
-        "USA": 1228,
-        "Offshore": 327
+        "Dubai": 532,
+        "USA": 1215,
+        "Offshore": 323
       },
-      "estCost": 538,
+      "estCost": 532,
       "assigneeId": "mob",
       "contributorIds": [
         "pm",
@@ -138504,13 +138610,13 @@
       "deletions": 33,
       "startDate": "2026-06-26T13:31:04+03:00",
       "endDate": "2026-06-26T13:31:04+03:00",
-      "estHours": 25.4,
+      "estHours": 25.3,
       "estCostByMarket": {
-        "Dubai": 1486,
-        "USA": 3391,
-        "Offshore": 902
+        "Dubai": 1480,
+        "USA": 3378,
+        "Offshore": 898
       },
-      "estCost": 1486,
+      "estCost": 1480,
       "assigneeId": "i18n",
       "contributorIds": [],
       "commits": [
@@ -138606,13 +138712,13 @@
       "deletions": 74,
       "startDate": "2026-06-26T13:31:06+03:00",
       "endDate": "2026-06-26T13:31:06+03:00",
-      "estHours": 8.1,
+      "estHours": 8,
       "estCostByMarket": {
-        "Dubai": 474,
-        "USA": 1081,
-        "Offshore": 288
+        "Dubai": 468,
+        "USA": 1068,
+        "Offshore": 284
       },
-      "estCost": 474,
+      "estCost": 468,
       "assigneeId": "i18n",
       "contributorIds": [
         "mob",
@@ -139225,6 +139331,164 @@
           "fileCount": 1
         }
       ]
+    },
+    {
+      "repo": "careapi",
+      "id": "ISS-0267",
+      "epicId": "marketplace",
+      "title": "Sprint 11 Phase A: MyKeyz→Care bridge (inspection jobs) — Care side",
+      "disciplines": [],
+      "dominant": "Backend",
+      "status": "done",
+      "commitCount": 2,
+      "insertions": 691,
+      "deletions": 9,
+      "startDate": "2026-06-26T17:51:44+03:00",
+      "endDate": "2026-06-26T18:01:58+03:00",
+      "estHours": 17.4,
+      "estCostByMarket": {
+        "Dubai": 1018,
+        "USA": 2323,
+        "Offshore": 618
+      },
+      "estCost": 1018,
+      "assigneeId": "be",
+      "contributorIds": [],
+      "commits": [
+        {
+          "hash": "badb7668926b1b518d1ce3ae91531d5bb1c8cab2",
+          "date": "2026-06-26T17:51:44+03:00",
+          "author": "Claude",
+          "subject": "Sprint 11 Phase A: MyKeyz→Care bridge (inspection jobs) — Care side",
+          "repo": "careapi",
+          "files": [
+            {
+              "path": "src/config.ts",
+              "ins": 7,
+              "del": 0
+            },
+            {
+              "path": "src/data.ts",
+              "ins": 42,
+              "del": 0
+            },
+            {
+              "path": "src/db.ts",
+              "ins": 104,
+              "del": 7
+            },
+            {
+              "path": "src/index.ts",
+              "ins": 146,
+              "del": 1
+            },
+            {
+              "path": "src/lib/signing.ts",
+              "ins": 22,
+              "del": 0
+            },
+            {
+              "path": "src/mykeyzWebhook.ts",
+              "ins": 50,
+              "del": 0
+            }
+          ],
+          "insertions": 371,
+          "deletions": 8,
+          "disciplines": [],
+          "fileCount": 6
+        },
+        {
+          "hash": "069e953a2cc312c155dc2671b99742c86085af27",
+          "date": "2026-06-26T18:01:58+03:00",
+          "author": "Claude",
+          "subject": "Sprint 11 Phase B: bridge E2E suite + Control Panel source display",
+          "repo": "careapi",
+          "files": [
+            {
+              "path": "package.json",
+              "ins": 1,
+              "del": 0
+            },
+            {
+              "path": "public/admin.html",
+              "ins": 50,
+              "del": 1
+            },
+            {
+              "path": "scripts/e2e-all.mjs",
+              "ins": 1,
+              "del": 0
+            },
+            {
+              "path": "scripts/e2e-bridge.mjs",
+              "ins": 268,
+              "del": 0
+            }
+          ],
+          "insertions": 320,
+          "deletions": 1,
+          "disciplines": [],
+          "fileCount": 4
+        }
+      ]
+    },
+    {
+      "repo": "care",
+      "id": "ISS-0268",
+      "epicId": "marketplace",
+      "title": "Sprint 11 Phase B: bridge contract docs",
+      "disciplines": [
+        "Product"
+      ],
+      "dominant": "Product",
+      "status": "done",
+      "commitCount": 1,
+      "insertions": 482,
+      "deletions": 0,
+      "startDate": "2026-06-26T18:02:00+03:00",
+      "endDate": "2026-06-26T18:02:00+03:00",
+      "estHours": 11.9,
+      "estCostByMarket": {
+        "Dubai": 756,
+        "USA": 1404,
+        "Offshore": 411
+      },
+      "estCost": 756,
+      "assigneeId": "pm",
+      "contributorIds": [],
+      "commits": [
+        {
+          "hash": "b4a2cc5d8b77a9d8d702c6203706ab816855b8b7",
+          "date": "2026-06-26T18:02:00+03:00",
+          "author": "Claude",
+          "subject": "Sprint 11 Phase B: bridge contract docs",
+          "repo": "care",
+          "files": [
+            {
+              "path": "docs/05-INTEGRATIONS.md",
+              "ins": 33,
+              "del": 0
+            },
+            {
+              "path": "docs/BRIDGE-MYKEYZ-CARE.md",
+              "ins": 339,
+              "del": 0
+            },
+            {
+              "path": "docs/SPRINT-11-TODO.md",
+              "ins": 110,
+              "del": 0
+            }
+          ],
+          "insertions": 482,
+          "deletions": 0,
+          "disciplines": [
+            "Product"
+          ],
+          "fileCount": 3
+        }
+      ]
     }
   ],
   "sprints": [
@@ -139537,7 +139801,7 @@
       "label": "Sprint 8 · 2026-06-24",
       "startDate": "2026-06-24T03:09:02.000Z",
       "endDate": "2026-06-30T03:09:02.000Z",
-      "commitCount": 54,
+      "commitCount": 57,
       "issueIds": [
         "ISS-0235",
         "ISS-0236",
@@ -139570,9 +139834,11 @@
         "ISS-0263",
         "ISS-0264",
         "ISS-0265",
-        "ISS-0266"
+        "ISS-0266",
+        "ISS-0267",
+        "ISS-0268"
       ],
-      "velocity": 54
+      "velocity": 57
     },
     {
       "id": "SP-P1",
