@@ -1,0 +1,59 @@
+name: Recompute retro board
+
+# Real, always-on: recomputes the board from all source repos on a schedule (and on demand),
+# independent of any laptop. When data.json changes, it commits — which triggers the host
+# (Railway / Cloudflare Pages) to redeploy automatically.
+on:
+  schedule:
+    - cron: "*/20 * * * *"      # every 20 minutes
+  workflow_dispatch: {}
+  repository_dispatch:
+    types: [source-push]        # source repos can ping this for instant updates
+
+permissions:
+  contents: write
+
+jobs:
+  recompute:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout retro app
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with: { node-version: "20" }
+
+      - name: Clone source repos
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          set -e
+          mkdir -p _repos
+          clone() { git clone --quiet "https://x-access-token:${GH_PAT}@github.com/KBRglobal/$1.git" "_repos/$2"; }
+          clone mykeyz app
+          clone mykeyz-care care
+          clone mykeyz-care-api careapi
+          clone mykeyz-marketing marketing
+          clone octypo octypo
+          clone recover-portal recover
+          clone verify-portal verify
+
+      - name: Recompute data
+        env:
+          REPOS_BASE: ${{ github.workspace }}/_repos
+        run: |
+          node extract/extract.mjs
+          node extract/estimate.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name "retro-bot"
+          git config user.email "bot@travi.world"
+          git add web/src/data.json
+          if git diff --cached --quiet; then
+            echo "No change — board already current."
+          else
+            git commit -m "data: recompute from source repos [skip ci]"
+            git push
+            echo "Board updated."
+          fi

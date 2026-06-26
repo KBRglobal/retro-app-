@@ -13,7 +13,9 @@ const OUT = resolve(__dirname, "..", "web", "src", "data.json");
 
 // --- Project config (reusable: point this at any project's repos) ----------
 const CONFIG = JSON.parse(readFileSync(resolve(__dirname, "config.json"), "utf8"));
-const REPOS = CONFIG.repos;
+// In CI we clone repos under REPOS_BASE/<id>; locally we use the absolute config paths.
+const REPOS_BASE = process.env.REPOS_BASE;
+const REPOS = CONFIG.repos.map((r) => REPOS_BASE ? { ...r, path: resolve(REPOS_BASE, r.id) } : r);
 
 // --- Discipline inference from touched files -----------------------------
 // Each rule: if any changed file matches, the commit carries that discipline.
@@ -112,7 +114,8 @@ const disciplineTotals = {};
 for (const c of all) for (const d of c.disciplines) disciplineTotals[d] = (disciplineTotals[d] || 0) + 1;
 
 const dataset = {
-  generatedAt: new Date().toISOString(),
+  // deterministic: tied to the latest commit, so data.json only changes on real new work
+  generatedAt: all[all.length - 1]?.date ?? null,
   repos: REPOS.map(({ id, label }) => ({ id, label })),
   summary: {
     totalCommits: all.length,
