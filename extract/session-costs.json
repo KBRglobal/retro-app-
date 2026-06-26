@@ -1,0 +1,2683 @@
+{
+  "sessionDays": 39,
+  "totalTeamEquivHours": 2776,
+  "totalPersonDays": 793,
+  "totalPersonMonths": 36,
+  "disciplineHours": {
+    "Mobile": 420.1,
+    "Product": 336.4,
+    "Design": 120.30000000000001,
+    "Backend": 716.8,
+    "QA": 298.1,
+    "AI/ML": 107.9,
+    "DevOps": 88.99999999999999,
+    "Frontend": 285.3,
+    "Security": 265.6,
+    "Product/docs": 125.5,
+    "AI-ML": 9.5
+  },
+  "totalCostByMarket": {
+    "Pakistan": [
+      19274.5,
+      35847.5
+    ],
+    "Ukraine": [
+      53294.5,
+      87760
+    ],
+    "Dubai": [
+      94555,
+      144760
+    ],
+    "Israel": [
+      130234,
+      192998.5
+    ],
+    "US": [
+      212398.5,
+      289847
+    ]
+  },
+  "sessions": [
+    {
+      "day": "2026-05-06",
+      "teamEquivHours": 48,
+      "personDays": 13.7,
+      "reuseSplit": {
+        "boilerplatePct": 55,
+        "adaptedPct": 35,
+        "novelPct": 10
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Mobile",
+          "hours": 13.5,
+          "did": "Built the Expo Router app shell — navigation groups plus login/register/forgot-password, onboarding role/rooms, and inspection screens wired through Zustand stores."
+        },
+        {
+          "discipline": "Product",
+          "hours": 26,
+          "did": "Wrote ~34k words across 76 markdown docs — 20 templated UI screen specs plus onboarding, auth-flow and architecture notes that drove the build."
+        },
+        {
+          "discipline": "Design",
+          "hours": 3,
+          "did": "Authored the design-system tokens (colors/spacing/typography) and core UI components (Button, TextField, SegmentedControl, RoleCard)."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 2.5,
+          "did": "Wired the Supabase client with a SecureStore/localStorage storage adapter, plus session and API service layers."
+        },
+        {
+          "discipline": "QA",
+          "hours": 3,
+          "did": "Smoke-tested the auth and onboarding flows and the Zod form-validation paths."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          3678,
+          5153
+        ],
+        "Israel": [
+          2360,
+          3503
+        ],
+        "Dubai": [
+          1653,
+          2561
+        ],
+        "Ukraine": [
+          895,
+          1479
+        ],
+        "Pakistan": [
+          311,
+          604
+        ]
+      },
+      "note": "Genesis day (3 sprint commits, app repo): full Expo/Supabase scaffold + auth + onboarding + ~34k words of UI/product specs. Sampled register/supabase/scaffold diffs; package-lock.json (10,252 lines) scored ~0 auto-gen. Code is mostly standard Expo Router + Supabase + Zustand/Zod boilerplate-and-adapt (~10% novel inspection/property domain); 76 docs heavily templated across 20 near-identical screen specs so discounted; off-hours 1.3x (06:09-07:15) applied once at session level."
+    },
+    {
+      "day": "2026-05-07",
+      "teamEquivHours": 80,
+      "personDays": 22.9,
+      "reuseSplit": {
+        "boilerplatePct": 25,
+        "adaptedPct": 50,
+        "novelPct": 25
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 33,
+          "did": "Stood up the Node backend from scratch — JWT+bcrypt auth, inspections CRUD, watermark/vision/payments/signatures/reports/notifications/addons routes, R2 storage and SQL migrations; pivoted Supabase to Railway Postgres + custom auth."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 24,
+          "did": "Built the full React Native inspection flow — auth/onboarding screens, camera+gallery+video capture with compression, chat interface, tier-selection, payment, signature, summary, report-preview, settings, history and comparison mode."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 5,
+          "did": "Wired OpenAI Vision — a cheap gpt-4o-mini binary triage classifier plus deep defect analysis constrained to a fixed category/severity schema."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 5,
+          "did": "Dockerized the backend, added railway.json deploy config and GitHub Actions CI (frontend + backend-with-Postgres + Cloudflare Pages deploy), wired R2/Stripe/Dropbox env config and wrote the DEPLOY runbook."
+        },
+        {
+          "discipline": "QA",
+          "hours": 5,
+          "did": "Wrote 32 vitest tests across front and back — auth round-trip + bcrypt, watermark, sha256, videoFrames, validation schemas, password strength and default-rooms."
+        },
+        {
+          "discipline": "Design",
+          "hours": 3,
+          "did": "Styled the inspection-flow screens and the report-preview / room-complete surfaces."
+        },
+        {
+          "discipline": "Product",
+          "hours": 5,
+          "did": "Backfilled DEVELOPER_NOTES sprint logs, wrote the DEPLOY runbook prose and flipped TODO/sprint checkboxes."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          6605,
+          8770
+        ],
+        "Israel": [
+          4165,
+          5935
+        ],
+        "Dubai": [
+          2901,
+          4311
+        ],
+        "Ukraine": [
+          1679,
+          2648
+        ],
+        "Pakistan": [
+          606,
+          1107
+        ]
+      },
+      "note": "Reuse ~25% boilerplate / 50% adapted (JWT, bcrypt, Stripe, Dropbox Sign, R2, OpenAI calls are known recipes) / 25% novel (watermark SVG composite, PDF report template, vision prompt schema, Supabase→Railway pivot spike); 10.3k of 21.2k insertions are auto-gen package-lock (scored ~0) and 675 lines are docs; sampled the 6 largest commits in full + stat for the rest."
+    },
+    {
+      "day": "2026-05-08",
+      "teamEquivHours": 38,
+      "personDays": 10.9,
+      "reuseSplit": {
+        "boilerplatePct": 25,
+        "adaptedPct": 50,
+        "novelPct": 25
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Mobile",
+          "hours": 20,
+          "did": "Built the RN UI atom kit (Button/Card/TextField/HeroBackground/DevNav) and re-skinned ~18 Expo screens (auth, onboarding, tier+payment, inspection, settings, chat) onto the new design tokens, plus a net-new comparison screen wired to /vision/compare."
+        },
+        {
+          "discipline": "Design",
+          "hours": 7,
+          "did": "Authored the Apple-meets-teal visual language: navy+teal+gold palette, elevation/radius/type scales, gradient stops, 12 hand-coded BrandIcon SVG paths, and art direction for six gpt-image-1 hero illustrations."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 7,
+          "did": "Wrote the locale-aware (en/he/ar) RTL PDF report template with font-stack swap, flex mirroring and mono isolation; added the no-leak forgot-password endpoint and switched Stripe currency USD to EUR."
+        },
+        {
+          "discipline": "QA",
+          "hours": 3,
+          "did": "Verified the new backend endpoints and locale PDF paths (vitest 12/12), exercised the payment and comparison flows, and regression-checked the restyled screens."
+        },
+        {
+          "discipline": "Product",
+          "hours": 1,
+          "did": "Recorded the generated R2 keys and rewrote DEVELOPER_NOTES to resolve the stack/storage decisions (Node/Fastify + R2), narrowing open blockers to Stripe and Dropbox Sign keys."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          2990,
+          3985
+        ],
+        "Israel": [
+          1855,
+          2705
+        ],
+        "Dubai": [
+          1296,
+          1973
+        ],
+        "Ukraine": [
+          747,
+          1217
+        ],
+        "Pakistan": [
+          269,
+          504
+        ]
+      },
+      "note": "Reuse: most of the +4400 is design-system APPLICATION (re-skinning ~18 screens onto defined tokens = adapted ~50%) over standard RN component patterns (boilerplate ~25%); novel ~25% lives in palette/token decisions, 12 hand-coded BrandIcon SVGs, the complex RTL locale-aware PDF template, and the new comparison feature. Ramp-up paid once for the day; deletions weighted ~20%. Sampled: full --stat on all 5 commits + diffs of colors.ts and Button.tsx + all commit messages (stat-only on the rest)."
+    },
+    {
+      "day": "2026-05-09",
+      "teamEquivHours": 5.3,
+      "personDays": 1.51,
+      "reuseSplit": {
+        "boilerplatePct": 25,
+        "adaptedPct": 45,
+        "novelPct": 30
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Product",
+          "hours": 5.3,
+          "did": "Rewrote the Dubai launch plan into an annotated v2 — authored a mandatory security/dependency policy (no-new-npm, built-ins-over-SDK table, REST-over-SDK) and added per-item IMPL implementation blocks for UAE Pass, Ejari/Makani, bilingual EN/AR report, AED 299 IAP pricing, and the broker referral program."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          398,
+          583
+        ],
+        "Israel": [
+          265,
+          398
+        ],
+        "Dubai": [
+          186,
+          292
+        ],
+        "Ukraine": [
+          95,
+          159
+        ],
+        "Pakistan": [
+          32,
+          64
+        ]
+      },
+      "note": "Docs-only rewrite (full diff seen): ~2,659 words added vs ~4,539 removed (net-shorter restructure of an existing v1 plan), so most content is adapted/boilerplate (45/25) with ~30% genuinely novel (the new security-rules section + IMPL specifics); priced as solo Product/docs at PM rate, Saturday-midday 1.3× weekend multiplier applied, no QA/Design/review warranted."
+    },
+    {
+      "day": "2026-05-09",
+      "teamEquivHours": 114,
+      "personDays": 32.6,
+      "reuseSplit": {
+        "boilerplatePct": 42,
+        "adaptedPct": 36,
+        "novelPct": 22
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 42,
+          "did": "Built 3-SKU AED pricing + payment routes, Apple/Google IAP receipt verification (RS256 JWT REST), refund automation with idempotent webhooks, DB-backed durable job queue, server-side hard caps/rate limits/timestamping/error_logs, broker referral payouts, Unifonic SMS, and reviewer demo mode."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 20,
+          "did": "Re-skinned all 21 React Native screens onto the new design system, wired the StoreKit IAP client + camera photo-quota auto-paywall, the expo-updates OTA client, and report-preview; drove the bundle to 0 TS errors after the design pass."
+        },
+        {
+          "discipline": "Frontend",
+          "hours": 7,
+          "did": "Redesigned the public Verify page to brand quality, built the magic-link /sign web page, and rebuilt the villa-grade report PDF HTML template with multi-photo issue grids."
+        },
+        {
+          "discipline": "Design",
+          "hours": 6,
+          "did": "Landed the Apple-meets-navy design system + tokens (Manus pass), destroyed the dead teal/gold/cream palette to navy + clean white, and replaced the placeholder app icon with a brand-consistent one."
+        },
+        {
+          "discipline": "QA",
+          "hours": 7,
+          "did": "Authored 4 Maestro end-to-end production flows + config covering the payment, auth, and report paths."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 6,
+          "did": "Wired OTA EAS Update channels + server-driven config, set up the Maestro E2E CI workflow on a macOS simulator, deployed Cloudflare Pages, and fixed the Docker chromium install for puppeteer."
+        },
+        {
+          "discipline": "Security",
+          "hours": 8,
+          "did": "Implemented UAE Pass OAuth + single-use magic-link signature security, pinned the Apple cert chain to AppleRootCA-G3, and routed all Manus AI traffic through the backend (removed the API key from the client)."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 8,
+          "did": "Integrated the Manus API with structured-output schemas, hardened response parsing (flat task_id, ContentParts array, root upload_url), and aligned the generate-report SQL with the actual schema."
+        },
+        {
+          "discipline": "Product",
+          "hours": 10,
+          "did": "Wrote the Dubai Launch Plan v2 + strategic re-plan, the cross-reference launch checklist, and the onboarding/signature/payment spec alignment to UAE Pass + Apple IAP."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          9134,
+          12275
+        ],
+        "Israel": [
+          5678,
+          8272
+        ],
+        "Dubai": [
+          4048,
+          6095
+        ],
+        "Ukraine": [
+          2329,
+          3746
+        ],
+        "Pakistan": [
+          843,
+          1544
+        ]
+      },
+      "note": "Sampled heavy commits (Manus design pass, UAE Pass/Magic Link, marketing landing, report PDF) + stat for the other 60+. Heavy reuse discount (42% boilerplate / 36% adapted / 22% novel): generated Manus design assets ~near-zero authorship, payments/OAuth/job-queue/webhooks adapted from known recipes; novel slice is UAE domain rules (Ejari/Makani, defect taxonomy, TRN invoice, broker math), pricing semantics, and report-data provenance. Marketing-tagged build (landing page) excluded per build-cost-only rule."
+    },
+    {
+      "day": "2026-05-10",
+      "teamEquivHours": 102,
+      "personDays": 29.1,
+      "reuseSplit": {
+        "boilerplatePct": 35,
+        "adaptedPct": 45,
+        "novelPct": 20
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 30,
+          "did": "Shipped the broker-portal API (email-OTP auth, broker-scoped /me/tenants/reports/commission routes, migrations) and SSO token issuance, and deleted the dead Manus vision service + manusProxy."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 18,
+          "did": "Rebuilt the media-preview and chat capture screens, added voice notes, fixed the iOS cold-start splash hang, and reverted unfinished features to Coming Soon per the product-truth audit."
+        },
+        {
+          "discipline": "Frontend",
+          "hours": 14,
+          "did": "Stood up the Next.js broker self-service portal (login, dashboard, tenants/reports/commission tables) and reworked the demo flow to stream the user's real report instead of a hardcoded mock."
+        },
+        {
+          "discipline": "Security",
+          "hours": 12,
+          "did": "Hardened auth end-to-end: atomic refresh-token rotation (TOCTOU), JWT alg/aud/iss pinning, brute-force + per-broker/per-user OTP rate caps, one-shot reset tokens, revoked-PDF blocking, and media-type byte validation."
+        },
+        {
+          "discipline": "Product/docs",
+          "hours": 8,
+          "did": "Wrote the product-truth + Apple/backend/mobile/money audit docs and the codebase architecture/stack/structure notes that drove the day's reverts and blocker closures."
+        },
+        {
+          "discipline": "AI-ML",
+          "hours": 6,
+          "did": "Made /v1/ai/analyze-photo auto-persist the issue and folded the full AI inspector output into the bilingual AR/EN PDF report."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 5,
+          "did": "Wired the EAS ASC API key for non-interactive iOS submit, set the encryption-exempt flag, and added Railway deploy config for the broker portal."
+        },
+        {
+          "discipline": "QA",
+          "hours": 5,
+          "did": "Authored the Maestro E2E flows and watermark unit tests, plus a retry-button audit pass across capture screens."
+        },
+        {
+          "discipline": "Design",
+          "hours": 4,
+          "did": "Replaced hardcoded colors with design-system tokens and polished the media-preview UI (full-width CTA, dynamic GPS badge, safe-area/keyboard handling)."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          745,
+          1371
+        ],
+        "Ukraine": [
+          2052,
+          3350
+        ],
+        "Dubai": [
+          3582,
+          5441
+        ],
+        "Israel": [
+          4918,
+          7249
+        ],
+        "US": [
+          8096,
+          10895
+        ]
+      },
+      "note": "Nominal 19k insertions but ~6.9k are lockfiles (pnpm/package-lock, ~0 cost), ~2.25k marketing HTML (excluded), ~2k docs, and 50+ binary PNGs — leaving ~7.8k hand-authored code that is mostly scaffolded Next.js CRUD + SDK/SSO adaptation (Maktuba lift, zxcvbn, Bugsnag), with a genuinely novel security/auth-hardening + product-audit core (~20%); sampled the 8 largest commits via full git show/--stat, stat-only for the ~50 small commits."
+    },
+    {
+      "day": "2026-05-11",
+      "teamEquivHours": 155,
+      "personDays": 44.3,
+      "reuseSplit": {
+        "boilerplatePct": 25,
+        "adaptedPct": 55,
+        "novelPct": 20
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Security",
+          "hours": 55.2,
+          "did": "Built real admin auth (inline RFC-6238 TOTP, bcrypt, rotated refresh sessions, append-only audit log), closed SSRF/path-traversal/prompt-injection, hardened IAP idempotency+replay window, added per-route rate-limit buckets and zod max-lengths, pinned JWT alg/aud/iss, fixed sign-in user-enumeration timing, patched 114 CVEs."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 27.6,
+          "did": "Added DB pool/statement + slowloris timeouts, pg_advisory_lock multi-replica migrations and new indexes, hourly cleanup worker, jobQueue status guards, Manus status-based retry classification, DLQ + /health/deep, graceful SIGTERM shutdown, route pagination."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 17.3,
+          "did": "Shipped delete-account UI with OAuth re-auth, root ErrorBoundary against blank-screen crashes, chat AsyncStorage persistence, role-selector backend wiring, useNetwork OS-event listeners, removed fake splash counter, SSR-safe PostHog/Bugsnag init."
+        },
+        {
+          "discipline": "Frontend",
+          "hours": 15.5,
+          "did": "Built broker-portal admin login + Edge JWT verify gate, page/root error boundaries, proxy body validation and upstream-error sanitization; hardened marketing CSP (dropped unsafe-inline), real 404, OpenGraph/JSON-LD, signup honeypot."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 6.9,
+          "did": "Ran backend/broker-portal containers as non-root, added .dockerignore files, upgraded base images to clear CVEs, injected PostHog + Google OAuth client IDs into EAS preview+production builds."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 6,
+          "did": "Sanitized roomName/userNote to block prompt injection, validated Manus structured output with Zod before DB write, added magic-byte + multipart-header validation on the voice-transcription endpoint."
+        },
+        {
+          "discipline": "QA",
+          "hours": 12.1,
+          "did": "Wrote ~1,000 lines of vitest integration+unit coverage (IAP webhook, media magic-bytes, broker OTP limits, PDF idempotency/auth/ownership/canonical, AI ownership, watermark EXIF regression) with mocked DB/auth."
+        },
+        {
+          "discipline": "Product/docs",
+          "hours": 14,
+          "did": "Authored the Damagix-to-brand rebrand touchpoint map (every file:line, multiple coverage passes) plus the AGENTS 'Deep Polish' autonomous-improvement protocol — ~7,800 finished words."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          1170,
+          2150
+        ],
+        "Ukraine": [
+          3110,
+          5200
+        ],
+        "Dubai": [
+          5460,
+          8170
+        ],
+        "Israel": [
+          7250,
+          11800
+        ],
+        "US": [
+          12200,
+          16250
+        ]
+      },
+      "note": "Reuse ~25% boilerplate (schema max-lengths, rate-limit buckets, dep/CVE bumps, test mocks) / ~55% adapted (RFC-6238 TOTP, JWT rotation, OWASP SSRF/path-traversal guards, timeouts, error boundaries, OG tags) / ~20% novel (IAP money idempotency, evidence-integrity media hashing + canonical PDF verify, advisory-lock migration, brand-map analysis); sampled heavy commits in full (adminAuth.ts, tests, brand docs), used --stat for the small-fix long tail."
+    },
+    {
+      "day": "2026-05-12",
+      "teamEquivHours": 113,
+      "personDays": 32.3,
+      "reuseSplit": {
+        "boilerplatePct": 35,
+        "adaptedPct": 40,
+        "novelPct": 25
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 55,
+          "did": "Built OTS blockchain anchoring, RERA dispute-letter generator, fair-wear deposit calc + landlord-score engine, Unifonic SMS DLR webhooks, EXIF capture, i18n backend, counter-photo magic-link, plus complex audit fixes (Postgres multi-replica rate-limit, IAP replay/refund, R2->Manus streaming)."
+        },
+        {
+          "discipline": "QA",
+          "hours": 28,
+          "did": "Wrote ~3,500 lines of route/unit/integration tests across AI async jobs, auth/account-delete, payments, signatures, dispute-letter, notifications, EXIF and the Unifonic webhook."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 6,
+          "did": "Added RERA classifier to defect analysis output, GET confidence-histogram endpoint, analyze-photo dedup guard and Manus job-endpoint polling."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 10,
+          "did": "Wired Arabic/English i18n + RTL to all screens, added dispute-letter and confidence-histogram report buttons, RERA/fair-wear DefectCard badges, offline upload queue, and 35 a11y labels."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 4,
+          "did": "Alpine Dockerfiles, puppeteer-core/openai dependency bumps with lockfile sync, and multi-replica rate-limit infra wiring."
+        },
+        {
+          "discipline": "Security",
+          "hours": 6,
+          "did": "Enforced auth nonce requirement, IAP replay + REFUND_REVERSED guards, SSRF render guards, and moved web token from localStorage to sessionStorage."
+        },
+        {
+          "discipline": "Product",
+          "hours": 4,
+          "did": "Maintained AGENTS.md fixed-commits table and AUTO_IMPROVEMENT_LOG.md, added synthetic-data disclosure notes and updated user-facing copy."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          798,
+          1448
+        ],
+        "Ukraine": [
+          2162,
+          3471
+        ],
+        "Dubai": [
+          3796,
+          5674
+        ],
+        "Israel": [
+          5327,
+          7745
+        ],
+        "US": [
+          8533,
+          11490
+        ]
+      },
+      "note": "Reuse 35/40/25: ~2.3k lockfile lines + scaffolded migrations/HTML-template/i18n tables are boilerplate (~0), webhook/OTS-lib/push/EXIF integrations are adapted patterns, novel core = RERA legal dispute logic + fair-wear depreciation + landlord scoring + concurrency/IAP fixes. Sampled major feature/test/deletion commits via full diff + stat for the rest (68 commits, 11.5k ins / 5.8k del); big cleanup commit is markdown deletions + lockfile churn scored near-zero."
+    },
+    {
+      "day": "2026-05-13",
+      "teamEquivHours": 23,
+      "personDays": 6.57,
+      "reuseSplit": {
+        "boilerplatePct": 30,
+        "adaptedPct": 48,
+        "novelPct": 22
+      },
+      "disciplineWork": [
+        {
+          "discipline": "QA",
+          "hours": 7,
+          "did": "Wrote ~140 unit tests across inspections, issues, addons, admin, appConfig, landlordScore, brokers and IAP routes on a shared vitest mock harness (4 commits, ~2570 test lines)."
+        },
+        {
+          "discipline": "Security",
+          "hours": 5.5,
+          "did": "Triaged and patched 7 high/critical CVEs: Snyk fixes (CWE-918/79/798), form-data + qs npm overrides, swapped opentimestamps for a maintained fork, enforced Unifonic HMAC in prod."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 5.5,
+          "did": "Hardened routes: AbortSignal.timeout on all fetch/apiFetch calls, S3 request timeout, rate-limit buckets (PUSH/DELETE_ACCOUNT), pagination + LIMIT guards, shared isUuid util, cleanup sweeps, small refactors."
+        },
+        {
+          "discipline": "Frontend",
+          "hours": 2,
+          "did": "Added try-catch around async calls in 7 RN/web files, removed unnecessary as-any casts, and added a retry button on history.tsx."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 2,
+          "did": "Added a media composite index, graceful shutdown, S3 timeout config, and managed the lockfile/dependency override changes."
+        },
+        {
+          "discipline": "Product/docs",
+          "hours": 1,
+          "did": "Updated AGENTS.md and AUTO_IMPROVEMENT_LOG.md session entries (sessions 9-12)."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          1594,
+          2183
+        ],
+        "Israel": [
+          938,
+          1492
+        ],
+        "Dubai": [
+          713,
+          1094
+        ],
+        "Ukraine": [
+          400,
+          681
+        ],
+        "Pakistan": [
+          152,
+          279
+        ]
+      },
+      "note": "Reuse heavy: shared copy-paste vitest harness across test files, one-liner AbortSignal/npm-override patterns, lockfile churn (~30% boilerplate/48% adapted/22% novel security+migration judgment); sampled key diffs (tests, Snyk CVE, deps swap), stat-only for the rest."
+    },
+    {
+      "day": "2026-05-14",
+      "teamEquivHours": 5.7,
+      "personDays": 1.63,
+      "reuseSplit": {
+        "boilerplatePct": 35,
+        "adaptedPct": 50,
+        "novelPct": 15
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Security",
+          "hours": 2.4,
+          "did": "Triaged Snyk SAST findings, added path-traversal guards (resolve + startsWith) in reports.ts/storage.ts, an SSRF allowlist helper (assertSafeUploadUrl) in manusProxy.ts, and justified deepcode-ignore suppressions for the proven false positives (timing bcrypt hash, i18n password labels, allowlisted broker proxy fetch)."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 1.2,
+          "did": "Wired the guards into the Fastify file-serving and storage read/stream paths (readStoredBuffer/readStoredFileStream/readStoredStream) and the Manus upload PUT call sites without breaking stream handling."
+        },
+        {
+          "discipline": "QA",
+          "hours": 1,
+          "did": "Extracted inline test secrets into named vi.hoisted() fixture constants across admin/auth/unifonicWebhook tests and re-ran the full 363-test suite to confirm green with 0 TS errors."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 0.6,
+          "did": "Validated the SSRF guard against the Manus vision-pipeline upload contract — restricting upload_url to manus.im/amazonaws.com HTTPS hosts so a compromised AI vendor response cannot pivot to internal hosts."
+        },
+        {
+          "discipline": "Product",
+          "hours": 0.5,
+          "did": "Logged the SAST remediation and the follow-up suppression session in AGENTS.md and AUTO_IMPROVEMENT_LOG.md (~50 lines of changelog prose)."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          444,
+          593
+        ],
+        "Israel": [
+          268,
+          453
+        ],
+        "Dubai": [
+          201,
+          299
+        ],
+        "Ukraine": [
+          115,
+          193
+        ],
+        "Pakistan": [
+          44,
+          80
+        ]
+      },
+      "note": "Full diffs read (not sampled; ~140 LOC code + ~50 LOC docs across 4 commits). Reuse skews boilerplate/adapted: path-traversal resolve+startsWith and SSRF allowlist are textbook OWASP recipes (adapted), test-fixture extraction and ignore-comments are mechanical (boilerplate); only the FP-vs-real triage and the domain-specific allowlist are novel. One session, ramp-up + interruptions counted once; late-day (~17:00) penalty negligible."
+    },
+    {
+      "day": "2026-05-15",
+      "teamEquivHours": 16,
+      "personDays": 4.6,
+      "reuseSplit": {
+        "boilerplatePct": 45,
+        "adaptedPct": 40,
+        "novelPct": 15
+      },
+      "disciplineWork": [
+        {
+          "discipline": "QA",
+          "hours": 8,
+          "did": "Authored a 28-flow Maestro E2E suite covering every user journey (auth, inspection, payments, reports, RTL, offline), then rewrote them with real TestFlight credentials and fixed all flows to pass Maestro 2.4 syntax."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 3.5,
+          "did": "Aligned the whole dependency tree to Expo SDK 55 — bumped RN to 0.83.6, pinned reanimated/worklets to bundled versions, and applied a postcss ^8.5.14 override to patch the metro-config XSS CVE."
+        },
+        {
+          "discipline": "Security",
+          "hours": 2,
+          "did": "Eliminated the remaining Snyk SAST findings — renamed credential-looking constants, added a password_label i18n key, and committed a .snyk policy documenting reviewed false positives."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 1.5,
+          "did": "Added a crypto polyfill and an AbortSignal.timeout shim to the RN runtime so api/appConfig/mediaUpload services work on device."
+        },
+        {
+          "discipline": "Product/docs",
+          "hours": 1,
+          "did": "Logged the session's work in AGENTS.md and AUTO_IMPROVEMENT_LOG.md (sessions 12e and 13)."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          92.5,
+          176
+        ],
+        "Ukraine": [
+          245,
+          430.5
+        ],
+        "Dubai": [
+          440,
+          702
+        ],
+        "Israel": [
+          584,
+          932.5
+        ],
+        "US": [
+          998.5,
+          1420
+        ]
+      },
+      "note": "Read full diffs of SAST + crypto-polyfill commits and sampled one Maestro flow + dep stats; rest by --stat. Heavy reuse: Maestro YAML is one pattern repeated 28×, deps are lockfile churn (~0) + guide-following Expo upgrade, SAST is renames — hence ~45% boilerplate / 40% adapted; novelty (15%) is mapping real screen text/flows + version-conflict and false-positive judgment."
+    },
+    {
+      "day": "2026-05-16",
+      "teamEquivHours": 42,
+      "personDays": 12,
+      "reuseSplit": {
+        "boilerplatePct": 30,
+        "adaptedPct": 42,
+        "novelPct": 28
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 10,
+          "did": "Fixed the silent ESM-require bug that left rate-limiting disabled in production, added per-email brute-force lockout, scoped admin session-touch to its owner, gated Apple Sandbox receipts for TestFlight via env flag, and tightened config validation + data retention."
+        },
+        {
+          "discipline": "Security",
+          "hours": 6,
+          "did": "Closed enumeration/abuse holes: per-email login lockout, public landlord-score rate bucket, admin idle-timeout bypass, 24-char min admin token, and validated alert-email config."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 6,
+          "did": "Made CONCURRENTLY migrations run outside transactions one-statement-per-query, fixed migration 0048 UUID type, added magic-link partial indexes, and wrote the 5-check env quality gate."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 5,
+          "did": "Landed batch-2 RN security/UX fixes across camera/chat/history/settings/register screens plus api/notifications/session stores and Android runtime permissions (FINE/COARSE_LOCATION, POST_NOTIFICATIONS, READ_MEDIA_IMAGES)."
+        },
+        {
+          "discipline": "QA",
+          "hours": 8,
+          "did": "Authored the brutal end-to-end QA architect audit (verdict + 4 critical/10 major), the build-12 known-issues list, and the 22-step E2E prod sweep + journey shell scripts."
+        },
+        {
+          "discipline": "Product/docs",
+          "hours": 7,
+          "did": "Wrote the production-state single-source-of-truth snapshot, rewrote the docs README, and organized the 200+ finding backend/frontend/infra audit docs."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          3133,
+          4265
+        ],
+        "Israel": [
+          1927,
+          2955
+        ],
+        "Dubai": [
+          1395,
+          2109
+        ],
+        "Ukraine": [
+          788,
+          1295
+        ],
+        "Pakistan": [
+          290,
+          537
+        ]
+      },
+      "note": "Audit-and-fix night: ~30% boilerplate (rate buckets, migration runners, test/journey scripts), ~42% adapted (security fixes mirroring the existing admin_login_fails pattern, RN screen tweaks), ~28% novel (ESM-disable diagnosis + the actual 200+ audit findings); ~25k words of docs priced at writing/analysis velocity, not lines/day. Read full diffs of the 2 fix-batches + small backend fixes; sampled the 4 doc commits by word count."
+    },
+    {
+      "day": "2026-05-20",
+      "teamEquivHours": 9.2,
+      "personDays": 2.6,
+      "reuseSplit": {
+        "boilerplatePct": 60,
+        "adaptedPct": 25,
+        "novelPct": 15
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Mobile",
+          "hours": 3,
+          "did": "Ran the scripted Damagix to MyKeyz rename across 260 RN files with case-preservation + preserve-list, fixed IAP SKU/storage-key/config constants, swapped wordmark assets, verified the app still builds."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 1.8,
+          "did": "Configured Cloudflare zone for mykeyz.net/.io via API: api/www CNAMEs to Railway (proxied), enabled Email Routing with auto MX/SPF/DKIM, re-triggered destination verification."
+        },
+        {
+          "discipline": "Product/docs",
+          "hours": 2.4,
+          "did": "Authored the 12-phase rebrand plan in TODO.md and locked the load-bearing decisions: canonical domain, com.mykeyz.app bundle + 3 IAP SKUs, JWT/storage namespaces, DB-wipe, KBR parent entity stays."
+        },
+        {
+          "discipline": "QA",
+          "hours": 1.2,
+          "did": "Ran the post-rename audit: 0 residual damagix occurrences, 53 KBR refs preserved, 52 bundle-ID refs intact, no hardcoded Railway URLs, build smoke-checked."
+        },
+        {
+          "discipline": "Design",
+          "hours": 0.8,
+          "did": "Swapped in the new MyKeyz brand binaries: app icon, adaptive-icon, favicon and wordmark (white + color) replacing the old Damagix assets."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          683,
+          950
+        ],
+        "Israel": [
+          424,
+          629
+        ],
+        "Dubai": [
+          300,
+          468
+        ],
+        "Ukraine": [
+          169,
+          281
+        ],
+        "Pakistan": [
+          60,
+          115
+        ]
+      },
+      "note": "Mostly a single scripted perl find-replace rebrand (999/1000 lines across 260 files is the same lines edited, not new logic) → 60% boilerplate; novel slice is only the preserve-list + canonical-domain decisions and the planning doc. Read full diffs of the 3 commits + sampled config.ts/iap.ts content; rest by --stat. Did not seat Frontend/Backend/AI-ML despite file-path discipline tags — the rename was one mechanical pass, not discipline-specific authorship; Marketing excluded per rules. Evening commits (18:30–19:30) carry a mild late-day factor; one session, ramp-up paid once."
+    },
+    {
+      "day": "2026-05-21",
+      "teamEquivHours": 12.8,
+      "personDays": 3.66,
+      "reuseSplit": {
+        "boilerplatePct": 30,
+        "adaptedPct": 50,
+        "novelPct": 20
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Frontend",
+          "hours": 6.6,
+          "did": "Rebuilt the MyKeyz marketing landing page by hand in HTML/CSS — custom grid sections, responsive clamp() typography, inline SVG icons, hero phone+PDF composition, pricing tiers, FAQ, plus nav scroll-state logic in site.js."
+        },
+        {
+          "discipline": "Design",
+          "hours": 3.3,
+          "did": "Set the redesign's visual direction: cream/paper ledger aesthetic, evidence-map card system, hero layout and section rhythm (image assets themselves were AI-generated, scored near-zero)."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 1.8,
+          "did": "Added the iOS GitHub Actions build+auto-submit workflow, switched it to --local on the macOS runner to dodge EAS cloud billing, and repointed extra.eas.projectId to the new mykeyz Expo project."
+        },
+        {
+          "discipline": "Product/docs",
+          "hours": 1.1,
+          "did": "Wrote MYKEYZ-MARKETING-DESIGN.md (612 words) documenting the landing-page sections, messaging and pricing, retiring the old HANDOFF-FOR-MANUS doc."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          69,
+          136
+        ],
+        "Ukraine": [
+          204,
+          368
+        ],
+        "Dubai": [
+          363,
+          629
+        ],
+        "Israel": [
+          456,
+          619
+        ],
+        "US": [
+          828,
+          1218
+        ]
+      },
+      "note": "Read full diffs of all 4 commits (CI files in full, landing page sampled via grep of CSS/markup + word-counted the .md). Landing page is bespoke but pattern-heavy (nav/hero/cards/pricing/FAQ) so heavy adapted-reuse; CI YAML is standard EAS recipe; binary image assets AI-generated → ~0 build cost. Ramp-up paid once; late-night 1.3x on the 01:30-02:35 CI work; no QA/reviewer seated (no testable business logic, not complex/money/security)."
+    },
+    {
+      "day": "2026-05-25",
+      "teamEquivHours": 15.5,
+      "personDays": 4.43,
+      "reuseSplit": {
+        "boilerplatePct": 15,
+        "adaptedPct": 45,
+        "novelPct": 40
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 8.5,
+          "did": "Reworked refresh-token storage to persist sha256(secret) instead of the raw jti across both user and admin auth services (login/refresh/logout/touch), with a UUID-guarded legacy fallback, migration 0057, and preserved TOCTOU-safe atomic claim + family-revocation; also scoped /property-timeline to the caller's own inspections."
+        },
+        {
+          "discipline": "Security",
+          "hours": 2,
+          "did": "Threat-modeled the two QA-audit findings — leaked refresh_tokens/admin_sessions rows enabling full session resumption (CR-4) and the severity-8 cross-tenant PII leak in /property-timeline (MA-2) — and reviewed the hardening for replay/rotation correctness."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 3,
+          "did": "Authored a nightly GitHub Actions workflow that pg_dumps Railway Postgres (compressed), validates each archive with pg_restore -l, uploads to the private R2 backups bucket and prunes >30 days; then fixed the runner to use the explicit pg17 binary path."
+        },
+        {
+          "discipline": "QA",
+          "hours": 2,
+          "did": "Validated the auth/security changes against the existing suites — 26/26 auth+admin route tests and 14/14 landlordScore route tests — confirming on-the-wire UUID shape and idle-timeout behavior held."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          1204,
+          1600
+        ],
+        "Israel": [
+          747,
+          1103
+        ],
+        "Dubai": [
+          535,
+          787
+        ],
+        "Ukraine": [
+          311,
+          493
+        ],
+        "Pakistan": [
+          115,
+          206
+        ]
+      },
+      "note": "Security/CI-hardening day (CR-4, MA-2, CR-1): sha256-store and GH-Actions-backup are known patterns (adapted ~45%) but the dual-path backwards-compat + TOCTOU/family-revocation integration and leak threat-modeling are novel (~40%); migration/yaml boilerplate ~15%. Marketing rebrand commit (symmetric find-replace, 9 static files) excluded per build-cost-only rule. Sampled: full diff read for the auth commit, stat-level for the security/CI/rebrand commits."
+    },
+    {
+      "day": "2026-05-26",
+      "teamEquivHours": 27.5,
+      "personDays": 7.9,
+      "reuseSplit": {
+        "boilerplatePct": 45,
+        "adaptedPct": 35,
+        "novelPct": 20
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Frontend",
+          "hours": 15,
+          "did": "Built the build-site.js static-site generator + 1350-line site.css brand design system + site.js (JS-independent reveal fallback, OS-aware download button) and wired ~20 marketing pages."
+        },
+        {
+          "discipline": "Design",
+          "hours": 5,
+          "did": "Defined the navy+gold design system, curated 40 AI-generated illustrations, and explored/swapped headline+body fonts (Inter -> Chillax/Satoshi -> Satoshi)."
+        },
+        {
+          "discipline": "Product/docs",
+          "hours": 4.5,
+          "did": "Rewrote every page in the calm-premium voice, added freemium pricing copy, and aligned site-wide meta/SEO text."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 1.5,
+          "did": "Added the Cloudflare Pages GitHub Actions deploy workflow and tore down the old Railway/Docker/nginx infra."
+        },
+        {
+          "discipline": "QA",
+          "hours": 1.5,
+          "did": "Verified OS-detection download routing, the no-JS reveal fallback, and cross-page nav/footer links."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          144,
+          286
+        ],
+        "Ukraine": [
+          426,
+          773
+        ],
+        "Dubai": [
+          781,
+          1350
+        ],
+        "Israel": [
+          970,
+          1310
+        ],
+        "US": [
+          1768,
+          2608
+        ]
+      },
+      "note": "Heavy reuse: HTML pages are templated output of build-site.js, 40 webp illustrations are AI-generated (near-zero authoring), JSON manifests generated, CSS/deploy mostly standard patterns; novel slice = brand design system, generator logic, original positioning copy. Sampled: read big-commit stat + build-site.js/site.css heads, stat-only for the 10 smaller commits."
+    },
+    {
+      "day": "2026-05-27",
+      "teamEquivHours": 92,
+      "personDays": 26.3,
+      "reuseSplit": {
+        "boilerplatePct": 25,
+        "adaptedPct": 50,
+        "novelPct": 25
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 26,
+          "did": "Built compare-photos API + Manus two-file proxy, migrated pricing to feature-tier across appConfig/iap (+migration SQL), added Ed25519 report-signing routes, and hardened error masking + stalled-job reaper."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 24,
+          "did": "Rewrote comparison.tsx with a baseline-gallery picker + per-pair confirm/edit cards, built the counterparty post-sign verify/dispute screen, the inspection element picker + defect fields, the new pricing/payment screens, and StatusBar/iPad readiness fixes."
+        },
+        {
+          "discipline": "Product",
+          "hours": 18,
+          "did": "Authored the verified feature-spec system + master TODO, storage/role-flow/web-portal/accelerator specs, the RESUME crash-point doc, and purged 95 superseded design/spec/audit docs (8209-line deletion)."
+        },
+        {
+          "discipline": "Security",
+          "hours": 9,
+          "did": "Implemented Ed25519 issuer signatures on generated reports and the 4xx error-disclosure policy plus the 7d->24h signed-URL TTL tightening."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 7,
+          "did": "Wired AI inspection element-capture end-to-end and the move-in <-> move-out photo-comparison agent integration through the job handler."
+        },
+        {
+          "discipline": "QA",
+          "hours": 4,
+          "did": "Corrected the wrong sha256 expected-hash test and reconciled the iap/appConfig/brokers test suites for the new feature-tier pricing."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 3,
+          "did": "Fixed the EAS production ascAppId, excluded the stale mykeyz-build/ dir from tsc, and tuned the cleanup stalled-job sweep."
+        },
+        {
+          "discipline": "Frontend",
+          "hours": 1,
+          "did": "Surfaced the new pricing tier on the broker-portal reports web page."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          7637,
+          10215
+        ],
+        "Israel": [
+          4794,
+          7131
+        ],
+        "Dubai": [
+          3391,
+          5054
+        ],
+        "Ukraine": [
+          1933,
+          3099
+        ],
+        "Pakistan": [
+          701,
+          1291
+        ]
+      },
+      "note": "Sampled full diffs of the 6 substantive code commits (comparison, counterparty, pricing, Ed25519, backend-harden) + stat for the rest; marketing design-pass 134b9a (vendored GSAP/Atropos/SplitType + AI-generated PNGs/brandbook) excluded per build-only rule and scored ~0; blended reuse ~25% novel / 50% adapted / 25% boilerplate, 8209-line doc purge priced as deletion (~20%); ramp-up paid once for the session."
+    },
+    {
+      "day": "2026-05-28",
+      "teamEquivHours": 30,
+      "personDays": 8.57,
+      "reuseSplit": {
+        "boilerplatePct": 25,
+        "adaptedPct": 50,
+        "novelPct": 25
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Mobile",
+          "hours": 14.5,
+          "did": "Rebuilt the inspection journey as inspection-first (new record-ready + property-details screens, rooms refactor), shipped the 3-slide first-launch intro carousel, the background analyzing->verified chat UX, pinch-to-zoom/retake camera, skip-rooms, and plain-language 'what does this mean' explainer sheets"
+        },
+        {
+          "discipline": "Backend",
+          "hours": 8,
+          "did": "Added PATCH /inspections/:id, room-skipped (0011) and ejari/gps (0012) migrations, the PAYWALL_ENABLED flag gating cloud upload/AI/report, report-ready push + 'Get MyKeyz' email CTA, and report-template legends"
+        },
+        {
+          "discipline": "Design",
+          "hours": 2.5,
+          "did": "Laid out the 3-slide intro carousel, wired the on-brand static illustrations, and added report confidence (High/Med/Low) tooltips and the 'How to read this report' legend"
+        },
+        {
+          "discipline": "Security",
+          "hours": 1.5,
+          "did": "Fixed Apple Sign-In nonce hashing and configured Google Sign-In on iOS (redirect URL scheme plugin + enable flag)"
+        },
+        {
+          "discipline": "QA",
+          "hours": 2,
+          "did": "Updated the media-upload 402 test to assert the gate only under paywall-enabled, and validated the new flow/payment/auth gating behavior"
+        },
+        {
+          "discipline": "Product",
+          "hours": 1.5,
+          "did": "Purged ~3,060 lines of implemented status/plan/codebase-intel docs and replaced them with a lean live TODO, plus the brand-tone copy sweep dropping legal/crypto framing"
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          2450,
+          3223
+        ],
+        "Israel": [
+          1521,
+          2233
+        ],
+        "Dubai": [
+          1067,
+          1590
+        ],
+        "Ukraine": [
+          612.5,
+          983.5
+        ],
+        "Pakistan": [
+          223,
+          412.5
+        ]
+      },
+      "note": "Reuse-heavy day: ~25% boilerplate (migrations/config/routing/test/doc-deletion), ~50% adapted RN/Fastify patterns (screens, bottom-sheets, share API, gestures, PATCH), ~25% novel (inspection-first reorder, background-analysis state machine, paywall flag, ejari/gps). Read full diffs of the 6 largest feature commits; stat-only for the rest; the two big doc-purge commits are pure deletions priced ~20%."
+    },
+    {
+      "day": "2026-05-29",
+      "teamEquivHours": 14,
+      "personDays": 4,
+      "reuseSplit": {
+        "boilerplatePct": 20,
+        "adaptedPct": 30,
+        "novelPct": 50
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 3.5,
+          "did": "Built the server-only /v1/geo/static-map Google proxy route and fixed the Postgres-numeric-string GPS coercion that was 500-ing every report containing a defect photo."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 2.6,
+          "did": "Unblocked the whole Manus analysis pipeline: added description_ar to the structured-output required[] and made the poller tolerate the transient post-create 404 (eventual consistency)."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 2,
+          "did": "Added the static-map Image preview (with onError self-hide) to property-details and reordered the multipart upload so form fields precede the file part."
+        },
+        {
+          "discipline": "QA",
+          "hours": 1,
+          "did": "Ran the live signup→create→upload→report E2E smoke test that surfaced the fetch duplex and multipart field-ordering failures."
+        },
+        {
+          "discipline": "Product",
+          "hours": 4.5,
+          "did": "Wrote the ~1,900-word report-builds-in-background design walkthrough spec."
+        },
+        {
+          "discipline": "Design",
+          "hours": 0.5,
+          "did": "Styled the map-preview card and shaped the report-design layout described in the spec."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          1148,
+          1587
+        ],
+        "Israel": [
+          739,
+          1075
+        ],
+        "Dubai": [
+          516,
+          788
+        ],
+        "Ukraine": [
+          292,
+          472
+        ],
+        "Pakistan": [
+          104,
+          193
+        ]
+      },
+      "note": "Read all 6 diffs in full (not sampled); day is mostly novel bug-diagnosis on the AI/upload/report pipeline plus a 1.9k-word spec, so ~50% novel / 30% adapted / 20% boilerplate (map proxy + config scaffolding). Late-night/early-AM timestamps → 1.3× fatigue applied once at session level."
+    },
+    {
+      "day": "2026-05-30",
+      "teamEquivHours": 4.3,
+      "personDays": 1.23,
+      "reuseSplit": {
+        "boilerplatePct": 15,
+        "adaptedPct": 25,
+        "novelPct": 60
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Product",
+          "hours": 2.6,
+          "did": "Authored the report-builds-in-background UX spec — vision/non-goals, room-nudge + AI-override flows, share-with-landlord hero flow with delivery/read receipts, and pivoted the hero CTA from landlord co-sign to share-with-receipts; wrote E2E test scenarios and the future-spec roadmap."
+        },
+        {
+          "discipline": "Design",
+          "hours": 1.7,
+          "did": "Wrote the §11 Visual & Interaction Design Notes from the design war-room — 8-col grid + asymmetric record-ready zones, typography/color system, defect-counter restraint rules, share-first screen layout, Hebrew calm-trust microcopy table, and anti-dark-pattern ethical guardrails."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          289,
+          431
+        ],
+        "Israel": [
+          190,
+          289
+        ],
+        "Dubai": [
+          134,
+          220
+        ],
+        "Ukraine": [
+          72,
+          126
+        ],
+        "Pakistan": [
+          24,
+          48
+        ]
+      },
+      "note": "Docs-only session (one design-spec .md, 3 commits, ~1800 net words of spec-grade prose); priced at writing velocity, not lines/day. Read all 3 full diffs (no sampling). ~60% novel product/UX/visual decisions, ~25% adapted brand/structure restatement, ~15% boilerplate file-lists/test-scaffolding; late-night 1.3x applied once, ramp-up once; solo author — no QA/code/Brooks overhead."
+    },
+    {
+      "day": "2026-06-07",
+      "teamEquivHours": 24,
+      "personDays": 6.86,
+      "reuseSplit": {
+        "boilerplatePct": 20,
+        "adaptedPct": 50,
+        "novelPct": 30
+      },
+      "disciplineWork": [
+        {
+          "discipline": "AI/ML",
+          "hours": 9,
+          "did": "Replaced the Manus proxy with a direct Claude-vision engine (claudeVision.ts: structured-output JSON schema + server-side Zod re-validation + prompt-injection sanitization + RERA/fair-wear classification), rebuilt the 12-category defect taxonomy from the knowledge base, added the formal description_full report paragraph, the 'every photographed photo is a defect' walkthrough contract, and bounded-concurrency (4) photo comparison."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 6,
+          "did": "Built the bilingual PDF report rendering engine in reportTemplate.ts (premium v2 layout, Arabic-primary lang=ar/dir=rtl, defects grouped by element within each room, Arabic room-name banners) and rewired config/routes/jobHandlers after deleting the 567-line Manus service."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 4,
+          "did": "Added continuous-camera walkthrough mode with a global 'N analyzing' indicator backed by a new non-persisted inflight registry store, a defect-card Remove escape hatch, the approval gate so only confirmed defects enter the report, and fixed the note input hiding behind the iOS keyboard."
+        },
+        {
+          "discipline": "QA",
+          "hours": 2.5,
+          "did": "Wrote scripts/quality-check.sh, a live-prod AI content-quality suite that asserts on the structured result (description_full length/sentence count, Arabic-script presence, severity, rera_article, negative controls), and repaired journey-full.sh staleness breaks to 22/22 green."
+        },
+        {
+          "discipline": "Design",
+          "hours": 1.5,
+          "did": "Directed the premium bilingual report aesthetic (typographic/RTL layout system in the v2 template) and swapped in the house-key app icon across all asset slots."
+        },
+        {
+          "discipline": "Product",
+          "hours": 1,
+          "did": "Set the Arabic-primary 'AR is the primary voice' report decision and updated the RESUME doc to reflect the Claude vision engine, walkthrough UX, and current build state."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          194,
+          353
+        ],
+        "Ukraine": [
+          538,
+          865
+        ],
+        "Dubai": [
+          908,
+          1388
+        ],
+        "Israel": [
+          1300,
+          1883
+        ],
+        "US": [
+          2040,
+          2793
+        ]
+      },
+      "note": "Reuse ~20% boilerplate (package-lock/config/icon swap) / ~50% adapted (PDF HTML-CSS templating, Anthropic SDK + Zod patterns, RN keyboard/state idioms, bash test harness) / ~30% novel (vision contract + RERA/sanitization logic, taxonomy distillation, non-persisted inflight-poll store, concurrency fix); the 567-line Manus deletion priced at ~20%. Read full diffs for the load-bearing commits (claudeVision.ts, reportTemplate, inflight store, quality-check.sh, taxonomy) and used --stat for the rest."
+    },
+    {
+      "day": "2026-06-08",
+      "teamEquivHours": 141,
+      "personDays": 40.3,
+      "reuseSplit": {
+        "boilerplatePct": 45,
+        "adaptedPct": 35,
+        "novelPct": 20
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 56,
+          "did": "Shipped the full RERA tenant-protection backend suite (90-day lease reminder, deposit-protection panel, notice-to-landlord PDF, rent-cheque + rent-increase-legality calculators, responsibility tags), the staged Deposit Recovery payment subsystem (Claim Pack/Lawyer Filing ladder, Stripe web checkout, dependency-free ZIP writer), WalletConnect-style QR web login, and Part B property-history migrations 0065/0070-0074."
+        },
+        {
+          "discipline": "Product",
+          "hours": 33,
+          "did": "Authored the 260-defect / 32-category DIY repair-guide knowledge base content plus the locked architecture-decision doc, the RERA article-to-feature map, and the running RESUME state docs."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 16,
+          "did": "Built six build-#8 React Native screens (Protection Kit, Property History, landlord response thread, data-sharing consent toggle, App Store review prompt, recover deep-link) and wired them to the new endpoints via api.ts."
+        },
+        {
+          "discipline": "Frontend",
+          "hours": 9,
+          "did": "Built the public mykeyz.net verify portal and the recover portal (Google/Booking-style search, premium green verified card, full-bleed responsive layout, custom SVG icons) and polished the marketing mobile hero."
+        },
+        {
+          "discipline": "QA",
+          "hours": 9,
+          "did": "Authored the test suites across the new endpoints (verify-portal privacy assertions, deposit-recovery pricing/ownership, ZIP round-trip, repair-guides loader), keeping the suite green at ~380-400 passing."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 7,
+          "did": "Added move-out repair-cost estimation and tenant-facing repair tips, and grounded the fair-wear/RERA defect classification in actual Dubai tenancy law."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 5,
+          "did": "Added Docker HEALTHCHECK and Redis-backed rate limiting with Postgres fallback, fixed Railway IPv6-only redis (family:0), and repaired a timestamptz migration that crashed prod boot."
+        },
+        {
+          "discipline": "Security",
+          "hours": 3,
+          "did": "Overrode transitive uuid@7 (CWE-1285), validated photo URLs before <Image> render, and sanitised verify-portal HTML with DOMPurify as XSS defence-in-depth."
+        },
+        {
+          "discipline": "Design",
+          "hours": 3,
+          "did": "Visual design for the verify/recover portals — premium green verified card, brand-asset hero, and custom SVG iconography in the navy+white system."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          11154,
+          15190
+        ],
+        "Israel": [
+          7040,
+          10079
+        ],
+        "Dubai": [
+          4987,
+          7537
+        ],
+        "Ukraine": [
+          2810,
+          4503
+        ],
+        "Pakistan": [
+          1002,
+          1851
+        ]
+      },
+      "note": "Monster 53-commit single-day in the app repo; sampled representative diffs (repair-guide KB, notice-PDF, deposit-recovery assembly, verify portal, Protection Kit screen) and used --stat for the rest. Line counts are distorted by a 42k-line repair-guide KB (priced as templated/AI-curated content at writing velocity, heavy reuse, not code) and an 8.7k-line broker-portal deletion (scored at ~20%); backend is dominated by a repeating migration+service+route+test scaffold (adapted pattern) with genuine novel slices in RERA legal logic, deposit-recovery assembly, the ZIP writer, Stripe, and security flows."
+    },
+    {
+      "day": "2026-06-09",
+      "teamEquivHours": 46,
+      "personDays": 13.1,
+      "reuseSplit": {
+        "boilerplatePct": 20,
+        "adaptedPct": 45,
+        "novelPct": 35
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Mobile",
+          "hours": 19,
+          "did": "Built bottom-tab nav shell + first-class Reports tab (pull-to-refresh, swipe pin/delete via gesture-handler, persisted pin store), wired async report polling, and fixed camera Done/payment back/capture/voice flows."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 10,
+          "did": "Moved report generation to a background job with idempotency + a status-polling endpoint (the core dead-spinner fix) and added a DELETE-inspection route with 409-on-generated guard."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 1.8,
+          "did": "Reworked the claudeVision prompt/schema to emit labour_hours + materials instead of a fabricated total, enabling server-side grounded repair-cost arithmetic."
+        },
+        {
+          "discipline": "QA",
+          "hours": 3.6,
+          "did": "Updated and added backend route tests for the new enqueue/idempotency and DELETE behavior (409+ backend tests green)."
+        },
+        {
+          "discipline": "Design",
+          "hours": 2.2,
+          "did": "Defined the tab-shell layout, swipe affordances, pin/trash icons, and photo/keyboard proportion fixes."
+        },
+        {
+          "discipline": "Product",
+          "hours": 9,
+          "did": "Authored the full app-overhaul plan, 18-bug inventory, UX-completeness map, and locked the free/paid tier model as planning docs (~5,400 words)."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          3698,
+          4966
+        ],
+        "Israel": [
+          2329,
+          3381
+        ],
+        "Dubai": [
+          1625,
+          2450
+        ],
+        "Ukraine": [
+          919,
+          1480
+        ],
+        "Pakistan": [
+          329,
+          616
+        ]
+      },
+      "note": "Mostly adapted RN/backend patterns (gesture-handler swipe, RefreshControl, expo-router tabs, zustand persist, existing job-queue infra) with novel domain logic (async idempotency design, grounded cost arithmetic, free/paid gating) and original product-planning prose; ~20% boilerplate / 45% adapted / 35% novel. Sampled the core async-report, Reports-tab, and cost diffs in full; --stat for the smaller fixes."
+    },
+    {
+      "costByMarket": {
+        "Pakistan": [
+          666,
+          1237
+        ],
+        "Ukraine": [
+          1869,
+          3025
+        ],
+        "Dubai": [
+          3262,
+          4990
+        ],
+        "Israel": [
+          4616,
+          6612
+        ],
+        "US": [
+          7376,
+          10041
+        ]
+      },
+      "day": "2026-06-10",
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 26.5,
+          "did": "Shipped the v2.0 backend wave: vendor marketplace engine + consent gate + agent RevShare, document-vault routes, apartment-timeline & lease-scan endpoints, Mikey checklist/inbox service, agent-portal magic-link auth, reports background generation, plus migrations 0077/0083/0084; also decoupled/neutralized the octypo content engine extracted from Travi."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 21.8,
+          "did": "Built the v2.0 RN screens: document-vault, Mikey checklist + Meet-Mikey intro, agent-portal UI, vendor-marketplace quote/offers flow, full-screen pinch-zoom photo viewer, per-inspection role picker + dashboard badges, 4 missing phase-4 states, and free-vs-verified report upsell."
+        },
+        {
+          "discipline": "Frontend",
+          "hours": 6.2,
+          "did": "Stood up the Astro marketing site/ and app marketing-v2 workspaces (BaseLayout + Lenis/ScrollTrigger bridge, tokens) and ported the approved hero + Vault/Problem/Records sections into Astro+React components."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 9.4,
+          "did": "Wired lease-scan AI auto-fill of tenancy dates and ported/neutralized the octypo AI content pipeline (multi-model provider, gatekeeper, dedup/LSH, quality-108) into a standalone domain-agnostic engine."
+        },
+        {
+          "discipline": "Product",
+          "hours": 12.5,
+          "did": "Authored the Version 2.0 product vision & screen spec, process-gap map + execution plan, Marketing V2 'Proof Engine' redesign plan, review-pass security/pipeline/UX plans, and refreshed README/DEPLOY/ARCHITECTURE."
+        },
+        {
+          "discipline": "Design",
+          "hours": 7.8,
+          "did": "Translated approved marketing directions (hero, Vault, Camera-Roll Autopsy, The Strata) into on-brand HTML/Astro sections with design tokens and the rescued gpt-image-1 icon set."
+        },
+        {
+          "discipline": "QA",
+          "hours": 6.2,
+          "did": "Added/kept the report-preview QA harness and IAP screenshot tool and extended backend test coverage (verified 412–416 tests green across the feature wave)."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 2.3,
+          "did": "Set up octypo standalone infra: docker-compose, drizzle config, .env.example and the engine package/registry wiring for independent deploy."
+        }
+      ],
+      "note": "Sampled the 3 largest commits (octypo extraction, marketing init, marketing-v2) in full-stat plus the document-vault diff body; stat for the rest. ~15.7k lines are auto-gen lockfiles (~0) and octypo's ~17k src is extracted/neutralized from Travi (adapted, not invented), so effort split ~25% boilerplate / 50% adapted / 25% novel rather than raw-line scale.",
+      "personDays": 26.6,
+      "reuseSplit": {
+        "boilerplatePct": 25,
+        "adaptedPct": 50,
+        "novelPct": 25
+      },
+      "teamEquivHours": 93
+    },
+    {
+      "day": "2026-06-11",
+      "teamEquivHours": 167,
+      "personDays": 47.7,
+      "reuseSplit": {
+        "boilerplatePct": 50,
+        "adaptedPct": 35,
+        "novelPct": 15
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 40,
+          "did": "Built octypo admin API + HMAC token auth, document-library content mining, rewrote the report job-queue/bounded-cache for the near-instant capture loop, added Stripe idempotency + free-tier 30-photo quota, and bilingual legal-doc backend."
+        },
+        {
+          "discipline": "Frontend",
+          "hours": 40,
+          "did": "Built the octypo admin React SPA (dashboard, feeds, articles CRUD, BlockNote editor), the full marketing Astro site (audience/use-case/legal/pricing pages) + SSR /guides, and wired i18n t() across dozens of app screens."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 16,
+          "did": "Shipped build #8 React Native screens — notice-to-landlord, repair-guide, payment-reminders — plus their services and inspection store changes."
+        },
+        {
+          "discipline": "Security",
+          "hours": 14,
+          "did": "Made admin TOTP mandatory (enrollment-only token for password-only login), encrypted TOTP secrets at rest, closed the refresh-token bypass, and hardened JWT/jti and rate limits."
+        },
+        {
+          "discipline": "QA",
+          "hours": 16,
+          "did": "Authored test suites for jobQueue, adminAuth, rateLimit, boundedCache, pendingCompression and documents/agents/admin routes, and ran 31/31 octypo E2E against dockerized Postgres."
+        },
+        {
+          "discipline": "Design",
+          "hours": 7,
+          "did": "Ported the approved ice-palette / brand-voice marketing pages and built the octypo admin UI components and layout (toasts, badges, skeletons, modals)."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 6,
+          "did": "Wired the octypo gpt-image-1 hero/body image pipeline to R2, the content-mining gatekeeper, and TOPICS_JSON-driven config."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 2,
+          "did": "Added the octypo production start script and deploy/env config for Railway."
+        },
+        {
+          "discipline": "Product",
+          "hours": 26,
+          "did": "Produced the 33-language locale set (664 keys each, natively written and verified) + first-launch language flow, assembled the verbatim locked marketing copy, and the bilingual legal-doc content."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          1103,
+          2068
+        ],
+        "Ukraine": [
+          3081,
+          5162
+        ],
+        "Dubai": [
+          5519,
+          8637
+        ],
+        "Israel": [
+          7403,
+          10725
+        ],
+        "US": [
+          12407,
+          17135
+        ]
+      },
+      "note": "Heavy-reuse day: ~50% boilerplate (locale-JSON values over an existing 664-key set, verbatim Astro pages, React CRUD scaffolding; package-lock.json ~3.5k lines scored ~0), ~35% adapted (i18n wiring, admin CRUD, RN screens/services), ~15% genuinely novel (job-queue concurrency rewrite, TOTP encryption/refresh-bypass fix, Stripe idempotency, blocks HTML round-trip, content mining). Ramp-up paid once for the session. Sampled full diffs of octypo admin platform, marketing full site, mobile build #8, perf capture loop and the TOTP security commit; used --stat for the 31 locale commits."
+    },
+    {
+      "day": "2026-06-12",
+      "teamEquivHours": 90.5,
+      "personDays": 25.9,
+      "reuseSplit": {
+        "boilerplatePct": 20,
+        "adaptedPct": 35,
+        "novelPct": 45
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Security",
+          "hours": 36,
+          "did": "Built the TimeSeal crypto evidence layers: hand-rolled RFC 3161 timestamp DER (no ASN.1 lib), per-inspection Merkle tree with selective-disclosure proofs, hash-chained tamper-evident custody log, and capture-integrity + issuer-signature binding."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 14,
+          "did": "Wired the new evidence services into the reports/inspections/media routes and added migrations 0091-0097 (freshness beacon, TSA receipt, Merkle root, custody log, capture integrity, sealed report versions)."
+        },
+        {
+          "discipline": "QA",
+          "hours": 14,
+          "did": "Authored the heavy test suites covering custody chains, RFC3161 receipts, Merkle proofs, capture integrity and report canonicalization."
+        },
+        {
+          "discipline": "Product",
+          "hours": 18,
+          "did": "Wrote the TimeSeal v2 master architecture spec (adversary model A1-A8, defensibility sections 7-12), the Admin Control Panel pre-launch gate spec, the setup-screen redesign spec, red-team audit findings and resume docs."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 5,
+          "did": "Rebuilt the inspection setup screen as a one-screen record-style flow and gated the deposit letter to move-out only."
+        },
+        {
+          "discipline": "Design",
+          "hours": 3,
+          "did": "Defined the record-style setup layout, value-strip copy rules and the TimeSeal trust-pillar presentation."
+        },
+        {
+          "discipline": "AI-ML",
+          "hours": 0.5,
+          "did": "Shortened the triage TL;DR card to one line for faster, cheaper Haiku output."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          660,
+          1214
+        ],
+        "Ukraine": [
+          1730,
+          2930
+        ],
+        "Dubai": [
+          3100,
+          4630
+        ],
+        "Israel": [
+          4100,
+          7000
+        ],
+        "US": [
+          6800,
+          9180
+        ]
+      },
+      "note": "Sampled the 6 large feat diffs (merkleTree.ts, rfc3161.ts hand-built DER, custodyLog, captureIntegrity) + stat for the rest; crypto core is genuinely novel (45%), with migrations/route-wiring/testmode boilerplate (20%) and templated spec structure + standard test patterns adapted (35); overnight ~03:26 timestamps triggered the late-night fatigue multiplier."
+    },
+    {
+      "day": "2026-06-13",
+      "teamEquivHours": 40,
+      "personDays": 11.4,
+      "reuseSplit": {
+        "boilerplatePct": 35,
+        "adaptedPct": 45,
+        "novelPct": 20
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 17,
+          "did": "Shipped a live single-use capture nonce (atomic race-safe one-shot consume), closed a free-report TOCTOU with a partial unique index + 23505 backstop, enforced per-tier photo caps from a single source of truth, added reliability guards (Anthropic 60s timeouts, idempotent claim-pack delivery, advisory-lock report enqueue, webhook/reminder claim release, crash handlers), and deleted the dead addons/subscriptions monetization path."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 10,
+          "did": "Reimplemented the splash screen to the approved Figma design with RN Animated (3D seal pulse + ambient float), floored navigation at MIN_SPLASH_MS, and fixed paying-moment trust gaps (Send error feedback, native Share for the verify-link copy, geocode-failure address hint)."
+        },
+        {
+          "discipline": "Product",
+          "hours": 6.5,
+          "did": "Authored and updated specs/audit trail: anti-fraud capture-authenticity spec, MK-REDESIGN dark re-skin handoff, Dubai RDC deposit-recovery research draft, full-system improvement audit, SBP launch gate, light-theme lock, and per-commit RESUME bookkeeping."
+        },
+        {
+          "discipline": "QA",
+          "hours": 4,
+          "did": "Wrote unit tests pinning nonce mint/consume one-shot + TTL binding, photo-cap values and no-drift, and the concurrent free-report race, keeping the 640+ backend suite green."
+        },
+        {
+          "discipline": "Design",
+          "hours": 2,
+          "did": "Validated splash visual fidelity to Figma 128:7 and locked the approved light-theme spec (slate kickers, tint background, gold reserved for functional-only)."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 0.5,
+          "did": "Roughly halved the dominant image-token cost of the per-defect enrich call by sending a 1024px image to Sonnet while keeping Haiku triage at 1568px."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          3173,
+          4255
+        ],
+        "Israel": [
+          2013,
+          2880
+        ],
+        "Dubai": [
+          1406,
+          2101
+        ],
+        "Ukraine": [
+          795,
+          1265
+        ],
+        "Pakistan": [
+          286,
+          527
+        ]
+      },
+      "note": "Read full diffs for all 8 code commits; 11 docs/.md commits scored by stat at writing velocity. Split ~35% boilerplate (migrations, test scaffold, 336-line monetization deletion, RESUME bookkeeping), ~45% adapted (nonce/prune/advisory-lock patterns mirrored from existing code, Figma-to-RN splash, i18n wraps), ~20% novel (nonce session binding, TOCTOU unique-index, enqueue serialization, splash animation). One late-night session (02:58–23:19) — ramp-up paid once, 1.3x night penalty applied."
+    },
+    {
+      "day": "2026-06-14",
+      "teamEquivHours": 108,
+      "personDays": 30.9,
+      "reuseSplit": {
+        "boilerplatePct": 30,
+        "adaptedPct": 50,
+        "novelPct": 20
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Security",
+          "hours": 13,
+          "did": "Built the anti-fraud network-integrity brain (VPN/proxy/geo + risk-score ladder) and behavioral/velocity brain (impossible-travel, capture-cadence, pHash duplicate); pure, calibrated, 35 unit tests."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 25,
+          "did": "Shipped the standalone two-sided vendor marketplace module (auth/leads/bids/jobs/ledger/monetization/disputes + migrations 0105-0107), claim-session + 160-bit public_ref, and RDC report-generation endpoints."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 2.5,
+          "did": "Built the in-app claim entry screen with eligibility check and web/QR handoff, and wired the 'Recover your deposit' CTA on report-ready."
+        },
+        {
+          "discipline": "Frontend",
+          "hours": 38,
+          "did": "Ported ~35 screens from Figma to React Native pixel-exact (home, onboarding, auth, rooms, the Reveal, admin panel), plus the dual-theme foundation and prototype-driven nav wiring."
+        },
+        {
+          "discipline": "Design",
+          "hours": 11.5,
+          "did": "Drove the deep-navy vault / ice-light theme migration, the no-black sweep across 20 files, and per-screen visual fidelity against the approved Figma frames."
+        },
+        {
+          "discipline": "QA",
+          "hours": 7,
+          "did": "Validated anti-fraud risk paths, claim eligibility/session, marketplace bid-to-job flows and report rendering (746 tests green end-to-end)."
+        },
+        {
+          "discipline": "Product/docs",
+          "hours": 9,
+          "did": "Authored the anti-fraud F-J spec, vendor-marketplace v2 + 34-screen build guide, RDC legal decision/change logs and the merge/RESUME handoffs."
+        },
+        {
+          "discipline": "AI-ML",
+          "hours": 1,
+          "did": "Extended the vision legal-fault map (RERA Art. 21 permit basis + explicit 3-category fault framework)."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 1,
+          "did": "Added the marketplace standalone deployable server entry-point and migration wiring."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          684,
+          1286
+        ],
+        "Ukraine": [
+          1914,
+          3280
+        ],
+        "Dubai": [
+          3423,
+          5470
+        ],
+        "Israel": [
+          4439,
+          6426
+        ],
+        "US": [
+          7697,
+          10715
+        ]
+      },
+      "note": "Reuse ~30% boilerplate (marketplace CRUD/migrations, config, theme-token sweeps, admin scaffolding), ~50% adapted (Figma-to-RN pixel ports, report gen, claim wiring), ~20% novel (anti-fraud brains, risk ladder, public_ref, monetization/dispute logic, legal content). Sampled full diffs of the security brains + marketplace module; stat-only for the ~35 mechanical Figma-port screens and docs. Heavy redesign churn (same screens rebuilt 3-4x as MK-REDESIGN/MK-2.0) counted once at final delivered artifact, not per rebuild."
+    },
+    {
+      "day": "2026-06-15",
+      "teamEquivHours": 56.5,
+      "personDays": 16.1,
+      "reuseSplit": {
+        "boilerplatePct": 30,
+        "adaptedPct": 45,
+        "novelPct": 25
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Mobile",
+          "hours": 26,
+          "did": "Built ~13 approved Figma RN screens (auth, capture, deposit-recovery, meters, dashboards), shipped the useResponsive/Screen layout system and converted all screens to flex, wired flows + DevNav + demo-seed; absorbed the scaler spike/revert churn."
+        },
+        {
+          "discipline": "Product",
+          "hours": 10,
+          "did": "Authored the governance/spec doc system (CLAUDE.md, 919-line team roster, app/brand/qa/systems/website authority+spec docs), the full coverage audit, and the i18n pending-localization manifest."
+        },
+        {
+          "discipline": "Design",
+          "hours": 7,
+          "did": "Drove the dark-vault theme passes (de-white capture/checkout), approved/exported Figma frames, and produced lottie + logo-exploration brand assets."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 6,
+          "did": "Shipped migration 0102 (12 handover columns) + PATCH /v1/inspections/:id/handover with owner checks, wired the captured data into report generation, and removed the dead Manus provider path."
+        },
+        {
+          "discipline": "QA",
+          "hours": 3,
+          "did": "Added route tests for the handover endpoint (+63 lines, 638-test suite green) and verified the layout scaler + demo-seed render on web."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 2.5,
+          "did": "Added the Cloudflare functions/api Pages function, bumped version to 1.8.0, set OTA testmode, and did .gitignore/asset-archiving repo hygiene."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 2,
+          "did": "Purged the dead Manus vision provider and wired the Claude vision client as the sole inference engine across the app."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          4508,
+          6098
+        ],
+        "Israel": [
+          2823,
+          4138
+        ],
+        "Dubai": [
+          1971,
+          3015
+        ],
+        "Ukraine": [
+          1125,
+          1834
+        ],
+        "Pakistan": [
+          401,
+          757
+        ]
+      },
+      "note": "Sampled key diffs (backend handover, responsive system, screen-build/docs stats), rest by --stat; RN screens priced as Figma-port adapted (~50%), governance docs heavily boilerplate-discounted (templated 7-domain authority scaffolding), ~14.7k deleted lines (dead-code purge) at 20%."
+    },
+    {
+      "day": "2026-06-16",
+      "teamEquivHours": 21.5,
+      "personDays": 6.1,
+      "reuseSplit": {
+        "boilerplatePct": 30,
+        "adaptedPct": 42,
+        "novelPct": 28
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Frontend",
+          "hours": 8,
+          "did": "Built the QR connect screen and the single-file claim workspace SPA (case list, tier/pricing cards, paid-polling, checklist rendering, authed fetch wrapper) plus the landing page and its Door-A pivot restructure."
+        },
+        {
+          "discipline": "Security",
+          "hours": 7,
+          "did": "Designed and implemented the anti-phishing Claim Pair Protocol in the browser: ephemeral X25519 ECDH key exchange, HKDF-SHA256 (salt=pairId) and AES-GCM sealed-token decrypt mirroring the backend seal, with code-entry plus QR device-confirm."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 2,
+          "did": "Wrote a zero-dependency Node http static server with a public-file allowlist, health endpoint and directory-traversal stripping, plus package.json and the claim/pair join+poll endpoint wiring on the client side."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 1,
+          "did": "Deployed the portal to Railway and pointed the QR LINK_ORIGIN to the custom claim.mykeyz.net domain."
+        },
+        {
+          "discipline": "Product",
+          "hours": 2,
+          "did": "Authored the HANDOFF-CLAIM-WORKSPACE doc and TODO plan, and made the Door-A pivot decision (private email-link claim flow) that deleted the public-QR landing path."
+        },
+        {
+          "discipline": "QA",
+          "hours": 1.5,
+          "did": "Exercised the claim flow and crypto pairing end to end: code entry, device-confirm, sealed-token handoff and re-link on auth expiry."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          1564,
+          2145
+        ],
+        "Israel": [
+          870,
+          1378
+        ],
+        "Dubai": [
+          698,
+          1099
+        ],
+        "Ukraine": [
+          389,
+          678
+        ],
+        "Pakistan": [
+          144,
+          269
+        ]
+      },
+      "note": "Whole-session reuse ~30% boilerplate (CSS scaffold, vendored qrcode, package.json, Node-http static-server shape, WebCrypto API calls), ~42% adapted (fetch/render/escape patterns, QR polling), ~28% novel (Claim Pair crypto protocol + case/tier/checklist logic + Door-A pivot); ramp-up paid once, evening 1.3x on the late crypto work; read full server.js + crypto diff (388fa6e5), sampled connect/workspace/index, stat for the rest."
+    },
+    {
+      "day": "2026-06-16",
+      "teamEquivHours": 86.5,
+      "personDays": 24.7,
+      "reuseSplit": {
+        "boilerplatePct": 40,
+        "adaptedPct": 38,
+        "novelPct": 22
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Frontend",
+          "hours": 32,
+          "did": "Neutralized ~55 RN screens to a light/midnight flex skeleton (killed fixed-375 layouts, Colors->WF tokens), and wired ~20 UX fixes: room-mapping cascade tile selector, space-selection persistence, summary finding editor, media-preview picker, station shells to real data, connect-computer + verify-record QR scanners, WhatsApp/Email share chips."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 20,
+          "did": "Built the deposit-claim pair protocol (claimPair.ts + 0112 migration, code+QR confirm), dual-auth requireAuthOrClaim preHandler with 72h single-use grant TTL, Stripe return-to-claim-origin, invite-landlord API, claim-pair rate limiting, OAuth account-linking (Apple-after-Google), and the space-mapping inspection routes/migration."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 8,
+          "did": "Merged the two-pass triage+enrich vision pipeline into a single Sonnet call (-623 lines), rewrote the prompt so the photo is authoritative (junk photo -> isDefect=false, no fabricated SEVERE defect), threaded real confidence through, and enriched the legal-paragraph generation."
+        },
+        {
+          "discipline": "Design",
+          "hours": 6,
+          "did": "Defined the wireframe light/midnight token system and flex-skeleton rules driving the app-wide neutralization, and styled the TimeSeal verify portal (PNG icon set, refined typography, proof-layout polish)."
+        },
+        {
+          "discipline": "QA",
+          "hours": 7,
+          "did": "Rewrote/updated the test suites for the changed behavior — claudeVision single-call contract, jobHandlers (enrich removed), claim-pair flow, and adminPanel metrics — covering auth, payments and the AI pipeline."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 2.5,
+          "did": "Split marketing/marketing-v2/verify-portal out of the app monorepo (-12k lines, 142 files), stood up the verify portal Cloudflare config (_headers/_redirects/wrangler.toml), and added CORS for recover.mykeyz.io."
+        },
+        {
+          "discipline": "Security",
+          "hours": 5,
+          "did": "Hardened auth/privacy paths: surfaced real delete-code email failures instead of fake ok:true, wiped ALL chat rooms on sign-out/account-delete, made the claim grant single-use with eligibility re-check at redeem, and applied group-A/B root-file security fixes."
+        },
+        {
+          "discipline": "Product/docs",
+          "hours": 6,
+          "did": "Authored launch-prep prose — privacy-policy.md + terms-of-service.md (~260 lines), the space-mapping design spec, SCREEN-REVIEW and several session-handoff/E2E trackers — plus completed Arabic localization to 867/867 keys (ar.json)."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          6278,
+          8808
+        ],
+        "Israel": [
+          3645,
+          5110
+        ],
+        "Dubai": [
+          2786,
+          4480
+        ],
+        "Ukraine": [
+          1572,
+          2674
+        ],
+        "Pakistan": [
+          557,
+          1045
+        ]
+      },
+      "note": "Sampled full diffs for the load-bearing commits (claim-pair protocol, AI pipeline merge, space-mapping, verify portal init) and used --stat for the rest. Reuse skews high: ~40% boilerplate (17.6k deletions/repo-split scored near-zero, mechanical 55-screen token migration via spec+sed, 867-key ar.json translation), ~38% adapted (QR scanner from existing pattern, standard auth middleware/REST routes, verify portal HTML from prior marketing), ~22% genuinely novel (claim-pair dual-auth protocol, photo-authoritative vision prompt, space-mapping data model, chat-wipe privacy logic)."
+    },
+    {
+      "day": "2026-06-17",
+      "teamEquivHours": 303,
+      "personDays": 86.6,
+      "reuseSplit": {
+        "boilerplatePct": 35,
+        "adaptedPct": 40,
+        "novelPct": 25
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Product",
+          "hours": 100,
+          "did": "Authored the ~106K-word forensic launch audit (CLAUDE-AUDIT-PARTIAL, CODE-UX-AUDIT, FIX-LOG) plus 17 per-section audit files and closed stale audit rows ahead of submission."
+        },
+        {
+          "discipline": "Frontend",
+          "hours": 80,
+          "did": "Reworked UX across screens: back buttons, camera-permission->Settings deep link, guided room checklist, inline legal form errors, pre-seal summary confirmation, manual finding flow, external PDF open, unread inbox filter, locale lock to English."
+        },
+        {
+          "discipline": "QA",
+          "hours": 46,
+          "did": "Wrote ~80 test files / 5.2K lines covering offline native sync, media-upload policy, summary reconcile, analytics privacy, chat store, OTA updates and request-id utils."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 40,
+          "did": "Built media pipeline (HEIC/EXIF/GPS/hard_block/delete + video frames), R2 URL signing and orphan-leak fixes, per-file offline upload recovery, payment reminders, notices/push priority, and the summaryReconcile service."
+        },
+        {
+          "discipline": "Security",
+          "hours": 12,
+          "did": "Gated web-link start on trusted origin, validated scoped web-session users, blocked fake-user offline session restore, signed R2 URLs with TTL, and recorded capture-cadence risk signals."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 10,
+          "did": "Added image quality gate (dark/blurry rejection), Arabic input validation, comparison-image resize, and preserved issue metadata from the vision analysis."
+        },
+        {
+          "discipline": "Design",
+          "hours": 10,
+          "did": "Laid out the new flow states: guided camera checklist, inline error display, pre-seal summary, and report-ready proof-status surfaces."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 5,
+          "did": "Wired OTA update handling and Bugsnag, and adjusted deploy/config for the launch build."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          1797,
+          3465
+        ],
+        "Ukraine": [
+          5134,
+          8826
+        ],
+        "Dubai": [
+          9496,
+          15318
+        ],
+        "Israel": [
+          12619,
+          18185
+        ],
+        "US": [
+          21091,
+          30255
+        ]
+      },
+      "note": "Launch-stabilization day, 87 commits/662 files dominated by one 23.7K-line commit; ~106K words of audit docs are templated/derived (discounted to ~70K effective), code 11.3K + tests 5.2K lines are mixed adapt/novel -> session split 35 boilerplate / 40 adapted / 25 novel; big commit read in full, rest scored by stat with sampled diffs."
+    },
+    {
+      "day": "2026-06-18",
+      "teamEquivHours": 65.5,
+      "personDays": 18.7,
+      "reuseSplit": {
+        "boilerplatePct": 45,
+        "adaptedPct": 35,
+        "novelPct": 20
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 25.5,
+          "did": "Split the backend god-files (report/job handlers, inspection routes, public-verify, report service) into modules, added the defect-KB service + extracted create route, and shipped offline/AI/api-root error-hiding and privacy fixes."
+        },
+        {
+          "discipline": "Product",
+          "hours": 14,
+          "did": "Authored the 45-category property defect knowledge base (~23k lines of structured content) + master taxonomy, the FINAL pricing-packages source-of-truth doc, and trimmed the code-UX audit to open work."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 7,
+          "did": "Broke the app's monolithic API layer into typed contracts plus transport/auth/domain clients and split the frontend inspection stores."
+        },
+        {
+          "discipline": "QA",
+          "hours": 7,
+          "did": "Wrote and updated test suites for the defect KB, report signing/tamper, the cleanup advisory-lock skip path, and verify-page forgery integration."
+        },
+        {
+          "discipline": "Security",
+          "hours": 5,
+          "did": "Enforced a tampered verdict and pinned the issuer signing key in the public verify flow, with JSON/HTML forgery integration tests (audit §9)."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 4,
+          "did": "Added a Railway /health check and production synthetic readiness checks, and wrapped the multi-replica hourly cleanup in a pg advisory lock so only one replica sweeps."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 3,
+          "did": "Wired the new defect KB into the Claude vision pipeline and suppressed internal AI-job error detail from user-facing responses."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          475,
+          872
+        ],
+        "Ukraine": [
+          1311,
+          2100
+        ],
+        "Dubai": [
+          2318,
+          3464
+        ],
+        "Israel": [
+          3273,
+          4823
+        ],
+        "US": [
+          5178,
+          7005
+        ]
+      },
+      "note": "Sampled: full diff on defect-KB (23k lines = 45 templated JSON content files), security-verify, and advisory-lock commits; --stat for the ~15 god-file split/rename commits. Reuse is high — most line churn is code relocation (ins≈del refactors) and templated/generated content, so ~45% boilerplate / ~35% adapted, with novel hours concentrated in the signing/tamper logic and KB service."
+    },
+    {
+      "day": "2026-06-19",
+      "teamEquivHours": 112,
+      "personDays": 32,
+      "reuseSplit": {
+        "boilerplatePct": 25,
+        "adaptedPct": 35,
+        "novelPct": 40
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 62,
+          "did": "Forensic audit remediation night: closed the IAP refund-before-verify SERIALIZABLE race + JWS cert-chain validation, scrubbed PII from error logs, added DB-level append-only triggers (sealed reports, admin audit log) and FK ON-DELETE integrity, fail-closed rate-limit buckets, least-privilege admin defaults, frozen-canonical-snapshot verify, plus mechanical god-file splits of depositRecovery and reportTemplate into pure layers (byte-identical)."
+        },
+        {
+          "discipline": "QA",
+          "hours": 22,
+          "did": "Wrote/updated tests for nearly every fix (937-961 backend tests green), captured the 5193-line golden report-HTML snapshot that proved the template refactor was byte-identical, and added the multi-replica job-queue load-test harness."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 8,
+          "did": "Built the generic offline-warning banner + offline-duration hook, stopped losing evidence captured offline, fixed push taps deep-linking to the right screen, the in-flight-photo room-skip bug, and removed the legal classification layer from the app."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 7,
+          "did": "Added live queue-depth-by-type gauge, batch self-nudge so one replica drains bursts, authored the worker-scaling guide (startup/queue-safety proof), and triggered the Railway backend rebuild."
+        },
+        {
+          "discipline": "Security",
+          "hours": 7,
+          "did": "Owned the concurrency/integrity hardening: refund snapshot race, Apple JWS expired-cert rejection, append-only audit triggers, PII scrubbing, separating webhook secret from admin token, and stopping anti-fraud signal leakage on the public record."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 4,
+          "did": "Rebuilt per-photo vision analysis around the renter and image-as-truth, and stripped AI-authored prose + repair-cost estimation from the issue/data model (condition report = facts, not fault)."
+        },
+        {
+          "discipline": "Product/docs",
+          "hours": 2,
+          "did": "Documented why issue responses are deliberately not seal-locked, marked dormant anti-fraud signals, and fixed the migrations path in the code map."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          812,
+          1463
+        ],
+        "Ukraine": [
+          2202,
+          3496
+        ],
+        "Dubai": [
+          3840,
+          5684
+        ],
+        "Israel": [
+          5404,
+          7820
+        ],
+        "US": [
+          8636,
+          11530
+        ]
+      },
+      "note": "Sampled ~8 representative diffs + stat for the rest of 63 commits: ~40% novel (security/concurrency/anti-fraud fixes with tests), ~35% adapted (observability patterns, test scaffolding), ~25% boilerplate (5193-line auto-captured golden snapshot ~0, byte-identical god-file extraction moves at ~10% effort); deletions weighted 20%; late-night/complex 1.35x biology applied once for the session."
+    },
+    {
+      "day": "2026-06-20",
+      "teamEquivHours": 106.2,
+      "personDays": 30.3,
+      "reuseSplit": {
+        "boilerplatePct": 30,
+        "adaptedPct": 45,
+        "novelPct": 25
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 15,
+          "did": "Auth/JWT hardening (post-reset token invalidation, refresh replay/family-revocation), signature double-sign race fixes, claimPair device-handshake, notifications kill-switch, taxonomy enforcement + past-due payment reminders, server re-fingerprint/Merkle and dedicated rate buckets."
+        },
+        {
+          "discipline": "Security",
+          "hours": 10,
+          "did": "Removed hardcoded JWT_SECRET from source, https guard + fail-open signal, Google Android audience/azp validation, magic-link/verify rate-limit + liveness, recover-portal XSS and security-header hardening."
+        },
+        {
+          "discipline": "QA",
+          "hours": 7.5,
+          "did": "Wrote 858 lines of real-DB tests: refreshSession replay/family-revocation, handshakeCrypto seal/unseal + key validation, claimPair, and requireAuth A11 coverage."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 7,
+          "did": "Zero-delay capture refactor (camera reopens instantly), torch/floor options/review-tray delete/push-to-talk, offline-state surfacing, GPS timeout + honest time/location labels, walk-&-talk disabled behind feature flag."
+        },
+        {
+          "discipline": "Frontend",
+          "hours": 5,
+          "did": "claim and landlord-claims screens, emoji/LTR glyph to brand-icon sweep, and recover portal web UI hardening."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 4,
+          "did": "Aligned comparePhotoBuffers to the renter/documentary vision philosophy and made failed AI jobs return 200 instead of 502."
+        },
+        {
+          "discipline": "Design",
+          "hours": 2,
+          "did": "Replaced emoji and LTR-baked arrow glyphs with real brand icons and fixed misleading capture-tray chip visuals."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 0.7,
+          "did": "Untracked self-referential node_modules symlink and bumped OTA testmode markers 00132 to 00134."
+        },
+        {
+          "discipline": "Product/docs",
+          "hours": 55,
+          "did": "Authored ~55k words: audit2 findings/scope/closure ledgers for units 01/02/03/05 plus the 17-file design spec system (DESIGN-DNA, VISUAL-SYSTEM, TRUST-CEREMONY, UX-AUDIT) and V3.0 deferral roadmap."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          8085,
+          11359
+        ],
+        "Israel": [
+          5134,
+          7776
+        ],
+        "Dubai": [
+          3683,
+          5685
+        ],
+        "Ukraine": [
+          2000,
+          3318
+        ],
+        "Pakistan": [
+          706,
+          1346
+        ]
+      },
+      "note": "Sampled 5 largest commits in full + numstat-bucketed all 66; bulk is adapted security/auth hardening (~50%) plus ~55k words of templated forensic/design docs (Product/Tech-Writing dominates), genuine novel logic in race/vision/capture fixes; excluded 3.3k lines AI-generated *-result.json + lockfiles as ~0 and weighted deletions (incl. audit1 -2842) at 20%."
+    },
+    {
+      "day": "2026-06-21",
+      "teamEquivHours": 60,
+      "personDays": 17.1,
+      "reuseSplit": {
+        "boilerplatePct": 20,
+        "adaptedPct": 45,
+        "novelPct": 35
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 10,
+          "did": "Reworked the capture data model to a single user-selected video frame, added 48h-free/1yr-paid retention, and shipped the new POST /inspections/:id/spaces endpoint to append furniture rooms post-walkthrough."
+        },
+        {
+          "discipline": "Security",
+          "hours": 11,
+          "did": "Hardened inspection DELETE and property-seal paths against TOCTOU (SELECT FOR UPDATE + transactional re-guards), made media upload idempotent, and added DB-level CHECK/LOCK integrity guards on GPS bounds and fraud signals."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 20,
+          "did": "Built the walk-room-by-room flow end to end: new video frame-picker screen, damage-led and picture-led room pickers (where.tsx), the space-mapping walk-order list redesign of plan.tsx, the furniture step, and camera UI fixes."
+        },
+        {
+          "discipline": "QA",
+          "hours": 6,
+          "did": "Updated and extended the test suites (inspections, media, upload-policy, spaces) covering delete races, idempotency replay, tier-gated retention and the new endpoint to a green ~995-test backend run."
+        },
+        {
+          "discipline": "Design",
+          "hours": 5,
+          "did": "Drove the UX redesign of the capture flow (method-of-loci walk-order list, recognition-over-recall room tiles, calm seal-nudge on the Free tier, real video glyph) grounded in persona research."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 2.5,
+          "did": "Diagnosed the EAS pod-install failure to GoogleSignIn AppCheckCore, forced modular headers for the Google pods, and aligned the Expo SDK 55 native modules."
+        },
+        {
+          "discipline": "Product/docs",
+          "hours": 3.5,
+          "did": "Wrote the LOCKED walk-it-room-by-room capture spec, the FIX-PLAN and EAS-blocked handoff notes, and routed/closed the audit2/03 fresh-pass findings."
+        },
+        {
+          "discipline": "AI-ML",
+          "hours": 2,
+          "did": "Adapted the aiVision pipeline and media-upload policy to score the single user-selected frame instead of extracted video frames."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          447,
+          825
+        ],
+        "Ukraine": [
+          1206,
+          1983
+        ],
+        "Dubai": [
+          2096,
+          3147
+        ],
+        "Israel": [
+          2910,
+          4525
+        ],
+        "US": [
+          4758,
+          6328
+        ]
+      },
+      "note": "~35% novel (concurrency/TOCTOU + custody logic + capture-flow data model), ~45% adapted (RN screen patterns, CRUD/CHECK migrations), ~20% boilerplate incl. the expo-install --fix SDK alignment (~713 auto-gen lines scored ~0); sampled key diffs, stat for the rest given 33 commits / 5.3k insertions."
+    },
+    {
+      "day": "2026-06-22",
+      "teamEquivHours": 157,
+      "personDays": 44.9,
+      "reuseSplit": {
+        "boilerplatePct": 25,
+        "adaptedPct": 40,
+        "novelPct": 35
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Backend",
+          "hours": 64,
+          "did": "Closed the audit2 forensic-fix campaign across payments (webhook-origin + refund/dispute clawback), antifraud (IPQS, risk scoring), sharing (idempotent ON CONFLICT race), reports, retention/cleanup, admin-ops audit-log and jobs/rate-limit."
+        },
+        {
+          "discipline": "Security",
+          "hours": 30,
+          "did": "Hardened access-token liveness (block/delete/pre-reset), TOTP replay, Apple nonce single-use, anti-enumeration signup, magic-link revocation, fail-closed artifact deletion, and sealing-integrity (OTS, RFC3161, custody log, merkle proofs)."
+        },
+        {
+          "discipline": "QA",
+          "hours": 22,
+          "did": "Wrote and extended the test suites proving each fix — auth, sealing/reportCanonical, payments, logoVotes, document routes and job handlers."
+        },
+        {
+          "discipline": "Mobile",
+          "hours": 18,
+          "did": "Built the walk-flow inspection: station screen, calm/adaptive camera start, room picker, whole-sub-space offer card and Quick Checks/forgot-catcher across phases 4-5."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 6.5,
+          "did": "Tuned the Claude vision pipeline, defect KB/taxonomy and added the media AI-analysis marker migration."
+        },
+        {
+          "discipline": "Design",
+          "hours": 4.5,
+          "did": "Shaped the calm camera-start, station layout and offer-card UX and wired 36 Dubai room photos into the picker."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 1,
+          "did": "Applied the safe Snyk base-image bump and shipped backend migrations live plus OTA testmode 00150 to production."
+        },
+        {
+          "discipline": "Product/docs",
+          "hours": 11,
+          "did": "Authored forensic FINDINGS for ~10 audit units, the Dubai inspection-reminders spec and the v2.5/roadmap deferral notes."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          12340,
+          16410
+        ],
+        "Israel": [
+          7645,
+          11725
+        ],
+        "Dubai": [
+          5518,
+          8167
+        ],
+        "Ukraine": [
+          3152,
+          5103
+        ],
+        "Pakistan": [
+          1175,
+          2129
+        ]
+      },
+      "note": "Sampled 5 full/partial diffs (auth liveness, sealing-integrity, security hardening, walk-flow, asset wiring) + --stat for the other 59; reuse ~25% boilerplate (tests/asset-wiring/config/migrations/doc templates) / 40% adapted (known security+RN patterns) / 35% novel (sealing/merkle/custody, auth liveness, antifraud); -4073 in f373db2 is mostly generated audit JSON (near-zero). 157h/~45 person-days far exceeds one team-day — this is the counterfactual cost to hand-reproduce a 64-commit security campaign, not a feasible single-team day."
+    },
+    {
+      "day": "2026-06-25",
+      "teamEquivHours": 52,
+      "personDays": 14.9,
+      "reuseSplit": {
+        "boilerplatePct": 45,
+        "adaptedPct": 40,
+        "novelPct": 15
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Mobile",
+          "hours": 33,
+          "did": "Migrated the full Sleek design system and ~200 already-approved screens into the RN/Expo app, plus inspection UX fixes (camera contrast, sub-area selection, review back button, processing-waits-for-analysis), resume-to-exact-room, and the living in-app report with per-finding repair tips."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 4,
+          "did": "Rewired the account-deletion auth route so OAuth/social-login users can delete via emailed code (Apple 5.1.1 compliance), and wired in care actions and offline-sync handling."
+        },
+        {
+          "discipline": "Security",
+          "hours": 3,
+          "did": "Redesigned the append-only sealed_report_versions DB trigger (migration 0149) to permit right-to-be-forgotten (PDPL Art.6) account deletion without breaking the forensic audit trail."
+        },
+        {
+          "discipline": "Design",
+          "hours": 6,
+          "did": "Authored the Sleek design tokens (colors/typography/spacing/shadows/radius) and the brandbook deck the migrated screens render from."
+        },
+        {
+          "discipline": "Product",
+          "hours": 4,
+          "did": "Wrote the living-report plan, forensic-migration audit, and OTA-00157 design-handoff specs that scoped the day's work."
+        },
+        {
+          "discipline": "QA",
+          "hours": 2,
+          "did": "Updated auth and offline-sync test suites covering the account-deletion and pending-media-deletion paths."
+        }
+      ],
+      "costByMarket": {
+        "US": [
+          4280,
+          5640
+        ],
+        "Israel": [
+          2636,
+          3935
+        ],
+        "Dubai": [
+          1850,
+          2786
+        ],
+        "Ukraine": [
+          1062,
+          1729
+        ],
+        "Pakistan": [
+          385,
+          723
+        ]
+      },
+      "note": "Day dominated by a design-system migration (546 files, mostly translating already-approved screens + generated HTML/CSS exports) and an Expo scaffold whose 7,698-line package-lock is auto-gen ~0; novel slice (~15%) is the PDPL deletion trigger, OAuth account-deletion auth, resume-to-room, and living-report logic. Sampled the two large commits via --numstat bucketing; read all small fix diffs in full."
+    },
+    {
+      "day": "2026-06-26",
+      "teamEquivHours": 98.5,
+      "personDays": 28.1,
+      "reuseSplit": {
+        "boilerplatePct": 30,
+        "adaptedPct": 40,
+        "novelPct": 30
+      },
+      "disciplineWork": [
+        {
+          "discipline": "Mobile",
+          "hours": 34,
+          "did": "Built the entire MyKeyz Care provider Expo app from scratch (~35 screens: auth, 6-step setup, tabs, jobs/quotes/chat/earnings) plus the inspection-app furniture-capture loop, capture-first lock, junk-photo block and sub-area persistence."
+        },
+        {
+          "discipline": "Product",
+          "hours": 22,
+          "did": "Wrote the full Care product planning set (10 spec docs, roadmap), night handoff, and OTA QA issue logs/checklists driving the testmode 00162-00168 fixes."
+        },
+        {
+          "discipline": "Backend",
+          "hours": 14,
+          "did": "Stood up the Care API (Fastify + pg schema for suppliers/jobs/quotes/reveals/conversations/messages, auth, R2) and added the app's /reports/sample.json endpoint serving real sample findings and photos."
+        },
+        {
+          "discipline": "QA",
+          "hours": 13,
+          "did": "Authored the Codex forensic audit (532 lines) and validated each OTA's testable behavior — capture-lock, findings semantics, email-login reachability, zero-mock home — across the full inspection flow."
+        },
+        {
+          "discipline": "Frontend",
+          "hours": 6,
+          "did": "Wired shared Care UI primitives and web (+html) shell, and reworked the inspection app's report-online/sample living-report rendering."
+        },
+        {
+          "discipline": "Design",
+          "hours": 5,
+          "did": "Produced the Care design tokens/theme and product components (TradeOrbit, BrandMark, cards), and exported the new Apple-spec app icon set (icon/adaptive/splash/favicon) from Figma."
+        },
+        {
+          "discipline": "DevOps",
+          "hours": 3,
+          "did": "Configured Care API Dockerfile/railway.json + EAS build, bumped the TestFlight build number, and wrote the TestFlight deployment runbook."
+        },
+        {
+          "discipline": "AI/ML",
+          "hours": 1.5,
+          "did": "Built the voice-price speech parser and speech-recognition/analytics integration for spoken quote entry in the Care app."
+        }
+      ],
+      "costByMarket": {
+        "Pakistan": [
+          659,
+          1250
+        ],
+        "Ukraine": [
+          1849,
+          3044
+        ],
+        "Dubai": [
+          3311,
+          5105
+        ],
+        "Israel": [
+          4659,
+          6769
+        ],
+        "US": [
+          7525,
+          10300
+        ]
+      },
+      "note": "Reuse judged from real diffs (sampled the two big new-product commits' core logic — AppState/pricing/voicePrice + db schema/routes — and app-feature stats; rest by stat). Heavy Expo/Fastify scaffolding + adapted CRUD patterns, novel slice = pricing/voice/business flows + product specs; package-lock (2892 lines) and binary icon/PNG swaps scored ~0. Late-night 04:40 (1.3x) + multi-discipline coordination folded in."
+    }
+  ]
+}
