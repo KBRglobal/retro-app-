@@ -84,6 +84,11 @@ export const journal: JournalDay[] = (() => {
 export const journalMaxCommits = Math.max(...journal.map((d) => d.commits), 1);
 
 // effort headline numbers (constant across markets)
-export const PERSON_MONTHS = summary.teamEquivMonths;     // 126
+export const PERSON_MONTHS = summary.teamEquivMonths;     // total effort summed across the team
 export const PERSON_YEARS = Math.round((summary.teamEquivMonths / 12) * 10) / 10;
+// Calendar time the FULL TEAM working in parallel would take (NOT person-years) — this is
+// the "how long did they all work together" figure to show users.
+export const TEAM_MONTHS = summary.ghostMonths;           // 18
+export const TEAM_YEARS = Math.round((summary.ghostMonths / 12) * 10) / 10; // 1.5
+export const TOTAL_WORK_HOURS = summary.teamEquivMonths * 160; // person-hours (shift hours)
 export const TOTAL_HOURS = summary.realHours;             // 20,160

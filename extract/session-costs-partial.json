@@ -1,0 +1,1282 @@
+{
+  "summary": "Apply commit-human-cost skill to all 39 MyKeyz work-sessions: daily per-role timeline + cost across 5 markets",
+  "agentCount": 39,
+  "logs": [
+    "sessions 0-3 of 39",
+    "sessions 4-7 of 39",
+    "sessions 8-11 of 39",
+    "sessions 12-15 of 39",
+    "sessions 16-19 of 39",
+    "sessions 20-23 of 39",
+    "[cost:s20] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "[cost:s21] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "[cost:s22] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "[cost:s23] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "sessions 24-27 of 39",
+    "[cost:s26] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "[cost:s27] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "[cost:s25] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "[cost:s24] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "sessions 28-31 of 39",
+    "[cost:s29] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "[cost:s28] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "[cost:s31] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "[cost:s30] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "sessions 32-35 of 39",
+    "[cost:s35] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "[cost:s32] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "[cost:s33] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "[cost:s34] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "sessions 36-38 of 39",
+    "[cost:s37] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "[cost:s36] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+    "[cost:s38] failed: You've hit your session limit · resets 11:40am (Asia/Jerusalem)"
+  ],
+  "result": {
+    "sessionsAnalyzed": 20,
+    "of": 39,
+    "totalTeamEquivHours": 947,
+    "totalPersonDays": 271,
+    "totalPersonMonths": 12.3,
+    "disciplineHours": {
+      "Backend": 260,
+      "Mobile": 173,
+      "Security": 110,
+      "QA": 99,
+      "Product": 78,
+      "Frontend": 61,
+      "DevOps": 49,
+      "Product/docs": 39,
+      "Design": 37,
+      "AI/ML": 35,
+      "AI-ML": 6
+    },
+    "totalCostByMarket": {
+      "Pakistan": [
+        6793,
+        12552
+      ],
+      "Ukraine": [
+        18637,
+        30465
+      ],
+      "Dubai": [
+        32758,
+        49607
+      ],
+      "Israel": [
+        45376,
+        67829
+      ],
+      "US": [
+        73811,
+        99694
+      ]
+    },
+    "dailyTimeline": [
+      {
+        "day": "2026-05-06",
+        "hours": 48,
+        "personDays": 13.7,
+        "roles": [
+          "Mobile 13.5h: Built the Expo Router app shell — navigation groups plus login/register/forgot-password, onboarding role/rooms, and inspection screens wired through Zustand stores.",
+          "Product 26h: Wrote ~34k words across 76 markdown docs — 20 templated UI screen specs plus onboarding, auth-flow and architecture notes that drove the build.",
+          "Design 3h: Authored the design-system tokens (colors/spacing/typography) and core UI components (Button, TextField, SegmentedControl, RoleCard).",
+          "Backend 2.5h: Wired the Supabase client with a SecureStore/localStorage storage adapter, plus session and API service layers.",
+          "QA 3h: Smoke-tested the auth and onboarding flows and the Zod form-validation paths."
+        ],
+        "dubai": [
+          1653,
+          2561
+        ],
+        "us": [
+          3678,
+          5153
+        ]
+      },
+      {
+        "day": "2026-05-07",
+        "hours": 80,
+        "personDays": 22.9,
+        "roles": [
+          "Backend 33h: Stood up the Node backend from scratch — JWT+bcrypt auth, inspections CRUD, watermark/vision/payments/signatures/reports/notifications/addons routes, R2 storage and SQL migrations; pivoted Supabase to Railway Postgres + custom auth.",
+          "Mobile 24h: Built the full React Native inspection flow — auth/onboarding screens, camera+gallery+video capture with compression, chat interface, tier-selection, payment, signature, summary, report-preview, settings, history and comparison mode.",
+          "AI/ML 5h: Wired OpenAI Vision — a cheap gpt-4o-mini binary triage classifier plus deep defect analysis constrained to a fixed category/severity schema.",
+          "DevOps 5h: Dockerized the backend, added railway.json deploy config and GitHub Actions CI (frontend + backend-with-Postgres + Cloudflare Pages deploy), wired R2/Stripe/Dropbox env config and wrote the DEPLOY runbook.",
+          "QA 5h: Wrote 32 vitest tests across front and back — auth round-trip + bcrypt, watermark, sha256, videoFrames, validation schemas, password strength and default-rooms.",
+          "Design 3h: Styled the inspection-flow screens and the report-preview / room-complete surfaces.",
+          "Product 5h: Backfilled DEVELOPER_NOTES sprint logs, wrote the DEPLOY runbook prose and flipped TODO/sprint checkboxes."
+        ],
+        "dubai": [
+          2901,
+          4311
+        ],
+        "us": [
+          6605,
+          8770
+        ]
+      },
+      {
+        "day": "2026-05-08",
+        "hours": 38,
+        "personDays": 10.9,
+        "roles": [
+          "Mobile 20h: Built the RN UI atom kit (Button/Card/TextField/HeroBackground/DevNav) and re-skinned ~18 Expo screens (auth, onboarding, tier+payment, inspection, settings, chat) onto the new design tokens, plus a net-new comparison screen wired to /vision/compare.",
+          "Design 7h: Authored the Apple-meets-teal visual language: navy+teal+gold palette, elevation/radius/type scales, gradient stops, 12 hand-coded BrandIcon SVG paths, and art direction for six gpt-image-1 hero illustrations.",
+          "Backend 7h: Wrote the locale-aware (en/he/ar) RTL PDF report template with font-stack swap, flex mirroring and mono isolation; added the no-leak forgot-password endpoint and switched Stripe currency USD to EUR.",
+          "QA 3h: Verified the new backend endpoints and locale PDF paths (vitest 12/12), exercised the payment and comparison flows, and regression-checked the restyled screens.",
+          "Product 1h: Recorded the generated R2 keys and rewrote DEVELOPER_NOTES to resolve the stack/storage decisions (Node/Fastify + R2), narrowing open blockers to Stripe and Dropbox Sign keys."
+        ],
+        "dubai": [
+          1296,
+          1973
+        ],
+        "us": [
+          2990,
+          3985
+        ]
+      },
+      {
+        "day": "2026-05-09",
+        "hours": 114,
+        "personDays": 32.6,
+        "roles": [
+          "Backend 42h: Built 3-SKU AED pricing + payment routes, Apple/Google IAP receipt verification (RS256 JWT REST), refund automation with idempotent webhooks, DB-backed durable job queue, server-side hard caps/rate limits/timestamping/error_logs, broker referral payouts, Unifonic SMS, and reviewer demo mode.",
+          "Mobile 20h: Re-skinned all 21 React Native screens onto the new design system, wired the StoreKit IAP client + camera photo-quota auto-paywall, the expo-updates OTA client, and report-preview; drove the bundle to 0 TS errors after the design pass.",
+          "Frontend 7h: Redesigned the public Verify page to brand quality, built the magic-link /sign web page, and rebuilt the villa-grade report PDF HTML template with multi-photo issue grids.",
+          "Design 6h: Landed the Apple-meets-navy design system + tokens (Manus pass), destroyed the dead teal/gold/cream palette to navy + clean white, and replaced the placeholder app icon with a brand-consistent one.",
+          "QA 7h: Authored 4 Maestro end-to-end production flows + config covering the payment, auth, and report paths.",
+          "DevOps 6h: Wired OTA EAS Update channels + server-driven config, set up the Maestro E2E CI workflow on a macOS simulator, deployed Cloudflare Pages, and fixed the Docker chromium install for puppeteer.",
+          "Security 8h: Implemented UAE Pass OAuth + single-use magic-link signature security, pinned the Apple cert chain to AppleRootCA-G3, and routed all Manus AI traffic through the backend (removed the API key from the client).",
+          "AI/ML 8h: Integrated the Manus API with structured-output schemas, hardened response parsing (flat task_id, ContentParts array, root upload_url), and aligned the generate-report SQL with the actual schema.",
+          "Product 10h: Wrote the Dubai Launch Plan v2 + strategic re-plan, the cross-reference launch checklist, and the onboarding/signature/payment spec alignment to UAE Pass + Apple IAP."
+        ],
+        "dubai": [
+          4048,
+          6095
+        ],
+        "us": [
+          9134,
+          12275
+        ]
+      },
+      {
+        "day": "2026-05-09",
+        "hours": 5.3,
+        "personDays": 1.51,
+        "roles": [
+          "Product 5.3h: Rewrote the Dubai launch plan into an annotated v2 — authored a mandatory security/dependency policy (no-new-npm, built-ins-over-SDK table, REST-over-SDK) and added per-item IMPL implementation blocks for UAE Pass, Ejari/Makani, bilingual EN/AR report, AED 299 IAP pricing, and the broker referral program."
+        ],
+        "dubai": [
+          186,
+          292
+        ],
+        "us": [
+          398,
+          583
+        ]
+      },
+      {
+        "day": "2026-05-10",
+        "hours": 102,
+        "personDays": 29.1,
+        "roles": [
+          "Backend 30h: Shipped the broker-portal API (email-OTP auth, broker-scoped /me/tenants/reports/commission routes, migrations) and SSO token issuance, and deleted the dead Manus vision service + manusProxy.",
+          "Mobile 18h: Rebuilt the media-preview and chat capture screens, added voice notes, fixed the iOS cold-start splash hang, and reverted unfinished features to Coming Soon per the product-truth audit.",
+          "Frontend 14h: Stood up the Next.js broker self-service portal (login, dashboard, tenants/reports/commission tables) and reworked the demo flow to stream the user's real report instead of a hardcoded mock.",
+          "Security 12h: Hardened auth end-to-end: atomic refresh-token rotation (TOCTOU), JWT alg/aud/iss pinning, brute-force + per-broker/per-user OTP rate caps, one-shot reset tokens, revoked-PDF blocking, and media-type byte validation.",
+          "Product/docs 8h: Wrote the product-truth + Apple/backend/mobile/money audit docs and the codebase architecture/stack/structure notes that drove the day's reverts and blocker closures.",
+          "AI-ML 6h: Made /v1/ai/analyze-photo auto-persist the issue and folded the full AI inspector output into the bilingual AR/EN PDF report.",
+          "DevOps 5h: Wired the EAS ASC API key for non-interactive iOS submit, set the encryption-exempt flag, and added Railway deploy config for the broker portal.",
+          "QA 5h: Authored the Maestro E2E flows and watermark unit tests, plus a retry-button audit pass across capture screens.",
+          "Design 4h: Replaced hardcoded colors with design-system tokens and polished the media-preview UI (full-width CTA, dynamic GPS badge, safe-area/keyboard handling)."
+        ],
+        "dubai": [
+          3582,
+          5441
+        ],
+        "us": [
+          8096,
+          10895
+        ]
+      },
+      {
+        "day": "2026-05-11",
+        "hours": 155,
+        "personDays": 44.3,
+        "roles": [
+          "Security 55.2h: Built real admin auth (inline RFC-6238 TOTP, bcrypt, rotated refresh sessions, append-only audit log), closed SSRF/path-traversal/prompt-injection, hardened IAP idempotency+replay window, added per-route rate-limit buckets and zod max-lengths, pinned JWT alg/aud/iss, fixed sign-in user-enumeration timing, patched 114 CVEs.",
+          "Backend 27.6h: Added DB pool/statement + slowloris timeouts, pg_advisory_lock multi-replica migrations and new indexes, hourly cleanup worker, jobQueue status guards, Manus status-based retry classification, DLQ + /health/deep, graceful SIGTERM shutdown, route pagination.",
+          "Mobile 17.3h: Shipped delete-account UI with OAuth re-auth, root ErrorBoundary against blank-screen crashes, chat AsyncStorage persistence, role-selector backend wiring, useNetwork OS-event listeners, removed fake splash counter, SSR-safe PostHog/Bugsnag init.",
+          "Frontend 15.5h: Built broker-portal admin login + Edge JWT verify gate, page/root error boundaries, proxy body validation and upstream-error sanitization; hardened marketing CSP (dropped unsafe-inline), real 404, OpenGraph/JSON-LD, signup honeypot.",
+          "DevOps 6.9h: Ran backend/broker-portal containers as non-root, added .dockerignore files, upgraded base images to clear CVEs, injected PostHog + Google OAuth client IDs into EAS preview+production builds.",
+          "AI/ML 6h: Sanitized roomName/userNote to block prompt injection, validated Manus structured output with Zod before DB write, added magic-byte + multipart-header validation on the voice-transcription endpoint.",
+          "QA 12.1h: Wrote ~1,000 lines of vitest integration+unit coverage (IAP webhook, media magic-bytes, broker OTP limits, PDF idempotency/auth/ownership/canonical, AI ownership, watermark EXIF regression) with mocked DB/auth.",
+          "Product/docs 14h: Authored the Damagix-to-brand rebrand touchpoint map (every file:line, multiple coverage passes) plus the AGENTS 'Deep Polish' autonomous-improvement protocol — ~7,800 finished words."
+        ],
+        "dubai": [
+          5460,
+          8170
+        ],
+        "us": [
+          12200,
+          16250
+        ]
+      },
+      {
+        "day": "2026-05-12",
+        "hours": 113,
+        "personDays": 32.3,
+        "roles": [
+          "Backend 55h: Built OTS blockchain anchoring, RERA dispute-letter generator, fair-wear deposit calc + landlord-score engine, Unifonic SMS DLR webhooks, EXIF capture, i18n backend, counter-photo magic-link, plus complex audit fixes (Postgres multi-replica rate-limit, IAP replay/refund, R2->Manus streaming).",
+          "QA 28h: Wrote ~3,500 lines of route/unit/integration tests across AI async jobs, auth/account-delete, payments, signatures, dispute-letter, notifications, EXIF and the Unifonic webhook.",
+          "AI/ML 6h: Added RERA classifier to defect analysis output, GET confidence-histogram endpoint, analyze-photo dedup guard and Manus job-endpoint polling.",
+          "Mobile 10h: Wired Arabic/English i18n + RTL to all screens, added dispute-letter and confidence-histogram report buttons, RERA/fair-wear DefectCard badges, offline upload queue, and 35 a11y labels.",
+          "DevOps 4h: Alpine Dockerfiles, puppeteer-core/openai dependency bumps with lockfile sync, and multi-replica rate-limit infra wiring.",
+          "Security 6h: Enforced auth nonce requirement, IAP replay + REFUND_REVERSED guards, SSRF render guards, and moved web token from localStorage to sessionStorage.",
+          "Product 4h: Maintained AGENTS.md fixed-commits table and AUTO_IMPROVEMENT_LOG.md, added synthetic-data disclosure notes and updated user-facing copy."
+        ],
+        "dubai": [
+          3796,
+          5674
+        ],
+        "us": [
+          8533,
+          11490
+        ]
+      },
+      {
+        "day": "2026-05-13",
+        "hours": 23,
+        "personDays": 6.57,
+        "roles": [
+          "QA 7h: Wrote ~140 unit tests across inspections, issues, addons, admin, appConfig, landlordScore, brokers and IAP routes on a shared vitest mock harness (4 commits, ~2570 test lines).",
+          "Security 5.5h: Triaged and patched 7 high/critical CVEs: Snyk fixes (CWE-918/79/798), form-data + qs npm overrides, swapped opentimestamps for a maintained fork, enforced Unifonic HMAC in prod.",
+          "Backend 5.5h: Hardened routes: AbortSignal.timeout on all fetch/apiFetch calls, S3 request timeout, rate-limit buckets (PUSH/DELETE_ACCOUNT), pagination + LIMIT guards, shared isUuid util, cleanup sweeps, small refactors.",
+          "Frontend 2h: Added try-catch around async calls in 7 RN/web files, removed unnecessary as-any casts, and added a retry button on history.tsx.",
+          "DevOps 2h: Added a media composite index, graceful shutdown, S3 timeout config, and managed the lockfile/dependency override changes.",
+          "Product/docs 1h: Updated AGENTS.md and AUTO_IMPROVEMENT_LOG.md session entries (sessions 9-12)."
+        ],
+        "dubai": [
+          713,
+          1094
+        ],
+        "us": [
+          1594,
+          2183
+        ]
+      },
+      {
+        "day": "2026-05-14",
+        "hours": 5.7,
+        "personDays": 1.63,
+        "roles": [
+          "Security 2.4h: Triaged Snyk SAST findings, added path-traversal guards (resolve + startsWith) in reports.ts/storage.ts, an SSRF allowlist helper (assertSafeUploadUrl) in manusProxy.ts, and justified deepcode-ignore suppressions for the proven false positives (timing bcrypt hash, i18n password labels, allowlisted broker proxy fetch).",
+          "Backend 1.2h: Wired the guards into the Fastify file-serving and storage read/stream paths (readStoredBuffer/readStoredFileStream/readStoredStream) and the Manus upload PUT call sites without breaking stream handling.",
+          "QA 1h: Extracted inline test secrets into named vi.hoisted() fixture constants across admin/auth/unifonicWebhook tests and re-ran the full 363-test suite to confirm green with 0 TS errors.",
+          "AI/ML 0.6h: Validated the SSRF guard against the Manus vision-pipeline upload contract — restricting upload_url to manus.im/amazonaws.com HTTPS hosts so a compromised AI vendor response cannot pivot to internal hosts.",
+          "Product 0.5h: Logged the SAST remediation and the follow-up suppression session in AGENTS.md and AUTO_IMPROVEMENT_LOG.md (~50 lines of changelog prose)."
+        ],
+        "dubai": [
+          201,
+          299
+        ],
+        "us": [
+          444,
+          593
+        ]
+      },
+      {
+        "day": "2026-05-15",
+        "hours": 16,
+        "personDays": 4.6,
+        "roles": [
+          "QA 8h: Authored a 28-flow Maestro E2E suite covering every user journey (auth, inspection, payments, reports, RTL, offline), then rewrote them with real TestFlight credentials and fixed all flows to pass Maestro 2.4 syntax.",
+          "DevOps 3.5h: Aligned the whole dependency tree to Expo SDK 55 — bumped RN to 0.83.6, pinned reanimated/worklets to bundled versions, and applied a postcss ^8.5.14 override to patch the metro-config XSS CVE.",
+          "Security 2h: Eliminated the remaining Snyk SAST findings — renamed credential-looking constants, added a password_label i18n key, and committed a .snyk policy documenting reviewed false positives.",
+          "Mobile 1.5h: Added a crypto polyfill and an AbortSignal.timeout shim to the RN runtime so api/appConfig/mediaUpload services work on device.",
+          "Product/docs 1h: Logged the session's work in AGENTS.md and AUTO_IMPROVEMENT_LOG.md (sessions 12e and 13)."
+        ],
+        "dubai": [
+          440,
+          702
+        ],
+        "us": [
+          998.5,
+          1420
+        ]
+      },
+      {
+        "day": "2026-05-16",
+        "hours": 42,
+        "personDays": 12,
+        "roles": [
+          "Backend 10h: Fixed the silent ESM-require bug that left rate-limiting disabled in production, added per-email brute-force lockout, scoped admin session-touch to its owner, gated Apple Sandbox receipts for TestFlight via env flag, and tightened config validation + data retention.",
+          "Security 6h: Closed enumeration/abuse holes: per-email login lockout, public landlord-score rate bucket, admin idle-timeout bypass, 24-char min admin token, and validated alert-email config.",
+          "DevOps 6h: Made CONCURRENTLY migrations run outside transactions one-statement-per-query, fixed migration 0048 UUID type, added magic-link partial indexes, and wrote the 5-check env quality gate.",
+          "Mobile 5h: Landed batch-2 RN security/UX fixes across camera/chat/history/settings/register screens plus api/notifications/session stores and Android runtime permissions (FINE/COARSE_LOCATION, POST_NOTIFICATIONS, READ_MEDIA_IMAGES).",
+          "QA 8h: Authored the brutal end-to-end QA architect audit (verdict + 4 critical/10 major), the build-12 known-issues list, and the 22-step E2E prod sweep + journey shell scripts.",
+          "Product/docs 7h: Wrote the production-state single-source-of-truth snapshot, rewrote the docs README, and organized the 200+ finding backend/frontend/infra audit docs."
+        ],
+        "dubai": [
+          1395,
+          2109
+        ],
+        "us": [
+          3133,
+          4265
+        ]
+      },
+      {
+        "day": "2026-05-20",
+        "hours": 9.2,
+        "personDays": 2.6,
+        "roles": [
+          "Mobile 3h: Ran the scripted Damagix to MyKeyz rename across 260 RN files with case-preservation + preserve-list, fixed IAP SKU/storage-key/config constants, swapped wordmark assets, verified the app still builds.",
+          "DevOps 1.8h: Configured Cloudflare zone for mykeyz.net/.io via API: api/www CNAMEs to Railway (proxied), enabled Email Routing with auto MX/SPF/DKIM, re-triggered destination verification.",
+          "Product/docs 2.4h: Authored the 12-phase rebrand plan in TODO.md and locked the load-bearing decisions: canonical domain, com.mykeyz.app bundle + 3 IAP SKUs, JWT/storage namespaces, DB-wipe, KBR parent entity stays.",
+          "QA 1.2h: Ran the post-rename audit: 0 residual damagix occurrences, 53 KBR refs preserved, 52 bundle-ID refs intact, no hardcoded Railway URLs, build smoke-checked.",
+          "Design 0.8h: Swapped in the new MyKeyz brand binaries: app icon, adaptive-icon, favicon and wordmark (white + color) replacing the old Damagix assets."
+        ],
+        "dubai": [
+          300,
+          468
+        ],
+        "us": [
+          683,
+          950
+        ]
+      },
+      {
+        "day": "2026-05-21",
+        "hours": 12.8,
+        "personDays": 3.66,
+        "roles": [
+          "Frontend 6.6h: Rebuilt the MyKeyz marketing landing page by hand in HTML/CSS — custom grid sections, responsive clamp() typography, inline SVG icons, hero phone+PDF composition, pricing tiers, FAQ, plus nav scroll-state logic in site.js.",
+          "Design 3.3h: Set the redesign's visual direction: cream/paper ledger aesthetic, evidence-map card system, hero layout and section rhythm (image assets themselves were AI-generated, scored near-zero).",
+          "DevOps 1.8h: Added the iOS GitHub Actions build+auto-submit workflow, switched it to --local on the macOS runner to dodge EAS cloud billing, and repointed extra.eas.projectId to the new mykeyz Expo project.",
+          "Product/docs 1.1h: Wrote MYKEYZ-MARKETING-DESIGN.md (612 words) documenting the landing-page sections, messaging and pricing, retiring the old HANDOFF-FOR-MANUS doc."
+        ],
+        "dubai": [
+          363,
+          629
+        ],
+        "us": [
+          828,
+          1218
+        ]
+      },
+      {
+        "day": "2026-05-25",
+        "hours": 15.5,
+        "personDays": 4.43,
+        "roles": [
+          "Backend 8.5h: Reworked refresh-token storage to persist sha256(secret) instead of the raw jti across both user and admin auth services (login/refresh/logout/touch), with a UUID-guarded legacy fallback, migration 0057, and preserved TOCTOU-safe atomic claim + family-revocation; also scoped /property-timeline to the caller's own inspections.",
+          "Security 2h: Threat-modeled the two QA-audit findings — leaked refresh_tokens/admin_sessions rows enabling full session resumption (CR-4) and the severity-8 cross-tenant PII leak in /property-timeline (MA-2) — and reviewed the hardening for replay/rotation correctness.",
+          "DevOps 3h: Authored a nightly GitHub Actions workflow that pg_dumps Railway Postgres (compressed), validates each archive with pg_restore -l, uploads to the private R2 backups bucket and prunes >30 days; then fixed the runner to use the explicit pg17 binary path.",
+          "QA 2h: Validated the auth/security changes against the existing suites — 26/26 auth+admin route tests and 14/14 landlordScore route tests — confirming on-the-wire UUID shape and idle-timeout behavior held."
+        ],
+        "dubai": [
+          535,
+          787
+        ],
+        "us": [
+          1204,
+          1600
+        ]
+      },
+      {
+        "day": "2026-05-26",
+        "hours": 27.5,
+        "personDays": 7.9,
+        "roles": [
+          "Frontend 15h: Built the build-site.js static-site generator + 1350-line site.css brand design system + site.js (JS-independent reveal fallback, OS-aware download button) and wired ~20 marketing pages.",
+          "Design 5h: Defined the navy+gold design system, curated 40 AI-generated illustrations, and explored/swapped headline+body fonts (Inter -> Chillax/Satoshi -> Satoshi).",
+          "Product/docs 4.5h: Rewrote every page in the calm-premium voice, added freemium pricing copy, and aligned site-wide meta/SEO text.",
+          "DevOps 1.5h: Added the Cloudflare Pages GitHub Actions deploy workflow and tore down the old Railway/Docker/nginx infra.",
+          "QA 1.5h: Verified OS-detection download routing, the no-JS reveal fallback, and cross-page nav/footer links."
+        ],
+        "dubai": [
+          781,
+          1350
+        ],
+        "us": [
+          1768,
+          2608
+        ]
+      },
+      {
+        "day": "2026-05-27",
+        "hours": 92,
+        "personDays": 26.3,
+        "roles": [
+          "Backend 26h: Built compare-photos API + Manus two-file proxy, migrated pricing to feature-tier across appConfig/iap (+migration SQL), added Ed25519 report-signing routes, and hardened error masking + stalled-job reaper.",
+          "Mobile 24h: Rewrote comparison.tsx with a baseline-gallery picker + per-pair confirm/edit cards, built the counterparty post-sign verify/dispute screen, the inspection element picker + defect fields, the new pricing/payment screens, and StatusBar/iPad readiness fixes.",
+          "Product 18h: Authored the verified feature-spec system + master TODO, storage/role-flow/web-portal/accelerator specs, the RESUME crash-point doc, and purged 95 superseded design/spec/audit docs (8209-line deletion).",
+          "Security 9h: Implemented Ed25519 issuer signatures on generated reports and the 4xx error-disclosure policy plus the 7d->24h signed-URL TTL tightening.",
+          "AI/ML 7h: Wired AI inspection element-capture end-to-end and the move-in <-> move-out photo-comparison agent integration through the job handler.",
+          "QA 4h: Corrected the wrong sha256 expected-hash test and reconciled the iap/appConfig/brokers test suites for the new feature-tier pricing.",
+          "DevOps 3h: Fixed the EAS production ascAppId, excluded the stale mykeyz-build/ dir from tsc, and tuned the cleanup stalled-job sweep.",
+          "Frontend 1h: Surfaced the new pricing tier on the broker-portal reports web page."
+        ],
+        "dubai": [
+          3391,
+          5054
+        ],
+        "us": [
+          7637,
+          10215
+        ]
+      },
+      {
+        "day": "2026-05-28",
+        "hours": 30,
+        "personDays": 8.57,
+        "roles": [
+          "Mobile 14.5h: Rebuilt the inspection journey as inspection-first (new record-ready + property-details screens, rooms refactor), shipped the 3-slide first-launch intro carousel, the background analyzing->verified chat UX, pinch-to-zoom/retake camera, skip-rooms, and plain-language 'what does this mean' explainer sheets",
+          "Backend 8h: Added PATCH /inspections/:id, room-skipped (0011) and ejari/gps (0012) migrations, the PAYWALL_ENABLED flag gating cloud upload/AI/report, report-ready push + 'Get MyKeyz' email CTA, and report-template legends",
+          "Design 2.5h: Laid out the 3-slide intro carousel, wired the on-brand static illustrations, and added report confidence (High/Med/Low) tooltips and the 'How to read this report' legend",
+          "Security 1.5h: Fixed Apple Sign-In nonce hashing and configured Google Sign-In on iOS (redirect URL scheme plugin + enable flag)",
+          "QA 2h: Updated the media-upload 402 test to assert the gate only under paywall-enabled, and validated the new flow/payment/auth gating behavior",
+          "Product 1.5h: Purged ~3,060 lines of implemented status/plan/codebase-intel docs and replaced them with a lean live TODO, plus the brand-tone copy sweep dropping legal/crypto framing"
+        ],
+        "dubai": [
+          1067,
+          1590
+        ],
+        "us": [
+          2450,
+          3223
+        ]
+      },
+      {
+        "day": "2026-05-29",
+        "hours": 14,
+        "personDays": 4,
+        "roles": [
+          "Backend 3.5h: Built the server-only /v1/geo/static-map Google proxy route and fixed the Postgres-numeric-string GPS coercion that was 500-ing every report containing a defect photo.",
+          "AI/ML 2.6h: Unblocked the whole Manus analysis pipeline: added description_ar to the structured-output required[] and made the poller tolerate the transient post-create 404 (eventual consistency).",
+          "Mobile 2h: Added the static-map Image preview (with onError self-hide) to property-details and reordered the multipart upload so form fields precede the file part.",
+          "QA 1h: Ran the live signup→create→upload→report E2E smoke test that surfaced the fetch duplex and multipart field-ordering failures.",
+          "Product 4.5h: Wrote the ~1,900-word report-builds-in-background design walkthrough spec.",
+          "Design 0.5h: Styled the map-preview card and shaped the report-design layout described in the spec."
+        ],
+        "dubai": [
+          516,
+          788
+        ],
+        "us": [
+          1148,
+          1587
+        ]
+      },
+      {
+        "day": "2026-05-30",
+        "hours": 4.3,
+        "personDays": 1.23,
+        "roles": [
+          "Product 2.6h: Authored the report-builds-in-background UX spec — vision/non-goals, room-nudge + AI-override flows, share-with-landlord hero flow with delivery/read receipts, and pivoted the hero CTA from landlord co-sign to share-with-receipts; wrote E2E test scenarios and the future-spec roadmap.",
+          "Design 1.7h: Wrote the §11 Visual & Interaction Design Notes from the design war-room — 8-col grid + asymmetric record-ready zones, typography/color system, defect-counter restraint rules, share-first screen layout, Hebrew calm-trust microcopy table, and anti-dark-pattern ethical guardrails."
+        ],
+        "dubai": [
+          134,
+          220
+        ],
+        "us": [
+          289,
+          431
+        ]
+      }
+    ]
+  },
+  "workflowProgress": [
+    {
+      "type": "workflow_phase",
+      "index": 1,
+      "title": "Cost"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 1,
+      "label": "cost:s0",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "aefc6144c4fd5e3f1",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458104738,
+      "queuedAt": 1782458104718,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-06",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458248594,
+      "tokens": 66181,
+      "toolCalls": 9,
+      "durationMs": 143856,
+      "resultPreview": "{\"day\":\"2026-05-06\",\"teamEquivHours\":48,\"personDays\":13.7,\"reuseSplit\":{\"boilerplatePct\":55,\"adaptedPct\":35,\"novelPct\":10},\"disciplineWork\":[{\"discipline\":\"Mobile\",\"hours\":13.5,\"did\":\"Built the Expo Router app shell — navigation groups plus login/register/forgot-password, onboarding role/rooms, and inspection screens wired through Zustand stores.\"},{\"discipline\":\"Product\",\"hours\":26,\"did\":\"Wrote ~…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 2,
+      "label": "cost:s1",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "ae6dfc836de2addfe",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458104740,
+      "queuedAt": 1782458104718,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-07",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458231588,
+      "tokens": 70184,
+      "toolCalls": 7,
+      "durationMs": 126848,
+      "resultPreview": "{\"day\":\"2026-05-07\",\"teamEquivHours\":80,\"personDays\":22.9,\"reuseSplit\":{\"boilerplatePct\":25,\"adaptedPct\":50,\"novelPct\":25},\"disciplineWork\":[{\"discipline\":\"Backend\",\"hours\":33,\"did\":\"Stood up the Node backend from scratch — JWT+bcrypt auth, inspections CRUD, watermark/vision/payments/signatures/reports/notifications/addons routes, R2 storage and SQL migrations; pivoted Supabase to Railway Postgres…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 3,
+      "label": "cost:s2",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a8d77a4f91fa51663",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458104741,
+      "queuedAt": 1782458104718,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-08",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458220204,
+      "tokens": 73035,
+      "toolCalls": 7,
+      "durationMs": 115463,
+      "resultPreview": "{\"day\":\"2026-05-08\",\"teamEquivHours\":38,\"personDays\":10.9,\"reuseSplit\":{\"boilerplatePct\":25,\"adaptedPct\":50,\"novelPct\":25},\"disciplineWork\":[{\"discipline\":\"Mobile\",\"hours\":20,\"did\":\"Built the RN UI atom kit (Button/Card/TextField/HeroBackground/DevNav) and re-skinned ~18 Expo screens (auth, onboarding, tier+payment, inspection, settings, chat) onto the new design tokens, plus a net-new comparison …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 4,
+      "label": "cost:s3",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "ac58fe08e4d30224a",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458104742,
+      "queuedAt": 1782458104718,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-09",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458253529,
+      "tokens": 67825,
+      "toolCalls": 7,
+      "durationMs": 148787,
+      "resultPreview": "{\"day\":\"2026-05-09\",\"teamEquivHours\":114,\"personDays\":32.6,\"reuseSplit\":{\"boilerplatePct\":42,\"adaptedPct\":36,\"novelPct\":22},\"disciplineWork\":[{\"discipline\":\"Backend\",\"hours\":42,\"did\":\"Built 3-SKU AED pricing + payment routes, Apple/Google IAP receipt verification (RS256 JWT REST), refund automation with idempotent webhooks, DB-backed durable job queue, server-side hard caps/rate limits/timestampin…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 5,
+      "label": "cost:s4",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "ab1c10dab750c7eab",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458253532,
+      "queuedAt": 1782458253530,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-09",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458353772,
+      "tokens": 70184,
+      "toolCalls": 7,
+      "durationMs": 100240,
+      "resultPreview": "{\"day\":\"2026-05-09\",\"teamEquivHours\":5.3,\"personDays\":1.51,\"reuseSplit\":{\"boilerplatePct\":25,\"adaptedPct\":45,\"novelPct\":30},\"disciplineWork\":[{\"discipline\":\"Product\",\"hours\":5.3,\"did\":\"Rewrote the Dubai launch plan into an annotated v2 — authored a mandatory security/dependency policy (no-new-npm, built-ins-over-SDK table, REST-over-SDK) and added per-item IMPL implementation blocks for UAE Pass, …"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 6,
+      "label": "cost:s5",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "aa190c278a3cdde32",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458253533,
+      "queuedAt": 1782458253531,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-10",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458410249,
+      "tokens": 77879,
+      "toolCalls": 7,
+      "durationMs": 156716,
+      "resultPreview": "{\"day\":\"2026-05-10\",\"teamEquivHours\":102,\"personDays\":29.1,\"reuseSplit\":{\"boilerplatePct\":35,\"adaptedPct\":45,\"novelPct\":20},\"disciplineWork\":[{\"discipline\":\"Backend\",\"hours\":30,\"did\":\"Shipped the broker-portal API (email-OTP auth, broker-scoped /me/tenants/reports/commission routes, migrations) and SSO token issuance, and deleted the dead Manus vision service + manusProxy.\"},{\"discipline\":\"Mobile\"…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 7,
+      "label": "cost:s6",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a5ae18d4542b16e25",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458253534,
+      "queuedAt": 1782458253531,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-11",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458453966,
+      "tokens": 72897,
+      "toolCalls": 11,
+      "durationMs": 200432,
+      "resultPreview": "{\"day\":\"2026-05-11\",\"teamEquivHours\":155,\"personDays\":44.3,\"reuseSplit\":{\"boilerplatePct\":25,\"adaptedPct\":55,\"novelPct\":20},\"disciplineWork\":[{\"discipline\":\"Security\",\"hours\":55.2,\"did\":\"Built real admin auth (inline RFC-6238 TOTP, bcrypt, rotated refresh sessions, append-only audit log), closed SSRF/path-traversal/prompt-injection, hardened IAP idempotency+replay window, added per-route rate-limi…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 8,
+      "label": "cost:s7",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a962560d6454b4637",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458253534,
+      "queuedAt": 1782458253531,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-12",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458402397,
+      "tokens": 73722,
+      "toolCalls": 9,
+      "durationMs": 148863,
+      "resultPreview": "{\"day\":\"2026-05-12\",\"teamEquivHours\":113,\"personDays\":32.3,\"reuseSplit\":{\"boilerplatePct\":35,\"adaptedPct\":40,\"novelPct\":25},\"disciplineWork\":[{\"discipline\":\"Backend\",\"hours\":55,\"did\":\"Built OTS blockchain anchoring, RERA dispute-letter generator, fair-wear deposit calc + landlord-score engine, Unifonic SMS DLR webhooks, EXIF capture, i18n backend, counter-photo magic-link, plus complex audit fixes…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 9,
+      "label": "cost:s8",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a55d99f3b0da25ebf",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458453971,
+      "queuedAt": 1782458453970,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-13",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458606130,
+      "tokens": 73975,
+      "toolCalls": 9,
+      "durationMs": 152159,
+      "resultPreview": "{\"day\":\"2026-05-13\",\"teamEquivHours\":23,\"personDays\":6.57,\"reuseSplit\":{\"boilerplatePct\":30,\"adaptedPct\":48,\"novelPct\":22},\"disciplineWork\":[{\"discipline\":\"QA\",\"hours\":7,\"did\":\"Wrote ~140 unit tests across inspections, issues, addons, admin, appConfig, landlordScore, brokers and IAP routes on a shared vitest mock harness (4 commits, ~2570 test lines).\"},{\"discipline\":\"Security\",\"hours\":5.5,\"did\":\"…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 10,
+      "label": "cost:s9",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a094c445e606c2328",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458453972,
+      "queuedAt": 1782458453970,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-14",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458557072,
+      "tokens": 69171,
+      "toolCalls": 8,
+      "durationMs": 103100,
+      "resultPreview": "{\"day\":\"2026-05-14\",\"teamEquivHours\":5.7,\"personDays\":1.63,\"reuseSplit\":{\"boilerplatePct\":35,\"adaptedPct\":50,\"novelPct\":15},\"disciplineWork\":[{\"discipline\":\"Security\",\"hours\":2.4,\"did\":\"Triaged Snyk SAST findings, added path-traversal guards (resolve + startsWith) in reports.ts/storage.ts, an SSRF allowlist helper (assertSafeUploadUrl) in manusProxy.ts, and justified deepcode-ignore suppressions f…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 11,
+      "label": "cost:s10",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "ab1e4e371b2952b87",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458453973,
+      "queuedAt": 1782458453970,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-15",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458554677,
+      "tokens": 64052,
+      "toolCalls": 6,
+      "durationMs": 100704,
+      "resultPreview": "{\"day\":\"2026-05-15\",\"teamEquivHours\":16,\"personDays\":4.6,\"reuseSplit\":{\"boilerplatePct\":45,\"adaptedPct\":40,\"novelPct\":15},\"disciplineWork\":[{\"discipline\":\"QA\",\"hours\":8,\"did\":\"Authored a 28-flow Maestro E2E suite covering every user journey (auth, inspection, payments, reports, RTL, offline), then rewrote them with real TestFlight credentials and fixed all flows to pass Maestro 2.4 syntax.\"},{\"dis…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 12,
+      "label": "cost:s11",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a3ea443244108728d",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458453974,
+      "queuedAt": 1782458453970,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-16",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458608277,
+      "tokens": 69202,
+      "toolCalls": 8,
+      "durationMs": 154303,
+      "resultPreview": "{\"day\":\"2026-05-16\",\"teamEquivHours\":42,\"personDays\":12,\"reuseSplit\":{\"boilerplatePct\":30,\"adaptedPct\":42,\"novelPct\":28},\"disciplineWork\":[{\"discipline\":\"Backend\",\"hours\":10,\"did\":\"Fixed the silent ESM-require bug that left rate-limiting disabled in production, added per-email brute-force lockout, scoped admin session-touch to its owner, gated Apple Sandbox receipts for TestFlight via env flag, an…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 13,
+      "label": "cost:s12",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "ad2cf989bc6e63711",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458608281,
+      "queuedAt": 1782458608279,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-20",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458722299,
+      "tokens": 69457,
+      "toolCalls": 7,
+      "durationMs": 114018,
+      "resultPreview": "{\"day\":\"2026-05-20\",\"teamEquivHours\":9.2,\"personDays\":2.6,\"reuseSplit\":{\"boilerplatePct\":60,\"adaptedPct\":25,\"novelPct\":15},\"disciplineWork\":[{\"discipline\":\"Mobile\",\"hours\":3,\"did\":\"Ran the scripted Damagix to MyKeyz rename across 260 RN files with case-preservation + preserve-list, fixed IAP SKU/storage-key/config constants, swapped wordmark assets, verified the app still builds.\"},{\"discipline\":\"…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 14,
+      "label": "cost:s13",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a3276faba9aed06a1",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458608282,
+      "queuedAt": 1782458608279,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-21",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458722108,
+      "tokens": 66509,
+      "toolCalls": 8,
+      "durationMs": 113826,
+      "resultPreview": "{\"day\":\"2026-05-21\",\"teamEquivHours\":12.8,\"personDays\":3.66,\"reuseSplit\":{\"boilerplatePct\":30,\"adaptedPct\":50,\"novelPct\":20},\"disciplineWork\":[{\"discipline\":\"Frontend\",\"hours\":6.6,\"did\":\"Rebuilt the MyKeyz marketing landing page by hand in HTML/CSS — custom grid sections, responsive clamp() typography, inline SVG icons, hero phone+PDF composition, pricing tiers, FAQ, plus nav scroll-state logic in…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 15,
+      "label": "cost:s14",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "ad09717d82785505d",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458608283,
+      "queuedAt": 1782458608279,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-25",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458715098,
+      "tokens": 72242,
+      "toolCalls": 7,
+      "durationMs": 106815,
+      "resultPreview": "{\"day\":\"2026-05-25\",\"teamEquivHours\":15.5,\"personDays\":4.43,\"reuseSplit\":{\"boilerplatePct\":15,\"adaptedPct\":45,\"novelPct\":40},\"disciplineWork\":[{\"discipline\":\"Backend\",\"hours\":8.5,\"did\":\"Reworked refresh-token storage to persist sha256(secret) instead of the raw jti across both user and admin auth services (login/refresh/logout/touch), with a UUID-guarded legacy fallback, migration 0057, and preser…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 16,
+      "label": "cost:s15",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a3eeec14f7d33b2e5",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458608284,
+      "queuedAt": 1782458608279,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-26",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458713042,
+      "tokens": 65937,
+      "toolCalls": 6,
+      "durationMs": 104758,
+      "resultPreview": "{\"day\":\"2026-05-26\",\"teamEquivHours\":27.5,\"personDays\":7.9,\"reuseSplit\":{\"boilerplatePct\":45,\"adaptedPct\":35,\"novelPct\":20},\"disciplineWork\":[{\"discipline\":\"Frontend\",\"hours\":15,\"did\":\"Built the build-site.js static-site generator + 1350-line site.css brand design system + site.js (JS-independent reveal fallback, OS-aware download button) and wired ~20 marketing pages.\"},{\"discipline\":\"Design\",\"ho…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 17,
+      "label": "cost:s16",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a7ca69e32f06bce74",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458722302,
+      "queuedAt": 1782458722301,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-27",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458869856,
+      "tokens": 69007,
+      "toolCalls": 8,
+      "durationMs": 147554,
+      "resultPreview": "{\"day\":\"2026-05-27\",\"teamEquivHours\":92,\"personDays\":26.3,\"reuseSplit\":{\"boilerplatePct\":25,\"adaptedPct\":50,\"novelPct\":25},\"disciplineWork\":[{\"discipline\":\"Backend\",\"hours\":26,\"did\":\"Built compare-photos API + Manus two-file proxy, migrated pricing to feature-tier across appConfig/iap (+migration SQL), added Ed25519 report-signing routes, and hardened error masking + stalled-job reaper.\"},{\"discip…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 18,
+      "label": "cost:s17",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a57a8a6963f290d38",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458722303,
+      "queuedAt": 1782458722301,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-28",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458834373,
+      "tokens": 65442,
+      "toolCalls": 7,
+      "durationMs": 112070,
+      "resultPreview": "{\"day\":\"2026-05-28\",\"teamEquivHours\":30,\"personDays\":8.57,\"reuseSplit\":{\"boilerplatePct\":25,\"adaptedPct\":50,\"novelPct\":25},\"disciplineWork\":[{\"discipline\":\"Mobile\",\"hours\":14.5,\"did\":\"Rebuilt the inspection journey as inspection-first (new record-ready + property-details screens, rooms refactor), shipped the 3-slide first-launch intro carousel, the background analyzing->verified chat UX, pinch-to-…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 19,
+      "label": "cost:s18",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a3f4b99b8120d6c97",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458722304,
+      "queuedAt": 1782458722301,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-29",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458829521,
+      "tokens": 69181,
+      "toolCalls": 7,
+      "durationMs": 107217,
+      "resultPreview": "{\"day\":\"2026-05-29\",\"teamEquivHours\":14,\"personDays\":4,\"reuseSplit\":{\"boilerplatePct\":20,\"adaptedPct\":30,\"novelPct\":50},\"disciplineWork\":[{\"discipline\":\"Backend\",\"hours\":3.5,\"did\":\"Built the server-only /v1/geo/static-map Google proxy route and fixed the Postgres-numeric-string GPS coercion that was 500-ing every report containing a defect photo.\"},{\"discipline\":\"AI/ML\",\"hours\":2.6,\"did\":\"Unblocke…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 20,
+      "label": "cost:s19",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a5781dbb3b16e242e",
+      "model": "claude-opus-4-8[1m]",
+      "state": "done",
+      "startedAt": 1782458722305,
+      "queuedAt": 1782458722301,
+      "attempt": 1,
+      "lastToolName": "StructuredOutput",
+      "lastToolSummary": "2026-05-30",
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458837992,
+      "tokens": 72569,
+      "toolCalls": 7,
+      "durationMs": 115687,
+      "resultPreview": "{\"day\":\"2026-05-30\",\"teamEquivHours\":4.3,\"personDays\":1.23,\"reuseSplit\":{\"boilerplatePct\":15,\"adaptedPct\":25,\"novelPct\":60},\"disciplineWork\":[{\"discipline\":\"Product\",\"hours\":2.6,\"did\":\"Authored the report-builds-in-background UX spec — vision/non-goals, room-nudge + AI-override flows, share-with-landlord hero flow with delivery/read receipts, and pivoted the hero CTA from landlord co-sign to share…"
+    },
+    {
+      "type": "workflow_agent",
+      "index": 21,
+      "label": "cost:s20",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "aa7933f766ac18fdd",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458869860,
+      "queuedAt": 1782458869858,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458870347,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 487
+    },
+    {
+      "type": "workflow_agent",
+      "index": 22,
+      "label": "cost:s21",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "aee12599e1ce452a6",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458869861,
+      "queuedAt": 1782458869858,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458870395,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 534
+    },
+    {
+      "type": "workflow_agent",
+      "index": 23,
+      "label": "cost:s22",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a0bb0a90f3749fe57",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458869862,
+      "queuedAt": 1782458869858,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458870643,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 781
+    },
+    {
+      "type": "workflow_agent",
+      "index": 24,
+      "label": "cost:s23",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a2cfcbc4df44e9418",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458869863,
+      "queuedAt": 1782458869858,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458870828,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 965
+    },
+    {
+      "type": "workflow_agent",
+      "index": 25,
+      "label": "cost:s24",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a2056fc5fb731b4a4",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458870834,
+      "queuedAt": 1782458870830,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458871895,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 1061
+    },
+    {
+      "type": "workflow_agent",
+      "index": 26,
+      "label": "cost:s25",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "aaa795e554b92b480",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458870838,
+      "queuedAt": 1782458870830,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458871579,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 740
+    },
+    {
+      "type": "workflow_agent",
+      "index": 27,
+      "label": "cost:s26",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a132810de8cf10a8b",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458870842,
+      "queuedAt": 1782458870830,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458871249,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 406
+    },
+    {
+      "type": "workflow_agent",
+      "index": 28,
+      "label": "cost:s27",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a34b3d52b8d5e22e3",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458870845,
+      "queuedAt": 1782458870830,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458871333,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 488
+    },
+    {
+      "type": "workflow_agent",
+      "index": 29,
+      "label": "cost:s28",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "ab6bdcacf60c76277",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458871904,
+      "queuedAt": 1782458871902,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458872255,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 351
+    },
+    {
+      "type": "workflow_agent",
+      "index": 30,
+      "label": "cost:s29",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a8566943062a1605f",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458871905,
+      "queuedAt": 1782458871902,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458872248,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 343
+    },
+    {
+      "type": "workflow_agent",
+      "index": 31,
+      "label": "cost:s30",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a6a9981536dd18397",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458871906,
+      "queuedAt": 1782458871902,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458873063,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 1156
+    },
+    {
+      "type": "workflow_agent",
+      "index": 32,
+      "label": "cost:s31",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "afaa4335c890f18e1",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458871908,
+      "queuedAt": 1782458871902,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458872451,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 543
+    },
+    {
+      "type": "workflow_agent",
+      "index": 33,
+      "label": "cost:s32",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "aedc4765d4d231e29",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458873066,
+      "queuedAt": 1782458873064,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458873497,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 431
+    },
+    {
+      "type": "workflow_agent",
+      "index": 34,
+      "label": "cost:s33",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a0a03fc646ec93388",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458873067,
+      "queuedAt": 1782458873064,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458873542,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 475
+    },
+    {
+      "type": "workflow_agent",
+      "index": 35,
+      "label": "cost:s34",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "ae0cba2e31b34776e",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458873068,
+      "queuedAt": 1782458873064,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458873611,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 543
+    },
+    {
+      "type": "workflow_agent",
+      "index": 36,
+      "label": "cost:s35",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "ad1c8c95bac200efd",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458873069,
+      "queuedAt": 1782458873064,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458873461,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 391
+    },
+    {
+      "type": "workflow_agent",
+      "index": 37,
+      "label": "cost:s36",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "a5b5a61c548e28fad",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458873617,
+      "queuedAt": 1782458873616,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458873995,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 378
+    },
+    {
+      "type": "workflow_agent",
+      "index": 38,
+      "label": "cost:s37",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "aaeeae8c428c3a8d7",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458873618,
+      "queuedAt": 1782458873616,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458873985,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 367
+    },
+    {
+      "type": "workflow_agent",
+      "index": 39,
+      "label": "cost:s38",
+      "phaseIndex": 1,
+      "phaseTitle": "Cost",
+      "agentId": "ab8ce7106565c426f",
+      "model": "claude-opus-4-8[1m]",
+      "state": "error",
+      "startedAt": 1782458873618,
+      "queuedAt": 1782458873616,
+      "attempt": 1,
+      "promptPreview": "You are applying the commit-human-cost skill to ONE work-session of the MyKeyz project.\n\nSETUP — read these first, in order:\n1. The skill methodology: /Users/claude/.claude/skills/commit-human-cost/SKILL.md\n2. The market rates: /Users/claude/.claude/skills/commit-human-cost/references/market-rates.md\n3. The sessions file: /Users/claude/Documents/mykeyz-retro/extract/sessions.json — a JSON array. T…",
+      "lastProgressAt": 1782458874028,
+      "error": "You've hit your session limit · resets 11:40am (Asia/Jerusalem)",
+      "tokens": 0,
+      "toolCalls": 0,
+      "durationMs": 410
+    }
+  ],
+  "totalTokens": 1398651,
+  "totalToolCalls": 152
+}

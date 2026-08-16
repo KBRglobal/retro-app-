@@ -1,5 +1,5 @@
 import { Icon } from "@iconify/react";
-import { epics, team, summary, money, epicCost, PERSON_YEARS } from "../lib/data";
+import { epics, team, summary, money, epicCost, TEAM_YEARS, TEAM_MONTHS, TOTAL_WORK_HOURS } from "../lib/data";
 import { useMarket } from "../lib/market";
 
 export function Overview() {
@@ -71,9 +71,10 @@ export function Overview() {
                   <div className="grid grid-cols-3 gap-8 border-t border-white/10 pt-8">
                     <div>
                       <p className="text-[10px] font-bold text-white/40 uppercase mb-1">
-                        Human Effort
+                        Full Team · In Parallel
                       </p>
-                      <p className="text-lg font-bold">{PERSON_YEARS} Years</p>
+                      <p className="text-lg font-bold">{TEAM_YEARS} Years</p>
+                      <p className="text-[10px] text-white/40 font-bold mt-0.5">{TEAM_MONTHS} months together</p>
                     </div>
                     <div>
                       <p className="text-[10px] font-bold text-white/40 uppercase mb-1">
@@ -82,8 +83,8 @@ export function Overview() {
                       <p className="text-lg font-bold text-emerald-400">{speed}x</p>
                     </div>
                     <div>
-                      <p className="text-[10px] font-bold text-white/40 uppercase mb-1">Status</p>
-                      <p className="text-lg font-bold">Finalized</p>
+                      <p className="text-[10px] font-bold text-white/40 uppercase mb-1">Work Hours</p>
+                      <p className="text-lg font-bold">{TOTAL_WORK_HOURS.toLocaleString()} h</p>
                     </div>
                   </div>
                 </div>

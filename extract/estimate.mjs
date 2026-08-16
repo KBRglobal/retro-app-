@@ -22,6 +22,7 @@ const CONFIG = JSON.parse(readFileSync(resolve(__dirname, "config.json"), "utf8"
 
 const TOTAL_PERSON_MONTHS = 126;          // cross-validated effort (scaled for Care app + API; ~160.7k net LOC)
 const HOURS_PER_MONTH = 160;
+const HOURS_PER_DAY = 12;                  // hard-driven team: long 12h days (founder pace)
 const TOTAL_HOURS = TOTAL_PERSON_MONTHS * HOURS_PER_MONTH; // 19,200
 
 // --- Blended fully-loaded hourly rates ($/h), mid-point, from the research ----
@@ -253,6 +254,14 @@ for (const iss of issues) {
     iss.contributorIds.unshift("lead"); // lead reviews big cross-discipline items
   }
   teamStats[ranked[0]].issues += 1; // "owned" count
+
+  // human time frames: translate effort-hours into real working days.
+  // A developer delivers ~6 productive hours/day (an 8h day minus reviews, standups, breaks).
+  // humanDays = one person solo; crewDays = the real crew working it in parallel.
+  const crewSize = 1 + iss.contributorIds.length;
+  iss.crewSize = crewSize;
+  iss.humanDays = Math.max(0.5, Math.round((iss.estHours / HOURS_PER_DAY) * 10) / 10);
+  iss.crewDays = Math.max(0.5, Math.round((iss.estHours / HOURS_PER_DAY / crewSize) * 10) / 10);
 
   // distribute hours + cost across every contributing specialist (real teamwork)
   for (const [id, w] of Object.entries(memberWeight)) {
