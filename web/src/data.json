@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-24T08:04:48+04:00",
+  "generatedAt": "2026-08-24T08:40:57+04:00",
   "repos": [
     {
       "id": "app",
@@ -31,16 +31,16 @@
     }
   ],
   "summary": {
-    "totalCommits": 1872,
+    "totalCommits": 1875,
     "firstCommit": "2026-05-06T06:09:02+03:00",
-    "lastCommit": "2026-08-24T08:04:48+04:00",
-    "totalInsertions": 1050821,
-    "totalDeletions": 479629,
+    "lastCommit": "2026-08-24T08:40:57+04:00",
+    "totalInsertions": 1050851,
+    "totalDeletions": 479638,
     "disciplineTotals": {
       "Frontend": 608,
       "Design": 133,
       "Backend": 816,
-      "Product": 653,
+      "Product": 654,
       "AI/ML": 134,
       "DevOps": 78,
       "QA": 357,
@@ -55,33 +55,33 @@
     "ghostMonths": 18,
     "moneyByMarket": {
       "Dubai": {
-        "teamCost": 1457713,
+        "teamCost": 1457727,
         "actualCost": 25000,
-        "savings": 1432713,
+        "savings": 1432727,
         "savingsPct": 98,
         "teamEquivMonths": 138,
         "realHours": 20160
       },
       "USA": {
-        "teamCost": 2751421,
+        "teamCost": 2751441,
         "actualCost": 38000,
-        "savings": 2713421,
+        "savings": 2713441,
         "savingsPct": 99,
         "teamEquivMonths": 138,
         "realHours": 20160
       },
       "Offshore": {
-        "teamCost": 915591,
+        "teamCost": 915604,
         "actualCost": 15000,
-        "savings": 900591,
+        "savings": 900604,
         "savingsPct": 98,
         "teamEquivMonths": 138,
         "realHours": 20160
       }
     },
-    "teamCost": 1457713,
+    "teamCost": 1457727,
     "actualCost": 25000,
-    "savings": 1432713,
+    "savings": 1432727,
     "savingsPct": 98
   },
   "commits": [
@@ -95059,6 +95059,24 @@
       "fileCount": 29
     },
     {
+      "hash": "a9c7397a698a5e30426f2dae340ad7e11da94b63",
+      "date": "2026-08-24T04:27:10Z",
+      "author": "fleet-monitor",
+      "subject": "chore(fleet): monitor log update [skip ci]",
+      "repo": "octypo",
+      "files": [
+        {
+          "path": "fleet/MONITOR-LOG.jsonl",
+          "ins": 1,
+          "del": 0
+        }
+      ],
+      "insertions": 1,
+      "deletions": 0,
+      "disciplines": [],
+      "fileCount": 1
+    },
+    {
       "hash": "4f11cb7090b1127874cb605354f908aca7e025f9",
       "date": "2026-08-24T07:37:16+04:00",
       "author": "kbr",
@@ -95112,6 +95130,49 @@
         "Product"
       ],
       "fileCount": 1
+    },
+    {
+      "hash": "8889883c67c8de1ac59c6ee4d3e99f3c0537917a",
+      "date": "2026-08-24T08:28:41+04:00",
+      "author": "kbr",
+      "subject": "fix(fleet): prod build identity via ENGINE_BUILD_SHA env",
+      "repo": "octypo",
+      "files": [
+        {
+          "path": "scripts/deploy-all.mjs",
+          "ins": 10,
+          "del": 0
+        },
+        {
+          "path": "src/lib/build-info.ts",
+          "ins": 13,
+          "del": 6
+        }
+      ],
+      "insertions": 23,
+      "deletions": 6,
+      "disciplines": [],
+      "fileCount": 2
+    },
+    {
+      "hash": "8cefc8e6f0a1883fc817a51f048e353c94fcb0fa",
+      "date": "2026-08-24T08:40:57+04:00",
+      "author": "kbr",
+      "subject": "docs(fleet): monitor writes the committed log, no Telegram",
+      "repo": "octypo",
+      "files": [
+        {
+          "path": "docs/FLEET-OPS.md",
+          "ins": 6,
+          "del": 3
+        }
+      ],
+      "insertions": 6,
+      "deletions": 3,
+      "disciplines": [
+        "Product"
+      ],
+      "fileCount": 1
     }
   ],
   "team": [
@@ -95125,11 +95186,11 @@
       "hours": 2419,
       "issueCount": 133,
       "costByMarket": {
-        "Dubai": 159926,
-        "USA": 307971,
-        "Offshore": 100271
+        "Dubai": 159927,
+        "USA": 307973,
+        "Offshore": 100272
       },
-      "cost": 159926
+      "cost": 159927
     },
     {
       "id": "be",
@@ -95141,11 +95202,11 @@
       "hours": 2128,
       "issueCount": 113,
       "costByMarket": {
-        "Dubai": 137466,
-        "USA": 279769,
-        "Offshore": 85496
+        "Dubai": 137464,
+        "USA": 279766,
+        "Offshore": 85495
       },
-      "cost": 137466
+      "cost": 137464
     },
     {
       "id": "sec",
@@ -95157,11 +95218,11 @@
       "hours": 1120,
       "issueCount": 13,
       "costByMarket": {
-        "Dubai": 78440,
-        "USA": 145159,
-        "Offshore": 49669
+        "Dubai": 78437,
+        "USA": 145154,
+        "Offshore": 49667
       },
-      "cost": 78440
+      "cost": 78437
     },
     {
       "id": "mob",
@@ -95173,11 +95234,11 @@
       "hours": 2253,
       "issueCount": 69,
       "costByMarket": {
-        "Dubai": 146173,
-        "USA": 287583,
-        "Offshore": 91507
+        "Dubai": 146168,
+        "USA": 287572,
+        "Offshore": 91504
       },
-      "cost": 146173
+      "cost": 146168
     },
     {
       "id": "web",
@@ -95205,11 +95266,11 @@
       "hours": 929,
       "issueCount": 3,
       "costByMarket": {
-        "Dubai": 68317,
-        "USA": 119438,
-        "Offshore": 43687
+        "Dubai": 68315,
+        "USA": 119435,
+        "Offshore": 43685
       },
-      "cost": 68317
+      "cost": 68315
     },
     {
       "id": "ops",
@@ -95219,13 +95280,13 @@
       "icon": "lucide:cloud",
       "avatar": "https://randomuser.me/api/portraits/men/61.jpg",
       "hours": 771,
-      "issueCount": 13,
+      "issueCount": 12,
       "costByMarket": {
-        "Dubai": 50863,
-        "USA": 96863,
-        "Offshore": 32371
+        "Dubai": 50865,
+        "USA": 96866,
+        "Offshore": 32372
       },
-      "cost": 50863
+      "cost": 50865
     },
     {
       "id": "qa",
@@ -95237,11 +95298,11 @@
       "hours": 2131,
       "issueCount": 13,
       "costByMarket": {
-        "Dubai": 140951,
-        "USA": 277032,
-        "Offshore": 88271
+        "Dubai": 140945,
+        "USA": 277021,
+        "Offshore": 88267
       },
-      "cost": 140951
+      "cost": 140945
     },
     {
       "id": "pm",
@@ -95250,14 +95311,14 @@
       "color": "#14B8A6",
       "icon": "lucide:clipboard-list",
       "avatar": "https://randomuser.me/api/portraits/men/76.jpg",
-      "hours": 1650,
-      "issueCount": 65,
+      "hours": 1651,
+      "issueCount": 66,
       "costByMarket": {
-        "Dubai": 107423,
-        "USA": 209817,
-        "Offshore": 65675
+        "Dubai": 107471,
+        "USA": 209901,
+        "Offshore": 65710
       },
-      "cost": 107423
+      "cost": 107471
     },
     {
       "id": "design",
@@ -95269,11 +95330,11 @@
       "hours": 2187,
       "issueCount": 507,
       "costByMarket": {
-        "Dubai": 139742,
-        "USA": 245202,
-        "Offshore": 88724
+        "Dubai": 139739,
+        "USA": 245197,
+        "Offshore": 88722
       },
-      "cost": 139742
+      "cost": 139739
     },
     {
       "id": "i18n",
@@ -95285,11 +95346,11 @@
       "hours": 5861,
       "issueCount": 96,
       "costByMarket": {
-        "Dubai": 391346,
-        "USA": 707965,
-        "Offshore": 246386
+        "Dubai": 391330,
+        "USA": 707938,
+        "Offshore": 246375
       },
-      "cost": 391346
+      "cost": 391330
     },
     {
       "id": "growth",
@@ -95301,11 +95362,11 @@
       "hours": 469,
       "issueCount": 18,
       "costByMarket": {
-        "Dubai": 27782,
-        "USA": 56455,
-        "Offshore": 17717
+        "Dubai": 27781,
+        "USA": 56453,
+        "Offshore": 17716
       },
-      "cost": 27782
+      "cost": 27781
     }
   ],
   "ghost": {
@@ -95318,22 +95379,21 @@
         "epicId": "infra",
         "title": "Infra & DevOps",
         "lane": 0,
-        "estHours": 45,
+        "estHours": 44,
         "disciplines": [
           "Product",
           "Backend",
           "Design",
-          "Frontend",
-          "DevOps"
+          "Frontend"
         ],
         "startDate": "2025-01-15T00:00:00.000Z",
-        "endDate": "2025-01-31T06:39:22.389Z"
+        "endDate": "2025-01-31T06:42:50.672Z"
       },
       {
         "epicId": "design",
         "title": "Design System & UI",
         "lane": 1,
-        "estHours": 296,
+        "estHours": 299,
         "disciplines": [
           "Backend",
           "Product",
@@ -95345,7 +95405,7 @@
           "DevOps"
         ],
         "startDate": "2025-01-15T00:00:00.000Z",
-        "endDate": "2025-01-31T06:39:22.389Z"
+        "endDate": "2025-01-31T06:42:50.672Z"
       },
       {
         "epicId": "onboarding",
@@ -95363,7 +95423,7 @@
           "AI/ML"
         ],
         "startDate": "2025-01-15T00:00:00.000Z",
-        "endDate": "2025-02-03T22:43:33.437Z"
+        "endDate": "2025-02-03T22:46:22.250Z"
       },
       {
         "epicId": "core",
@@ -95376,8 +95436,8 @@
           "Backend",
           "Design"
         ],
-        "startDate": "2025-01-31T06:39:22.389Z",
-        "endDate": "2025-02-16T13:18:44.779Z"
+        "startDate": "2025-01-31T06:42:50.672Z",
+        "endDate": "2025-02-16T13:25:41.345Z"
       },
       {
         "epicId": "inspection",
@@ -95394,8 +95454,8 @@
           "Design",
           "AI/ML"
         ],
-        "startDate": "2025-01-31T06:39:22.389Z",
-        "endDate": "2025-06-21T21:13:31.674Z"
+        "startDate": "2025-01-31T06:42:50.672Z",
+        "endDate": "2025-06-21T21:36:58.395Z"
       },
       {
         "epicId": "ai",
@@ -95412,8 +95472,8 @@
           "DevOps",
           "QA"
         ],
-        "startDate": "2025-02-03T22:43:33.437Z",
-        "endDate": "2025-05-20T13:32:05.876Z"
+        "startDate": "2025-02-03T22:46:22.250Z",
+        "endDate": "2025-05-20T13:49:48.539Z"
       },
       {
         "epicId": "reports",
@@ -95429,8 +95489,8 @@
           "Frontend",
           "DevOps"
         ],
-        "startDate": "2025-02-16T13:18:44.779Z",
-        "endDate": "2025-03-10T02:32:30.558Z"
+        "startDate": "2025-02-16T13:25:41.345Z",
+        "endDate": "2025-03-10T02:42:29.515Z"
       },
       {
         "epicId": "payments",
@@ -95447,14 +95507,14 @@
           "QA",
           "Marketing"
         ],
-        "startDate": "2025-03-10T02:32:30.558Z",
-        "endDate": "2025-07-23T07:05:50.479Z"
+        "startDate": "2025-03-10T02:42:29.515Z",
+        "endDate": "2025-07-23T07:34:53.564Z"
       },
       {
         "epicId": "antifraud",
         "title": "Anti-fraud & Trust",
         "lane": 2,
-        "estHours": 7862,
+        "estHours": 7861,
         "disciplines": [
           "Frontend",
           "Backend",
@@ -95465,7 +95525,7 @@
           "Design",
           "AI/ML"
         ],
-        "startDate": "2025-05-20T13:32:05.876Z",
+        "startDate": "2025-05-20T13:49:48.539Z",
         "endDate": "2026-07-15T00:00:00.000Z"
       },
       {
@@ -95483,8 +95543,8 @@
           "QA",
           "Design"
         ],
-        "startDate": "2025-06-21T21:13:31.674Z",
-        "endDate": "2025-12-02T08:43:29.206Z"
+        "startDate": "2025-06-21T21:36:58.395Z",
+        "endDate": "2025-12-02T09:29:59.471Z"
       },
       {
         "epicId": "verify",
@@ -95499,8 +95559,8 @@
           "Design",
           "DevOps"
         ],
-        "startDate": "2025-07-23T07:05:50.479Z",
-        "endDate": "2025-08-08T13:45:12.869Z"
+        "startDate": "2025-07-23T07:34:53.564Z",
+        "endDate": "2025-08-08T14:17:44.237Z"
       },
       {
         "epicId": "content",
@@ -95515,8 +95575,8 @@
           "Frontend",
           "Backend"
         ],
-        "startDate": "2025-08-08T13:45:12.869Z",
-        "endDate": "2025-08-24T20:24:35.259Z"
+        "startDate": "2025-08-08T14:17:44.237Z",
+        "endDate": "2025-08-24T21:00:34.910Z"
       },
       {
         "epicId": "marketing",
@@ -95531,8 +95591,8 @@
           "Frontend",
           "Backend"
         ],
-        "startDate": "2025-08-24T20:24:35.259Z",
-        "endDate": "2025-09-10T03:03:57.649Z"
+        "startDate": "2025-08-24T21:00:34.910Z",
+        "endDate": "2025-09-10T03:43:25.583Z"
       },
       {
         "epicId": "i18n",
@@ -95546,8 +95606,8 @@
           "DevOps",
           "QA"
         ],
-        "startDate": "2025-09-10T03:03:57.649Z",
-        "endDate": "2025-10-01T00:53:38.491Z"
+        "startDate": "2025-09-10T03:43:25.583Z",
+        "endDate": "2025-10-01T01:36:03.385Z"
       },
       {
         "epicId": "admin",
@@ -95555,8 +95615,8 @@
         "lane": 0,
         "estHours": 14,
         "disciplines": [],
-        "startDate": "2025-10-01T00:53:38.491Z",
-        "endDate": "2025-10-17T07:33:00.881Z"
+        "startDate": "2025-10-01T01:36:03.385Z",
+        "endDate": "2025-10-17T08:18:54.058Z"
       }
     ]
   },
@@ -95615,12 +95675,12 @@
       "status": "done",
       "issueCount": 48,
       "commitCount": 372,
-      "estHours": 7862,
-      "estCost": 526289,
+      "estHours": 7861,
+      "estCost": 526274,
       "estCostByMarket": {
-        "Dubai": 526289,
-        "USA": 1022910,
-        "Offshore": 330255
+        "Dubai": 526274,
+        "USA": 1022884,
+        "Offshore": 330246
       },
       "startDate": "2026-05-09T12:28:40+03:00",
       "endDate": "2026-08-02T18:31:02+03:00",
@@ -95644,11 +95704,11 @@
       "issueCount": 73,
       "commitCount": 364,
       "estHours": 3057,
-      "estCost": 205085,
+      "estCost": 205072,
       "estCostByMarket": {
-        "Dubai": 205085,
-        "USA": 396755,
-        "Offshore": 128947
+        "Dubai": 205072,
+        "USA": 396730,
+        "Offshore": 128938
       },
       "startDate": "2026-05-09T14:12:46+03:00",
       "endDate": "2026-08-23T08:36:56+04:00",
@@ -95672,11 +95732,11 @@
       "issueCount": 42,
       "commitCount": 301,
       "estHours": 2528,
-      "estCost": 171851,
+      "estCost": 171844,
       "estCostByMarket": {
-        "Dubai": 171851,
-        "USA": 327163,
-        "Offshore": 108184
+        "Dubai": 171844,
+        "USA": 327151,
+        "Offshore": 108179
       },
       "startDate": "2026-05-07T00:09:57+03:00",
       "endDate": "2026-08-22T02:26:21+04:00",
@@ -95700,11 +95760,11 @@
       "issueCount": 65,
       "commitCount": 385,
       "estHours": 2648,
-      "estCost": 157981,
+      "estCost": 157969,
       "estCostByMarket": {
-        "Dubai": 157981,
-        "USA": 315690,
-        "Offshore": 98657
+        "Dubai": 157969,
+        "USA": 315666,
+        "Offshore": 98649
       },
       "startDate": "2026-05-09T00:17:48+03:00",
       "endDate": "2026-08-01T04:40:53+03:00",
@@ -95877,17 +95937,17 @@
         "DevOps"
       ],
       "status": "done",
-      "issueCount": 16,
-      "commitCount": 27,
-      "estHours": 296,
-      "estCost": 19444,
+      "issueCount": 17,
+      "commitCount": 32,
+      "estHours": 299,
+      "estCost": 19599,
       "estCostByMarket": {
-        "Dubai": 19444,
-        "USA": 37316,
-        "Offshore": 12390
+        "Dubai": 19599,
+        "USA": 37589,
+        "Offshore": 12503
       },
       "startDate": "2026-05-13T16:30:17+03:00",
-      "endDate": "2026-08-23T04:18:21+04:00",
+      "endDate": "2026-08-24T08:40:57+04:00",
       "icon": "lucide:palette",
       "desc": "Design system, brand and UI tokens."
     },
@@ -95998,21 +96058,20 @@
         "Product",
         "Backend",
         "Design",
-        "Frontend",
-        "DevOps"
+        "Frontend"
       ],
       "status": "done",
-      "issueCount": 11,
-      "commitCount": 16,
-      "estHours": 45,
-      "estCost": 2658,
+      "issueCount": 10,
+      "commitCount": 14,
+      "estHours": 44,
+      "estCost": 2564,
       "estCostByMarket": {
-        "Dubai": 2658,
-        "USA": 5733,
-        "Offshore": 1633
+        "Dubai": 2564,
+        "USA": 5567,
+        "Offshore": 1564
       },
       "startDate": "2026-06-11T00:43:31+03:00",
-      "endDate": "2026-08-24T08:04:48+04:00",
+      "endDate": "2026-07-18T02:49:26+03:00",
       "icon": "lucide:cloud",
       "desc": "Railway, Docker, CI, migrations and OTA."
     },
@@ -141410,13 +141469,13 @@
       "deletions": 15059,
       "startDate": "2026-06-16T00:10:55+03:00",
       "endDate": "2026-06-16T04:20:52+03:00",
-      "estHours": 140.1,
+      "estHours": 140,
       "estCostByMarket": {
-        "Dubai": 8196,
-        "USA": 18703,
-        "Offshore": 4974
+        "Dubai": 8190,
+        "USA": 18690,
+        "Offshore": 4970
       },
-      "estCost": 8196,
+      "estCost": 8190,
       "assigneeId": "mob",
       "contributorIds": [
         "lead",
@@ -146422,13 +146481,13 @@
       "deletions": 4427,
       "startDate": "2026-06-17T19:40:03+03:00",
       "endDate": "2026-06-17T21:01:45+03:00",
-      "estHours": 471.1,
+      "estHours": 471,
       "estCostByMarket": {
-        "Dubai": 34626,
-        "USA": 60536,
-        "Offshore": 22142
+        "Dubai": 34619,
+        "USA": 60524,
+        "Offshore": 22137
       },
-      "estCost": 34626,
+      "estCost": 34619,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -151956,13 +152015,13 @@
       "deletions": 5247,
       "startDate": "2026-06-18T03:22:44+03:00",
       "endDate": "2026-06-18T04:42:55+03:00",
-      "estHours": 502.4,
+      "estHours": 502.3,
       "estCostByMarket": {
-        "Dubai": 36926,
-        "USA": 64558,
-        "Offshore": 23613
+        "Dubai": 36919,
+        "USA": 64546,
+        "Offshore": 23608
       },
-      "estCost": 36926,
+      "estCost": 36919,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -188797,13 +188856,13 @@
       "deletions": 170043,
       "startDate": "2026-07-21T05:31:14+03:00",
       "endDate": "2026-07-21T07:37:59+03:00",
-      "estHours": 4317.9,
+      "estHours": 4317.7,
       "estCostByMarket": {
-        "Dubai": 317366,
-        "USA": 554850,
-        "Offshore": 202941
+        "Dubai": 317351,
+        "USA": 554824,
+        "Offshore": 202932
       },
-      "estCost": 317366,
+      "estCost": 317351,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -195512,13 +195571,13 @@
       "deletions": 31677,
       "startDate": "2026-08-01T02:28:41+03:00",
       "endDate": "2026-08-01T04:40:53+03:00",
-      "estHours": 1281.5,
+      "estHours": 1281.4,
       "estCostByMarket": {
-        "Dubai": 74968,
-        "USA": 139043,
-        "Offshore": 47416
+        "Dubai": 74962,
+        "USA": 139032,
+        "Offshore": 47412
       },
-      "estCost": 74968,
+      "estCost": 74962,
       "assigneeId": "i18n",
       "contributorIds": [
         "lead",
@@ -198575,13 +198634,13 @@
       "deletions": 127,
       "startDate": "2026-08-21T20:06:23+04:00",
       "endDate": "2026-08-21T22:48:10+04:00",
-      "estHours": 503.4,
+      "estHours": 503.3,
       "estCostByMarket": {
-        "Dubai": 29449,
-        "USA": 67204,
-        "Offshore": 17871
+        "Dubai": 29443,
+        "USA": 67191,
+        "Offshore": 17867
       },
-      "estCost": 29449,
+      "estCost": 29443,
       "assigneeId": "qa",
       "contributorIds": [
         "lead",
@@ -203106,7 +203165,7 @@
     {
       "repo": "octypo",
       "id": "ISS-0382",
-      "epicId": "infra",
+      "epicId": "design",
       "title": "Monitor findings go to committed log, not Telegram",
       "disciplines": [
         "DevOps",
@@ -203114,23 +203173,41 @@
       ],
       "dominant": "DevOps",
       "status": "done",
-      "commitCount": 2,
-      "insertions": 94,
-      "deletions": 37,
-      "startDate": "2026-08-24T07:37:16+04:00",
-      "endDate": "2026-08-24T08:04:48+04:00",
-      "estHours": 1.7,
+      "commitCount": 5,
+      "insertions": 124,
+      "deletions": 46,
+      "startDate": "2026-08-24T04:27:10Z",
+      "endDate": "2026-08-24T08:40:57+04:00",
+      "estHours": 2.8,
       "estCostByMarket": {
-        "Dubai": 94,
-        "USA": 166,
-        "Offshore": 69
+        "Dubai": 155,
+        "USA": 273,
+        "Offshore": 113
       },
-      "estCost": 94,
-      "assigneeId": "ops",
+      "estCost": 155,
+      "assigneeId": "pm",
       "contributorIds": [
-        "pm"
+        "ops"
       ],
       "commits": [
+        {
+          "hash": "a9c7397a698a5e30426f2dae340ad7e11da94b63",
+          "date": "2026-08-24T04:27:10Z",
+          "author": "fleet-monitor",
+          "subject": "chore(fleet): monitor log update [skip ci]",
+          "repo": "octypo",
+          "files": [
+            {
+              "path": "fleet/MONITOR-LOG.jsonl",
+              "ins": 1,
+              "del": 0
+            }
+          ],
+          "insertions": 1,
+          "deletions": 0,
+          "disciplines": [],
+          "fileCount": 1
+        },
         {
           "hash": "4f11cb7090b1127874cb605354f908aca7e025f9",
           "date": "2026-08-24T07:37:16+04:00",
@@ -203181,6 +203258,49 @@
           ],
           "insertions": 1,
           "deletions": 1,
+          "disciplines": [
+            "Product"
+          ],
+          "fileCount": 1
+        },
+        {
+          "hash": "8889883c67c8de1ac59c6ee4d3e99f3c0537917a",
+          "date": "2026-08-24T08:28:41+04:00",
+          "author": "kbr",
+          "subject": "fix(fleet): prod build identity via ENGINE_BUILD_SHA env",
+          "repo": "octypo",
+          "files": [
+            {
+              "path": "scripts/deploy-all.mjs",
+              "ins": 10,
+              "del": 0
+            },
+            {
+              "path": "src/lib/build-info.ts",
+              "ins": 13,
+              "del": 6
+            }
+          ],
+          "insertions": 23,
+          "deletions": 6,
+          "disciplines": [],
+          "fileCount": 2
+        },
+        {
+          "hash": "8cefc8e6f0a1883fc817a51f048e353c94fcb0fa",
+          "date": "2026-08-24T08:40:57+04:00",
+          "author": "kbr",
+          "subject": "docs(fleet): monitor writes the committed log, no Telegram",
+          "repo": "octypo",
+          "files": [
+            {
+              "path": "docs/FLEET-OPS.md",
+              "ins": 6,
+              "del": 3
+            }
+          ],
+          "insertions": 6,
+          "deletions": 3,
           "disciplines": [
             "Product"
           ],
@@ -203706,7 +203826,7 @@
       "label": "Sprint 15 · 2026-08-19",
       "startDate": "2026-08-19T03:09:02.000Z",
       "endDate": "2026-08-25T03:09:02.000Z",
-      "commitCount": 72,
+      "commitCount": 75,
       "issueIds": [
         "ISS-0372",
         "ISS-0373",
@@ -203720,7 +203840,7 @@
         "ISS-0381",
         "ISS-0382"
       ],
-      "velocity": 72
+      "velocity": 75
     },
     {
       "id": "SP-P1",
